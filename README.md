@@ -1,4 +1,4 @@
-# Expedition
+# Figurer
 
 ## What it is
 
