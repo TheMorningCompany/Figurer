@@ -46,10 +46,10 @@ class CalculatorViewController: UIViewController {
             num_operator = "-"
             break
         case 4:
-            num_operator = "*"
+            num_operator = "×"
             break
         case 5:
-            num_operator = "/"
+            num_operator = "÷"
             break
         default:
             break
