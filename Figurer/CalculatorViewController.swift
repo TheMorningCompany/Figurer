@@ -33,6 +33,7 @@ class CalculatorViewController: UIViewController {
             break
         }
     }
+    
     @IBAction func operators(_ sender: UIButton) {
         switch sender.tag {
         case 1:
@@ -55,6 +56,7 @@ class CalculatorViewController: UIViewController {
         }
         resultLabel.text = num_operator
     }
+    
     @IBAction func function(_ sender: UIButton) {
         switch sender.tag {
         case 1:
