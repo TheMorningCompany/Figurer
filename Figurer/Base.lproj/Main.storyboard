@@ -249,11 +249,11 @@
                                             <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="355-gQ-3kv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-ME-0sB" userLabel="^">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-ME-0sB" userLabel="^">
                                         <rect key="frame" x="126" y="0.0" width="34" height="41"/>
                                         <state key="normal" image="powerLight"/>
                                         <connections>
-                                            <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKG-8A-dkC"/>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bE-P2-ccV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kks-pQ-bza" userLabel="+/-">
