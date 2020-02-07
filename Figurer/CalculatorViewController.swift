@@ -31,28 +31,45 @@ class CalculatorViewController: UIViewController {
         resultLabel.text = ""
         // Do any additional setup after loading the view.
     }
+    
+    func updateDisplay(value: String) {
+        var newValue = value
+        if (value.contains(".") && !(value.suffix(1) == "0")) {
+            newValue += "0"
+        }
+        let doubleResult = Double(newValue)
+        if (round(doubleResult!) == doubleResult) {
+            resultLabel.text = String(Int(round(doubleResult!)))
+            print("ROUNDED", String(resultLabel.text!))
+        } else {
+            print("NOT ROUNDED", newValue)
+            resultLabel.text = newValue
+        }
+    }
 
     @IBAction func numbers(_ sender: UIButton) {
         
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
-            resultLabel.text = String(sender.tag - 1)
+            updateDisplay(value: String(sender.tag - 1))
         } else {
             resultLabel.text! += String(sender.tag - 1)
         }
         
-        numberOnScreen = Double(resultLabel.text!) as! Double
+        numberOnScreen = Double(resultLabel.text!)!
     }
 
     @IBAction func special(_ sender: UIButton) {
         switch sender.tag {
         case 1:
-            resultLabel.text = String(Double.pi)
+            updateDisplay(value: String(Double.pi))
             break
         case 2:
             if (resultLabel.text == "") {
                 resultLabel.text = "0."
             } else {
-                resultLabel.text! += "."
+                if (!(resultLabel.text?.contains("."))!) {
+                    resultLabel.text! += "."
+                }
             }
             break
         default:
@@ -62,7 +79,7 @@ class CalculatorViewController: UIViewController {
 
     @IBAction func operators(_ sender: UIButton) {
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
-            resultLabel.text = "0"
+            updateDisplay(value: "0")
         }
         
         performingMath = true
@@ -89,7 +106,7 @@ class CalculatorViewController: UIViewController {
                 default:
                     break
                 }
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
             }
             performingMath = false
         }
@@ -140,7 +157,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = sqrt(input!)
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 3:
                 if (resultLabel.text == "") {
@@ -148,7 +165,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = input! / 100
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 4:
                 if (resultLabel.text == "") {
@@ -156,7 +173,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = sqrt(input!)
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 5:
                 if (resultLabel.text == "") {
@@ -164,7 +181,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = input! * -1
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             default:
                 break
