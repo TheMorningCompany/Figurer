@@ -34,7 +34,7 @@ class CalculatorViewController: UIViewController {
     
     func updateDisplay(value: String) {
         var newValue = value
-        if (value.suffix(1) == ".") {
+        if (value.contains(".") && !(value.suffix(1) == "0")) {
             newValue += "0"
         }
         let doubleResult = Double(newValue)
@@ -52,7 +52,7 @@ class CalculatorViewController: UIViewController {
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
             updateDisplay(value: String(sender.tag - 1))
         } else {
-            updateDisplay(value: resultLabel.text! + String(sender.tag - 1))
+            resultLabel.text! += String(sender.tag - 1)
         }
         
         numberOnScreen = Double(resultLabel.text!)!
