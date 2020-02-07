@@ -65,10 +65,10 @@ class CalculatorViewController: UIViewController {
             break
         case 2:
             if (resultLabel.text == "") {
-                updateDisplay(value: "0.")
+                resultLabel.text = "0."
             } else {
                 if (!(resultLabel.text?.contains("."))!) {
-                    updateDisplay(value: resultLabel.text! + ".")
+                    resultLabel.text! += "."
                 }
             }
             break
@@ -79,7 +79,7 @@ class CalculatorViewController: UIViewController {
 
     @IBAction func operators(_ sender: UIButton) {
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
-            resultLabel.text = "0"
+            updateDisplay(value: "0")
         }
         
         performingMath = true
@@ -157,7 +157,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = sqrt(input!)
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 3:
                 if (resultLabel.text == "") {
@@ -165,7 +165,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = input! / 100
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 4:
                 if (resultLabel.text == "") {
@@ -173,7 +173,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = sqrt(input!)
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             case 5:
                 if (resultLabel.text == "") {
@@ -181,7 +181,7 @@ class CalculatorViewController: UIViewController {
                 }
                 var input = Double(resultLabel.text!)
                 var result = input! * -1
-                resultLabel.text = String(result)
+                updateDisplay(value: String(result))
                 break
             default:
                 break
