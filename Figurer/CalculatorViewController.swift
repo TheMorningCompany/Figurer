@@ -12,7 +12,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     var num_operator:Int = -1
     
-    var operator_strings = ["=", "+", "-", "*", "/", "^"]
+    var operator_strings = ["=", "+", "-", "×", "÷", "^"]
     enum num_operators:Int {
         case EQUALS = 1
         case ADD = 2
