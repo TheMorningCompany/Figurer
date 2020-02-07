@@ -75,7 +75,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-36" translatesAutoresizingMaskIntoConstraints="NO" id="feG-53-alK" userLabel="3">
                                 <rect key="frame" x="0.0" y="243" width="258" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Ra-gmh" userLabel="7">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Ra-gmh" userLabel="7">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="K9F-Rj-aLk"/>
@@ -335,7 +335,7 @@
         <image name="powerLight" width="14.5" height="9"/>
         <image name="sqrtLight" width="21" height="12.5"/>
         <namedColor name="Color">
-            <color red="1" green="0.97500002384185791" blue="0.98600000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
