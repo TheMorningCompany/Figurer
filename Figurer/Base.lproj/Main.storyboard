@@ -75,13 +75,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-36" translatesAutoresizingMaskIntoConstraints="NO" id="feG-53-alK" userLabel="3">
                                 <rect key="frame" x="0.0" y="243" width="258" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Ra-gmh" userLabel="7">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-Ra-gmh" userLabel="7">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="K9F-Rj-aLk"/>
                                             <constraint firstAttribute="height" constant="110" id="Pjs-Om-LfD"/>
                                         </constraints>
                                         <state key="normal" image="7Light"/>
+                                        <state key="highlighted" image="7Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tl-Xw-9ZF"/>
                                         </connections>
@@ -93,6 +94,7 @@
                                             <constraint firstAttribute="width" constant="110" id="Huo-EE-mjG"/>
                                         </constraints>
                                         <state key="normal" image="8Light"/>
+                                        <state key="highlighted" image="8Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYc-w4-kjo"/>
                                         </connections>
@@ -104,6 +106,7 @@
                                             <constraint firstAttribute="width" constant="110" id="tI8-w2-bGF"/>
                                         </constraints>
                                         <state key="normal" image="9Light"/>
+                                        <state key="highlighted" image="9Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKM-r1-oEf"/>
                                         </connections>
@@ -120,6 +123,7 @@
                                             <constraint firstAttribute="width" constant="110" id="wss-8O-GfE"/>
                                         </constraints>
                                         <state key="normal" image="4Light"/>
+                                        <state key="highlighted" image="4Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgO-G0-QHA"/>
                                         </connections>
@@ -131,6 +135,7 @@
                                             <constraint firstAttribute="width" constant="110" id="Hf7-ql-KYZ"/>
                                         </constraints>
                                         <state key="normal" image="5Light"/>
+                                        <state key="highlighted" image="5Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSd-il-QZb"/>
                                         </connections>
@@ -142,6 +147,7 @@
                                             <constraint firstAttribute="width" constant="110" id="gaA-Zg-t7v"/>
                                         </constraints>
                                         <state key="normal" image="6Light"/>
+                                        <state key="highlighted" image="6Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1w-m9-GAc"/>
                                         </connections>
@@ -158,6 +164,7 @@
                                             <constraint firstAttribute="height" constant="110" id="e3U-Kg-7Hy"/>
                                         </constraints>
                                         <state key="normal" image="1Light"/>
+                                        <state key="highlighted" image="1Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQC-4n-Bof"/>
                                         </connections>
@@ -169,6 +176,7 @@
                                             <constraint firstAttribute="height" constant="110" id="73t-aV-N1G"/>
                                         </constraints>
                                         <state key="normal" image="2Light"/>
+                                        <state key="highlighted" image="2Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23B-xg-0sZ"/>
                                         </connections>
@@ -180,6 +188,7 @@
                                             <constraint firstAttribute="height" constant="110" id="wNU-Po-ok5"/>
                                         </constraints>
                                         <state key="normal" image="3Light"/>
+                                        <state key="highlighted" image="3Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pvy-rG-YwO"/>
                                         </connections>
@@ -196,6 +205,7 @@
                                             <constraint firstAttribute="height" constant="110" id="fCl-tQ-i3x"/>
                                         </constraints>
                                         <state key="normal" image="piDark"/>
+                                        <state key="highlighted" image="piPressed"/>
                                         <connections>
                                             <action selector="special:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ix-Xl-BDt"/>
                                         </connections>
@@ -207,6 +217,7 @@
                                             <constraint firstAttribute="width" constant="110" id="ket-kD-HU1"/>
                                         </constraints>
                                         <state key="normal" image="0Light"/>
+                                        <state key="highlighted" image="0Pressed"/>
                                         <connections>
                                             <action selector="numbers:" destination="KgH-wN-5XW" eventType="touchUpInside" id="aa1-VO-m08"/>
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebS-zR-82n"/>
@@ -219,6 +230,7 @@
                                             <constraint firstAttribute="height" constant="110" id="mur-oM-Z1I"/>
                                         </constraints>
                                         <state key="normal" image="dotLight"/>
+                                        <state key="highlighted" image="dotPressed"/>
                                         <connections>
                                             <action selector="special:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPc-ol-aNr"/>
                                         </connections>
@@ -313,24 +325,36 @@
     </scenes>
     <resources>
         <image name="0Light" width="140" height="141"/>
+        <image name="0Pressed" width="141" height="141"/>
         <image name="1Light" width="140" height="141"/>
+        <image name="1Pressed" width="141" height="140"/>
         <image name="2Light" width="141" height="141"/>
+        <image name="2Pressed" width="140" height="141"/>
         <image name="3Light" width="141" height="141"/>
+        <image name="3Pressed" width="140" height="141"/>
         <image name="4Light" width="140" height="141"/>
+        <image name="4Pressed" width="140" height="140"/>
         <image name="5Light" width="141" height="141"/>
+        <image name="5Pressed" width="140" height="140"/>
         <image name="6Light" width="141" height="141"/>
+        <image name="6Pressed" width="140" height="141"/>
         <image name="7Light" width="140" height="141"/>
+        <image name="7Pressed" width="141" height="141"/>
         <image name="8Light" width="141" height="141"/>
+        <image name="8Pressed" width="141" height="141"/>
         <image name="9Light" width="141" height="141"/>
+        <image name="9Pressed" width="141" height="140"/>
         <image name="acLight" width="18" height="20.5"/>
         <image name="divideLight" width="68.5" height="68.5"/>
         <image name="dotLight" width="141" height="141"/>
+        <image name="dotPressed" width="141" height="141"/>
         <image name="equalsLight" width="68.5" height="68.5"/>
         <image name="minusLight" width="68.5" height="68.5"/>
         <image name="multiplyLight" width="68.5" height="68.5"/>
         <image name="neg-posLight" width="21" height="20.5"/>
         <image name="percentLight" width="23" height="20.5"/>
         <image name="piDark" width="141" height="141"/>
+        <image name="piPressed" width="141" height="140"/>
         <image name="plusLight" width="68.5" height="68.5"/>
         <image name="powerLight" width="14.5" height="9"/>
         <image name="sqrtLight" width="21" height="12.5"/>
