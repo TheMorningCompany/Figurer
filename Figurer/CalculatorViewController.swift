@@ -9,6 +9,7 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
+    @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     var num_operator:Int = -1
     let impact = UIImpactFeedbackGenerator()//haptics
@@ -29,6 +30,7 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text = ""
+        equationViewer.text = ""
         // Do any additional setup after loading the view.
     }
     
@@ -42,17 +44,34 @@ class CalculatorViewController: UIViewController {
             resultLabel.text = String(Int(round(doubleResult!)))
             print("ROUNDED", String(resultLabel.text!))
         } else {
-            print("NOT ROUNDED", newValue)
+            var result =
             resultLabel.text = newValue
         }
     }
+    
+    func resetScreen() {
+        resultLabel.text = ""
+        equationViewer.text = ""
+        previousNumber = 0.0
+        numberOnScreen = 0.0
+    }
 
     @IBAction func numbers(_ sender: UIButton) {
+        
+        if ((equationViewer.text?.contains("="))!) {
+            resetScreen()
+        }
         
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
             updateDisplay(value: String(sender.tag - 1))
         } else {
             resultLabel.text! += String(sender.tag - 1)
+        }
+        
+        if (equationViewer.text == "") {
+            equationViewer.text = String(sender.tag - 1)
+        } else {
+            equationViewer.text! += String(sender.tag - 1)
         }
         
         numberOnScreen = Double(resultLabel.text!)!
@@ -66,10 +85,15 @@ class CalculatorViewController: UIViewController {
         case 2:
             if (resultLabel.text == "") {
                 resultLabel.text = "0."
-            } else {
-                if (!(resultLabel.text?.contains("."))!) {
-                    resultLabel.text! += "."
+                if (equationViewer.text == "") {
+                    equationViewer.text = "0.0"
+                } else {
+                    equationViewer.text! += "0.0"
                 }
+            } else if (!(resultLabel.text?.contains("."))!) {
+                resultLabel.text! += "."
+                equationViewer.text! += "."
+                
             }
             break
         default:
@@ -78,6 +102,11 @@ class CalculatorViewController: UIViewController {
     }
 
     @IBAction func operators(_ sender: UIButton) {
+        
+        if ((equationViewer.text?.contains("="))!) {
+            equationViewer.text = resultLabel.text
+        }
+        
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
             updateDisplay(value: "0")
         }
@@ -107,6 +136,7 @@ class CalculatorViewController: UIViewController {
                     break
                 }
                 updateDisplay(value: String(result))
+                equationViewer.text! += " = " + resultLabel.text!
             }
             performingMath = false
         }
@@ -138,6 +168,11 @@ class CalculatorViewController: UIViewController {
         
         if (sender.tag != num_operators.EQUALS.rawValue) {
             resultLabel.text = String(operator_strings[num_operator - 1])
+            if (equationViewer.text == "") {
+                equationViewer.text = String(operator_strings[num_operator - 1])
+            } else {
+                equationViewer.text! += " " + String(operator_strings[num_operator - 1]) + " "
+            }
         }
     }
 
@@ -146,41 +181,47 @@ class CalculatorViewController: UIViewController {
             switch sender.tag {
             case 1:
                 if (resultLabel.text == "") {
-                    
+                    resetScreen()
                 } else {
                     resultLabel.text = ""
+                    var equationText = equationViewer.text
+                    let endIndex = equationText!.range(of: " ", options: .backwards)!.lowerBound
+                    let range = ...endIndex
+                    equationText = String(equationText![range])
+                    equationViewer.text = equationText
                 }
                 break
             case 2:
                 if (resultLabel.text == "") {
                     break
                 }
-                var input = Double(resultLabel.text!)
-                var result = sqrt(input!)
+                let input = Double(resultLabel.text!)
+                let result = sqrt(input!)
                 updateDisplay(value: String(result))
                 break
             case 3:
                 if (resultLabel.text == "") {
                     break
                 }
-                var input = Double(resultLabel.text!)
-                var result = input! / 100
+                let input = Double(resultLabel.text!)
+                let result = input! / 100
                 updateDisplay(value: String(result))
+                equationViewer.text! += "%"
                 break
             case 4:
                 if (resultLabel.text == "") {
                     break
                 }
-                var input = Double(resultLabel.text!)
-                var result = sqrt(input!)
+                let input = Double(resultLabel.text!)
+                let result = sqrt(input!)
                 updateDisplay(value: String(result))
                 break
             case 5:
                 if (resultLabel.text == "") {
                     break
                 }
-                var input = Double(resultLabel.text!)
-                var result = input! * -1
+                let input = Double(resultLabel.text!)
+                let result = input! * -1
                 updateDisplay(value: String(result))
                 break
             default:
