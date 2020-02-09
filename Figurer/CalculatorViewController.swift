@@ -58,7 +58,7 @@ class CalculatorViewController: UIViewController {
 
     @IBAction func numbers(_ sender: UIButton) {
         
-        if ((equationViewer.text?.contains("="))!) {
+        if ((equationViewer.text?.contains("="))! || resultLabel.text == "ERROR") {
             resetScreen()
         }
         
@@ -83,12 +83,12 @@ class CalculatorViewController: UIViewController {
             updateDisplay(value: String(Double.pi))
             break
         case 2:
-            if (resultLabel.text == "") {
+            if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
                 resultLabel.text = "0."
                 if (equationViewer.text == "") {
-                    equationViewer.text = "0.0"
+                    equationViewer.text = "0."
                 } else {
-                    equationViewer.text! += "0.0"
+                    equationViewer.text! += "0."
                 }
             } else if (!(resultLabel.text?.contains("."))!) {
                 resultLabel.text! += "."
@@ -127,6 +127,9 @@ class CalculatorViewController: UIViewController {
                     result = previousNumber * numberOnScreen
                     break
                 case num_operators.DIVIDE.rawValue:
+                    if (numberOnScreen == 0) {
+                        print("DIVIDE BY 0")
+                    }
                     result = previousNumber / numberOnScreen
                     break
                 case num_operators.POWER.rawValue:
@@ -135,13 +138,23 @@ class CalculatorViewController: UIViewController {
                 default:
                     break
                 }
-                updateDisplay(value: String(result))
-                equationViewer.text! += " = " + resultLabel.text!
+                if (!(result.isNaN) && result.isFinite) {
+                    print(result)
+                    updateDisplay(value: String(result))
+                    equationViewer.text! += " = " + resultLabel.text!
+                } else {
+                    resetScreen()
+                    resultLabel.text = "ERROR"
+                }
             }
             performingMath = false
         }
         
-        previousNumber = Double(resultLabel.text!) as! Double
+        if (!(resultLabel.text == "ERROR")) {
+            previousNumber = Double(resultLabel.text!) as! Double
+        } else {
+            previousNumber = 1 / 0
+        }
         
         switch sender.tag {
         case 1:
@@ -185,14 +198,16 @@ class CalculatorViewController: UIViewController {
                 } else {
                     resultLabel.text = ""
                     var equationText = equationViewer.text
-                    let endIndex = equationText!.range(of: " ", options: .backwards)!.lowerBound
-                    let range = ...endIndex
-                    equationText = String(equationText![range])
+                    if (equationText!.contains(" ")) {
+                        let endIndex = equationText!.range(of: " ", options: .backwards)!.lowerBound
+                        let range = ...endIndex
+                        equationText = String(equationText![range])
+                    }
                     equationViewer.text = equationText
                 }
                 break
             case 2:
-                if (resultLabel.text == "") {
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -200,7 +215,7 @@ class CalculatorViewController: UIViewController {
                 updateDisplay(value: String(result))
                 break
             case 3:
-                if (resultLabel.text == "") {
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -209,7 +224,7 @@ class CalculatorViewController: UIViewController {
                 equationViewer.text! += "%"
                 break
             case 4:
-                if (resultLabel.text == "") {
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -217,7 +232,7 @@ class CalculatorViewController: UIViewController {
                 updateDisplay(value: String(result))
                 break
             case 5:
-                if (resultLabel.text == "") {
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
                     break
                 }
                 let input = Double(resultLabel.text!)
