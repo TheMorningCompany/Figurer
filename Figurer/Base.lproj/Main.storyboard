@@ -114,7 +114,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-36" translatesAutoresizingMaskIntoConstraints="NO" id="i5L-cu-o2S" userLabel="2">
-                                <rect key="frame" x="5" y="318" width="258" height="110"/>
+                                <rect key="frame" x="0.0" y="318" width="258" height="110"/>
                                 <subviews>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0l-nK-Aq6" userLabel="4">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -238,38 +238,38 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-VD-IKr">
-                                <rect key="frame" x="20" y="202.5" width="202" height="41"/>
+                                <rect key="frame" x="20" y="212" width="202" height="22"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nn-eY-6ay" userLabel="ac">
-                                        <rect key="frame" x="0.0" y="0.0" width="34" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="22"/>
                                         <state key="normal" image="acLight"/>
                                         <connections>
                                             <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="621-Cw-koK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-ER-N29" userLabel="sqrt">
-                                        <rect key="frame" x="42" y="0.0" width="34" height="41"/>
+                                        <rect key="frame" x="42" y="0.0" width="34" height="22"/>
                                         <state key="normal" image="sqrtLight"/>
                                         <connections>
                                             <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKj-Cb-mCB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7x-iR-bPX" userLabel="%">
-                                        <rect key="frame" x="84" y="0.0" width="34" height="41"/>
+                                        <rect key="frame" x="84" y="0.0" width="34" height="22"/>
                                         <state key="normal" image="percentLight"/>
                                         <connections>
                                             <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="355-gQ-3kv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-ME-0sB" userLabel="^">
-                                        <rect key="frame" x="126" y="0.0" width="34" height="41"/>
+                                        <rect key="frame" x="126" y="0.0" width="34" height="22"/>
                                         <state key="normal" image="powerLight"/>
                                         <connections>
                                             <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bE-P2-ccV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kks-pQ-bza" userLabel="+/-">
-                                        <rect key="frame" x="168" y="0.0" width="34" height="41"/>
+                                        <rect key="frame" x="168" y="0.0" width="34" height="22"/>
                                         <state key="normal" image="neg-posLight"/>
                                         <connections>
                                             <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARh-lw-06L"/>
@@ -292,26 +292,26 @@
                         </subviews>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
-                            <constraint firstItem="cJM-dD-eAP" firstAttribute="leading" secondItem="Ihh-QI-2ep" secondAttribute="leading" id="1JT-0H-x7f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hMl-OU-ccg" secondAttribute="trailing" constant="18" id="3A6-cI-1FJ"/>
+                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Fq-Hy-pw8"/>
                             <constraint firstItem="JO5-VD-IKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AaS-Vh-BF6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOI-aL-d2W" secondAttribute="trailing" constant="18" id="Egg-9V-9er"/>
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="centerY" secondItem="JO5-VD-IKr" secondAttribute="centerY" id="Er5-Ix-Ger"/>
+                            <constraint firstItem="i5L-cu-o2S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G7k-Vq-1bh"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="top" secondItem="TKr-PO-Qly" secondAttribute="bottom" constant="15" id="IQW-KI-kRo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPS-S7-3He" secondAttribute="trailing" constant="18" id="JY4-d6-wpX"/>
+                            <constraint firstItem="cJM-dD-eAP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jy2-cd-wMx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QG0-dw-8lV" secondAttribute="trailing" constant="15" id="Kxg-fq-5az"/>
-                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NyP-yE-6md"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="top" secondItem="YGx-b4-JW6" secondAttribute="bottom" constant="15" id="OHY-ev-iCG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TKr-PO-Qly" secondAttribute="trailing" constant="18" id="OKM-2O-blz"/>
-                            <constraint firstItem="i5L-cu-o2S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="OTl-Ue-EHq"/>
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="leading" secondItem="JO5-VD-IKr" secondAttribute="trailing" constant="20" id="VRJ-CX-yhg"/>
-                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="cJM-dD-eAP" secondAttribute="leading" id="b5L-Mm-0Sx"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="centerY" secondItem="feG-53-alK" secondAttribute="centerY" id="b9Z-hU-zey"/>
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="top" secondItem="RYb-Vx-dsM" secondAttribute="bottom" constant="8" id="eGV-u6-2eO"/>
                             <constraint firstItem="YGx-b4-JW6" firstAttribute="top" secondItem="FPS-S7-3He" secondAttribute="bottom" constant="15" id="fc6-ev-ta0"/>
                             <constraint firstItem="wOI-aL-d2W" firstAttribute="centerY" secondItem="Ihh-QI-2ep" secondAttribute="centerY" id="g6I-YE-5kW"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="centerY" secondItem="cJM-dD-eAP" secondAttribute="centerY" id="gdm-2I-dqq"/>
                             <constraint firstItem="wOI-aL-d2W" firstAttribute="top" secondItem="hMl-OU-ccg" secondAttribute="bottom" constant="15" id="gjn-0O-mNx"/>
+                            <constraint firstItem="Ihh-QI-2ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jrg-xi-Sk6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOI-aL-d2W" secondAttribute="bottom" constant="15" id="kDr-aC-0SW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RYb-Vx-dsM" secondAttribute="trailing" constant="20" id="kcQ-0g-gj1"/>
                             <constraint firstItem="YGx-b4-JW6" firstAttribute="centerY" secondItem="i5L-cu-o2S" secondAttribute="centerY" id="kdC-Gi-4HZ"/>
