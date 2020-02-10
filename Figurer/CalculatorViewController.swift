@@ -25,7 +25,6 @@ class CalculatorViewController: UIViewController {
 
     var numberOnScreen:Double = 0.0
     var previousNumber:Double = 0.0
-    var performingMath = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +43,6 @@ class CalculatorViewController: UIViewController {
             resultLabel.text = String(Int(round(doubleResult!)))
             print("ROUNDED", String(resultLabel.text!))
         } else {
-            var result =
             resultLabel.text = newValue
         }
     }
@@ -111,10 +109,8 @@ class CalculatorViewController: UIViewController {
             updateDisplay(value: "0")
         }
         
-        performingMath = true
-        
-        if (sender.tag == num_operators.EQUALS.rawValue && performingMath) {
-            if (num_operator != -1) {
+        if (sender.tag == num_operators.EQUALS.rawValue) {
+            if (num_operator != -1 && num_operator != num_operators.EQUALS.rawValue) {
                 var result = 0.0
                 switch num_operator {
                 case num_operators.ADD.rawValue:
@@ -146,12 +142,17 @@ class CalculatorViewController: UIViewController {
                     resetScreen()
                     resultLabel.text = "ERROR"
                 }
+            } else {
+                let result = numberOnScreen
+                updateDisplay(value: String(result))
+                equationViewer.text! += " = " + resultLabel.text!
             }
-            performingMath = false
+            numberOnScreen = Double(resultLabel.text!)!
+            print(numberOnScreen)
         }
         
         if (!(resultLabel.text == "ERROR")) {
-            previousNumber = Double(resultLabel.text!) as! Double
+            previousNumber = Double(resultLabel.text!)!
         } else {
             previousNumber = 1 / 0
         }
