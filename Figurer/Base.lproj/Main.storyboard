@@ -423,7 +423,7 @@
                                             <rect key="frame" x="237" y="110.5" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
-                                                <action selector="cookiesSwitchValueChange:" destination="8Ie-8t-s4i" eventType="valueChanged" id="wB5-Wq-CHk"/>
+                                                <action selector="hapticsSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="WzI-Pf-9FS"/>
                                             </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invert number pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PX-Zv-hC0">
@@ -436,7 +436,7 @@
                                             <rect key="frame" x="237" y="72.5" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
-                                                <action selector="reopenTabsSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="e7I-PL-S0X"/>
+                                                <action selector="invertSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="J6C-YJ-WL6"/>
                                             </connections>
                                         </switch>
                                     </subviews>
@@ -485,8 +485,8 @@
                         <blurEffect style="systemChromeMaterial"/>
                     </visualEffectView>
                     <connections>
-                        <outlet property="keepCookiesSwitch" destination="boL-AP-IIo" id="A8Q-R9-rqC"/>
-                        <outlet property="reopenTabsSwitch" destination="Pnh-at-W1u" id="LmO-TW-8o6"/>
+                        <outlet property="hapticsSwitch" destination="boL-AP-IIo" id="zRa-VD-lBX"/>
+                        <outlet property="invertNumpadSwitch" destination="Pnh-at-W1u" id="QWv-Im-yOu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcX-62-qlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
