@@ -53,6 +53,10 @@ class CalculatorViewController: UIViewController {
         previousNumber = 0.0
         numberOnScreen = 0.0
     }
+    
+    func logb(val: Double, forBase base: Double) -> Double {
+        return log(val)/log(base)
+    }
 
     //MARK: Number Buttons
     
@@ -253,6 +257,42 @@ class CalculatorViewController: UIViewController {
                 }
                 let input = Double(resultLabel.text!)
                 let result = input! * -1
+                updateDisplay(value: String(result))
+                break
+            case 6:
+                //ln
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                let result = logb(val: input!, forBase: M_E)
+                updateDisplay(value: String(result))
+                break
+            case 7:
+                //sin
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                let result = sin(input!)
+                updateDisplay(value: String(result))
+                break
+            case 8:
+                //cos
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                let result = cos(input!)
+                updateDisplay(value: String(result))
+                break
+            case 9:
+                //tan
+                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                let result = tan(input!)
                 updateDisplay(value: String(result))
                 break
             default:
