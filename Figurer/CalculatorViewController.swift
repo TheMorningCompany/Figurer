@@ -54,6 +54,8 @@ class CalculatorViewController: UIViewController {
         numberOnScreen = 0.0
     }
 
+    //MARK: Number Buttons
+    
     @IBAction func numbers(_ sender: UIButton) {
         
         if ((equationViewer.text?.contains("="))! || resultLabel.text == "ERROR") {
@@ -75,10 +77,17 @@ class CalculatorViewController: UIViewController {
         numberOnScreen = Double(resultLabel.text!)!
     }
 
+    //MARK: Special Buttons
+    
     @IBAction func special(_ sender: UIButton) {
         switch sender.tag {
         case 1:
             updateDisplay(value: String(Double.pi))
+            if (equationViewer.text == "") {
+                equationViewer.text = "π"
+            } else {
+                equationViewer.text! += "π"
+            }
             break
         case 2:
             if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
@@ -99,10 +108,16 @@ class CalculatorViewController: UIViewController {
         }
     }
 
+    //MARK: Operator Buttons
+    
     @IBAction func operators(_ sender: UIButton) {
         
         if ((equationViewer.text?.contains("="))!) {
             equationViewer.text = resultLabel.text
+        }
+        
+        if (operator_strings.contains(resultLabel.text!)) {
+            return
         }
         
         if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
@@ -110,8 +125,8 @@ class CalculatorViewController: UIViewController {
         }
         
         if (sender.tag == num_operators.EQUALS.rawValue) {
+            var result = 0.0
             if (num_operator != -1 && num_operator != num_operators.EQUALS.rawValue) {
-                var result = 0.0
                 switch num_operator {
                 case num_operators.ADD.rawValue:
                     result = previousNumber + numberOnScreen
@@ -134,21 +149,19 @@ class CalculatorViewController: UIViewController {
                 default:
                     break
                 }
-                if (!(result.isNaN) && result.isFinite) {
-                    print(result)
-                    updateDisplay(value: String(result))
-                    equationViewer.text! += " = " + resultLabel.text!
-                } else {
-                    resetScreen()
-                    resultLabel.text = "ERROR"
-                }
             } else {
-                let result = numberOnScreen
+                result = numberOnScreen
+            }
+            
+            if (!(result.isNaN) && result.isFinite) {
+                print(result)
                 updateDisplay(value: String(result))
                 equationViewer.text! += " = " + resultLabel.text!
+                numberOnScreen = Double(resultLabel.text!)!
+            } else {
+                resetScreen()
+                resultLabel.text = "ERROR"
             }
-            numberOnScreen = Double(resultLabel.text!)!
-            print(numberOnScreen)
         }
         
         if (!(resultLabel.text == "ERROR")) {
@@ -190,6 +203,8 @@ class CalculatorViewController: UIViewController {
         }
     }
 
+    // MARK: Function Buttons
+    
     @IBAction func function(_ sender: UIButton) {
         if (!operator_strings.contains(resultLabel.text!)) {
             switch sender.tag {
@@ -242,6 +257,18 @@ class CalculatorViewController: UIViewController {
                 break
             default:
                 break
+            }
+        } else {
+            if (sender.tag == 1) {
+                resultLabel.text = ""
+                var equationText = equationViewer.text
+                equationText = String((equationText?.dropLast())!)
+                if (equationText!.contains(" ")) {
+                    let endIndex = equationText!.range(of: " ", options: .backwards)!.lowerBound
+                    let range = ...endIndex
+                    equationText = String(equationText![range])
+                }
+                equationViewer.text = equationText
             }
         }
     }    /*
