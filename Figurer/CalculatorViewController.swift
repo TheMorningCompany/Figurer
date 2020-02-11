@@ -13,7 +13,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     var num_operator:Int = -1
     let impact = UIImpactFeedbackGenerator()//haptics
-    var operator_strings = ["=", "+", "-", "×", "÷", "^"]
+    var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
         case EQUALS = 1
         case ADD = 2
@@ -21,6 +21,7 @@ class CalculatorViewController: UIViewController {
         case MULTIPLY = 4
         case DIVIDE = 5
         case POWER = 6
+        case LOG = 7
     }
 
     var numberOnScreen:Double = 0.0
@@ -150,6 +151,9 @@ class CalculatorViewController: UIViewController {
                 case num_operators.POWER.rawValue:
                     result = pow(previousNumber, numberOnScreen)
                     break
+                case num_operators.LOG.rawValue:
+                    result = logb(val: previousNumber, forBase: numberOnScreen)
+                    break
                 default:
                     break
                 }
@@ -192,6 +196,9 @@ class CalculatorViewController: UIViewController {
             break
         case 6:
             num_operator = num_operators.POWER.rawValue
+            break
+        case 7:
+            num_operator = num_operators.LOG.rawValue
             break
         default:
             break
