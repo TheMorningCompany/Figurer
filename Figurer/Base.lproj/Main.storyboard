@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -478,13 +478,13 @@
                                                 <action selector="hapticsSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="WzI-Pf-9FS"/>
                                             </connections>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="use radian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Td-XQ4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="use radian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Td-XQ4">
                                             <rect key="frame" x="18" y="152" width="81" height="24"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-WR-inE">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-WR-inE">
                                             <rect key="frame" x="237" y="148.5" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
@@ -515,6 +515,7 @@
                                         <constraint firstItem="UTF-Za-Cza" firstAttribute="top" secondItem="5PX-Zv-hC0" secondAttribute="bottom" constant="14" id="MYd-l7-sTL"/>
                                         <constraint firstItem="5PX-Zv-hC0" firstAttribute="leading" secondItem="SXy-ef-Ga9" secondAttribute="leading" constant="18" id="OvY-tL-eJo"/>
                                         <constraint firstItem="jVE-Kb-Pua" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kF9-Mf-fkg" secondAttribute="trailing" symbolic="YES" id="P9f-Uq-xgg"/>
+                                        <constraint firstItem="ysg-xf-ahl" firstAttribute="trailing" secondItem="VGU-WR-inE" secondAttribute="trailing" constant="18" id="QQH-9Z-U5p"/>
                                         <constraint firstItem="ysg-xf-ahl" firstAttribute="trailing" secondItem="Pnh-at-W1u" secondAttribute="trailing" constant="18" id="TUQ-vK-j02"/>
                                         <constraint firstItem="kF9-Mf-fkg" firstAttribute="top" secondItem="XGr-oN-2zd" secondAttribute="bottom" constant="12" id="UfX-ce-ys7"/>
                                         <constraint firstItem="4M1-W2-jbB" firstAttribute="top" secondItem="RmW-BM-Ia5" secondAttribute="bottom" constant="10" id="WFt-d0-pES"/>
@@ -526,6 +527,7 @@
                                         <constraint firstItem="kF9-Mf-fkg" firstAttribute="leading" secondItem="jVE-Kb-Pua" secondAttribute="leading" constant="18" id="foA-lp-QjN"/>
                                         <constraint firstItem="4M1-W2-jbB" firstAttribute="leading" secondItem="ysg-xf-ahl" secondAttribute="leading" constant="19" id="gzg-CX-Vxg"/>
                                         <constraint firstItem="VGU-WR-inE" firstAttribute="centerY" secondItem="Mck-Td-XQ4" secondAttribute="centerY" id="hK1-03-PvK"/>
+                                        <constraint firstItem="Mck-Td-XQ4" firstAttribute="leading" secondItem="ysg-xf-ahl" secondAttribute="leading" constant="18" id="hkO-Ax-iNU"/>
                                         <constraint firstItem="UTF-Za-Cza" firstAttribute="leading" secondItem="SXy-ef-Ga9" secondAttribute="leading" constant="18" id="hn2-Vy-cTP"/>
                                         <constraint firstItem="boL-AP-IIo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UTF-Za-Cza" secondAttribute="trailing" constant="8" symbolic="YES" id="iIB-HG-bz1"/>
                                         <constraint firstItem="Pnh-at-W1u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5PX-Zv-hC0" secondAttribute="trailing" constant="8" symbolic="YES" id="ilf-Sk-03m"/>
