@@ -450,38 +450,34 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-
-                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXy-ef-Ga9">
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXy-ef-Ga9">
                                     <rect key="frame" x="8" y="0.0" width="304" height="548"/>
-
-                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXy-ef-Ga9">
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </scrollView>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXy-ef-Ga9">
                                     <rect key="frame" x="8" y="0.0" width="359" height="548"/>
-
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoJ-h2-dSa">
-                                            <rect key="frame" x="20" y="24" width="107" height="40"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoJ-h2-dSa">
+                                            <rect key="frame" x="20" y="-164" width="107" height="40"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF9-Mf-fkg">
-
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF9-Mf-fkg">
                                             <rect key="frame" x="18" y="238" width="122" height="40"/>
-
-                                            <rect key="frame" x="18" y="326" width="122" height="40"/>
-
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGr-oN-2zd">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGr-oN-2zd">
                                             <rect key="frame" x="18" y="190" width="86" height="36"/>
-
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-W2-jbB">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-W2-jbB">
                                             <rect key="frame" x="19" y="233" width="122" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" title="button option 2">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -490,21 +486,21 @@
                                                 <action selector="clearHistory:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="UvK-7t-y5S"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmW-BM-Ia5">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmW-BM-Ia5">
                                             <rect key="frame" x="19" y="187" width="122" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" title="button option 1">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                             <connections>
-                                                <action selector="clearBrowsingData:" destination="Odh-an-H7x" eventType="touchUpInside" id="JTD-y4-8OE"/>
                                                 <action selector="clearBrowsingData:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="yLd-7e-elB"/>
                                                 <action selector="clearHistory:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="dP1-IU-maY"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGr-oN-2zd">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGr-oN-2zd">
                                             <rect key="frame" x="18" y="278" width="86" height="36"/>
-
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" title="how to use">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -514,60 +510,56 @@
                                                 <segue destination="fDF-iu-eMZ" kind="presentation" id="lLN-bv-ZSz"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haptics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTF-Za-Cza">
-                                            <rect key="frame" x="18" y="113" width="56" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="haptics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTF-Za-Cza">
+                                            <rect key="frame" x="18" y="-75" width="56" height="23"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boL-AP-IIo">
-                                            <rect key="frame" x="292" y="109" width="51" height="31"/>
+                                            <rect key="frame" x="238" y="-79" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
                                                 <action selector="hapticsSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="WzI-Pf-9FS"/>
                                             </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="use radian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Td-XQ4">
-
-                                            <rect key="frame" x="18" y="152" width="81" height="24"/>
+                                            <rect key="frame" x="18" y="-38" width="81" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="81" id="cwA-PO-VNS"/>
                                             </constraints>
-
-                                            <rect key="frame" x="18" y="150" width="81" height="23"/>
-
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-WR-inE">
-                                            <rect key="frame" x="292" y="146" width="51" height="31"/>
+                                            <rect key="frame" x="238" y="-41.666666666666664" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
                                                 <action selector="hapticsSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="jhb-gH-ns9"/>
                                             </connections>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invert number pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PX-Zv-hC0">
-                                            <rect key="frame" x="18" y="76" width="146" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="invert number pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PX-Zv-hC0">
+                                            <rect key="frame" x="18" y="-112" width="146" height="23"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-at-W1u">
-                                            <rect key="frame" x="292" y="72" width="51" height="31"/>
+                                            <rect key="frame" x="238" y="-116" width="51" height="31"/>
                                             <color key="onTintColor" name="Figurer Orange"/>
                                             <connections>
                                                 <action selector="invertSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="J6C-YJ-WL6"/>
                                             </connections>
                                         </switch>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-me-YUX" userLabel="fade">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-me-YUX" userLabel="fade">
                                             <rect key="frame" x="102" y="372" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="GlyphUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-MA-kg4" userLabel="shadow">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-MA-kg4" userLabel="shadow">
                                             <rect key="frame" x="8" y="372" width="101" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -575,14 +567,14 @@
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-I3-rFd" userLabel="FadeBG">
-                                            <rect key="frame" x="197" y="372" width="99" height="100"/>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-I3-rFd" userLabel="FadeBG">
+                                            <rect key="frame" x="197" y="372" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="FadeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-2c-rKG" userLabel="light">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-2c-rKG" userLabel="light">
                                             <rect key="frame" x="8" y="290" width="101" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -590,14 +582,14 @@
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-HW-X90" userLabel="orange">
-                                            <rect key="frame" x="197" y="290" width="99" height="100"/>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-HW-X90" userLabel="orange">
+                                            <rect key="frame" x="197" y="290" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="OrangeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-Fq-0dE" userLabel="dark">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-Fq-0dE" userLabel="dark">
                                             <rect key="frame" x="102" y="290" width="100" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <gestureRecognizers/>
@@ -616,19 +608,15 @@
                                         <constraint firstItem="boL-AP-IIo" firstAttribute="centerY" secondItem="UTF-Za-Cza" secondAttribute="centerY" id="8oP-dV-29C"/>
                                         <constraint firstItem="Mck-Td-XQ4" firstAttribute="top" secondItem="UTF-Za-Cza" secondAttribute="bottom" constant="14" id="8vc-Yj-aSg"/>
                                         <constraint firstAttribute="bottom" secondItem="WsY-2c-rKG" secondAttribute="bottom" constant="-81" id="EuC-so-y8q"/>
-                                        <constraint firstItem="jVE-Kb-Pua" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XGr-oN-2zd" secondAttribute="trailing" symbolic="YES" id="F90-DG-9KM"/>
                                         <constraint firstItem="Mck-Td-XQ4" firstAttribute="centerX" secondItem="WsY-2c-rKG" secondAttribute="centerX" id="L4q-K0-DHn"/>
                                         <constraint firstItem="UTF-Za-Cza" firstAttribute="top" secondItem="5PX-Zv-hC0" secondAttribute="bottom" constant="14" id="MYd-l7-sTL"/>
-                                        <constraint firstItem="5PX-Zv-hC0" firstAttribute="leading" secondItem="SXy-ef-Ga9" secondAttribute="leading" constant="18" id="OvY-tL-eJo"/>
                                         <constraint firstItem="jVE-Kb-Pua" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kF9-Mf-fkg" secondAttribute="trailing" symbolic="YES" id="P9f-Uq-xgg"/>
                                         <constraint firstItem="ysg-xf-ahl" firstAttribute="trailing" secondItem="VGU-WR-inE" secondAttribute="trailing" constant="18" id="QQH-9Z-U5p"/>
                                         <constraint firstItem="ysg-xf-ahl" firstAttribute="trailing" secondItem="Pnh-at-W1u" secondAttribute="trailing" constant="18" id="TUQ-vK-j02"/>
                                         <constraint firstItem="yRs-MA-kg4" firstAttribute="leading" secondItem="ysg-xf-ahl" secondAttribute="leading" constant="8" id="TkS-Ii-KhL"/>
-                                        <constraint firstItem="kF9-Mf-fkg" firstAttribute="top" secondItem="XGr-oN-2zd" secondAttribute="bottom" constant="12" id="UfX-ce-ys7"/>
                                         <constraint firstItem="9ze-Fq-0dE" firstAttribute="centerY" secondItem="WsY-2c-rKG" secondAttribute="centerY" id="X9V-Ws-XHS"/>
                                         <constraint firstItem="WsY-2c-rKG" firstAttribute="top" secondItem="kF9-Mf-fkg" secondAttribute="bottom" constant="12" id="ZAp-A0-YVe"/>
-                                        <constraint firstItem="XGr-oN-2zd" firstAttribute="leading" secondItem="jVE-Kb-Pua" secondAttribute="leading" constant="18" id="ZlK-Oc-6to"/>
-                                        <constraint firstItem="yoJ-h2-dSa" firstAttribute="leading" secondItem="SXy-ef-Ga9" secondAttribute="leading" constant="20" id="aMR-bY-8Td"/>
+                                        <constraint firstAttribute="leading" secondItem="jVE-Kb-Pua" secondAttribute="leading" constant="18" id="ZlK-Oc-6to"/>
                                         <constraint firstItem="5PX-Zv-hC0" firstAttribute="top" secondItem="yoJ-h2-dSa" secondAttribute="bottom" constant="12" id="bAh-Qv-xsK"/>
                                         <constraint firstAttribute="trailing" secondItem="hnu-HW-X90" secondAttribute="trailing" constant="8" id="d74-EF-yc0"/>
                                         <constraint firstItem="kF9-Mf-fkg" firstAttribute="leading" secondItem="jVE-Kb-Pua" secondAttribute="leading" constant="18" id="foA-lp-QjN"/>
@@ -636,15 +624,11 @@
                                         <constraint firstItem="VGU-WR-inE" firstAttribute="centerY" secondItem="Mck-Td-XQ4" secondAttribute="centerY" id="hK1-03-PvK"/>
                                         <constraint firstItem="hnu-HW-X90" firstAttribute="leading" secondItem="yRs-MA-kg4" secondAttribute="trailing" constant="88" id="hVd-BX-tDm"/>
                                         <constraint firstItem="Mck-Td-XQ4" firstAttribute="leading" secondItem="ysg-xf-ahl" secondAttribute="leading" constant="18" id="hkO-Ax-iNU"/>
-                                        <constraint firstItem="UTF-Za-Cza" firstAttribute="leading" secondItem="SXy-ef-Ga9" secondAttribute="leading" constant="18" id="hn2-Vy-cTP"/>
                                         <constraint firstItem="boL-AP-IIo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UTF-Za-Cza" secondAttribute="trailing" constant="8" symbolic="YES" id="iIB-HG-bz1"/>
                                         <constraint firstItem="Pnh-at-W1u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5PX-Zv-hC0" secondAttribute="trailing" constant="8" symbolic="YES" id="ilf-Sk-03m"/>
-                                        <constraint firstItem="Qzd-me-YUX" firstAttribute="centerX" secondItem="SXy-ef-Ga9" secondAttribute="centerX" id="j81-ZX-1KE"/>
                                         <constraint firstItem="VGU-WR-inE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mck-Td-XQ4" secondAttribute="trailing" constant="8" symbolic="YES" id="k4t-b2-Pxc"/>
                                         <constraint firstAttribute="trailing" secondItem="Pnh-at-W1u" secondAttribute="trailing" constant="18" id="l8k-LD-Tmk"/>
-                                        <constraint firstItem="XGr-oN-2zd" firstAttribute="top" secondItem="Mck-Td-XQ4" secondAttribute="bottom" constant="14" id="laY-4M-L1E"/>
-                                        <constraint firstItem="yoJ-h2-dSa" firstAttribute="top" secondItem="SXy-ef-Ga9" secondAttribute="top" constant="24" id="pm2-Rv-bCU"/>
-                                        <constraint firstItem="9ze-Fq-0dE" firstAttribute="centerX" secondItem="SXy-ef-Ga9" secondAttribute="centerX" id="qmN-hs-dak"/>
+                                        <constraint firstAttribute="top" secondItem="Mck-Td-XQ4" secondAttribute="bottom" constant="14" id="laY-4M-L1E"/>
                                         <constraint firstItem="1dE-I3-rFd" firstAttribute="centerY" secondItem="yRs-MA-kg4" secondAttribute="centerY" id="rTd-Xo-tCN"/>
                                         <constraint firstItem="jVE-Kb-Pua" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yoJ-h2-dSa" secondAttribute="trailing" symbolic="YES" id="rub-ce-tac"/>
                                         <constraint firstItem="hnu-HW-X90" firstAttribute="centerY" secondItem="WsY-2c-rKG" secondAttribute="centerY" id="t2Q-VX-fU4"/>
@@ -658,10 +642,9 @@
                             </subviews>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="SXy-ef-Ga9" firstAttribute="leading" secondItem="5GO-AR-g7g" secondAttribute="leadingMargin" id="AXC-34-dNw"/>
-                                <constraint firstItem="SXy-ef-Ga9" firstAttribute="top" secondItem="5GO-AR-g7g" secondAttribute="top" id="Sbm-hy-9Wq"/>
-                                <constraint firstItem="SXy-ef-Ga9" firstAttribute="trailing" secondItem="5GO-AR-g7g" secondAttribute="trailingMargin" id="Vax-vT-XKY"/>
-                                <constraint firstAttribute="bottom" secondItem="SXy-ef-Ga9" secondAttribute="bottom" id="Vgm-3h-MbP"/>
+                                <constraint firstAttribute="leading" secondItem="5GO-AR-g7g" secondAttribute="leadingMargin" id="AXC-34-dNw"/>
+                                <constraint firstAttribute="top" secondItem="5GO-AR-g7g" secondAttribute="top" id="Sbm-hy-9Wq"/>
+                                <constraint firstAttribute="trailing" secondItem="5GO-AR-g7g" secondAttribute="trailingMargin" id="Vax-vT-XKY"/>
                             </constraints>
                         </view>
                         <color key="backgroundColor" name="Color"/>
@@ -776,39 +759,24 @@
         <image name="8Pressed" width="141" height="141"/>
         <image name="9Light" width="141" height="141"/>
         <image name="9Pressed" width="141" height="140"/>
-
-        <image name="Cos" width="21.5" height="7.5"/>
-        <image name="Cos-1" width="22.5" height="8.5"/>
+        <image name="Cos" width="21.666666030883789" height="7.3333334922790527"/>
+        <image name="Cos-1" width="22" height="8.3333330154418945"/>
         <image name="DarkUI" width="100" height="100"/>
         <image name="FadeUI" width="100" height="100"/>
         <image name="GlyphUI" width="100" height="100"/>
         <image name="In" width="10" height="10"/>
-        <image name="In-1" width="13.5" height="8.5"/>
-        <image name="LightUI" width="100" height="100"/>
-        <image name="Log" width="14.5" height="10"/>
-        <image name="Log-1" width="19.5" height="10"/>
-        <image name="OrangeUI" width="100" height="100"/>
-        <image name="ShadowUI" width="100" height="100"/>
-        <image name="Sin" width="17.5" height="10"/>
-        <image name="Sin-1" width="19" height="8.5"/>
-        <image name="Tan" width="19.5" height="9"/>
-        <image name="Tan-1" width="20.5" height="8.5"/>
-        <image name="acLight" width="18" height="20.5"/>
-        <image name="divideLight" width="68.5" height="68.5"/>
-
-        <image name="Cos" width="21.666666030883789" height="7.3333334922790527"/>
-        <image name="Cos-1" width="22" height="8.3333330154418945"/>
-        <image name="In" width="10" height="10"/>
         <image name="In-1" width="13.333333015441895" height="8.3333330154418945"/>
+        <image name="LightUI" width="100" height="100"/>
         <image name="Log" width="14.666666984558105" height="10"/>
         <image name="Log-1" width="19.333333969116211" height="10"/>
+        <image name="OrangeUI" width="100" height="100"/>
+        <image name="ShadowUI" width="100" height="100"/>
         <image name="Sin" width="17.333333969116211" height="10"/>
         <image name="Sin-1" width="18.666666030883789" height="8.3333330154418945"/>
         <image name="Tan" width="19.333333969116211" height="9.3333330154418945"/>
         <image name="Tan-1" width="20.666666030883789" height="8.3333330154418945"/>
         <image name="acLight" width="18" height="20.333333969116211"/>
         <image name="divideLight" width="68" height="68"/>
-
         <image name="dotLight" width="141" height="141"/>
         <image name="dotPressed" width="141" height="141"/>
         <image name="equalsLight" width="68" height="68"/>
