@@ -12,7 +12,6 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     var num_operator:Int = -1
-    let impact = UIImpactFeedbackGenerator()//haptics
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
         case EQUALS = 1

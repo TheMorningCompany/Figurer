@@ -19,6 +19,7 @@
 		00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */; };
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
 		5D4B27E223F220A500A23478 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B27E123F220A500A23478 /* Settings.bundle */; };
+		5D791A5923F51A8000C406A6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A5823F51A8000C406A6 /* Functions.swift */; };
 		5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		00C4E64A23EB7AC9005E125D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D4B27E123F220A500A23478 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5D791A5823F51A8000C406A6 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,8 +91,9 @@
 				00C4E63C23EB7AC8005E125D /* AppDelegate.swift */,
 				00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */,
 				5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */,
-				00C4E64223EB7AC8005E125D /* Main.storyboard */,
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
+				5D791A5823F51A8000C406A6 /* Functions.swift */,
+				00C4E64223EB7AC8005E125D /* Main.storyboard */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
 				00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */,
 				00C4E64A23EB7AC9005E125D /* Info.plist */,
@@ -178,6 +181,7 @@
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
 				5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */,
+				5D791A5923F51A8000C406A6 /* Functions.swift in Sources */,
 				00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,13 +329,13 @@
 				CODE_SIGN_ENTITLEMENTS = Figurer/Figurer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
 				INFOPLIST_FILE = Figurer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Figurer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.figurer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,13 +350,13 @@
 				CODE_SIGN_ENTITLEMENTS = Figurer/Figurer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
 				INFOPLIST_FILE = Figurer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Figurer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.figurer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
