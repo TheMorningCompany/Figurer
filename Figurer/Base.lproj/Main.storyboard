@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -264,101 +264,101 @@
                                 <rect key="frame" x="35" y="416" width="247" height="34"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-VD-IKr">
-                                        <rect key="frame" x="20" y="5" width="1046" height="24"/>
+                                        <rect key="frame" x="20" y="5" width="733.33333333333337" height="24"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-ER-N29" userLabel="xroot">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="22.666666666666668" height="24"/>
                                                 <state key="normal" image="sqrtLight"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKj-Cb-mCB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7x-iR-bPX" userLabel="%">
-                                                <rect key="frame" x="77" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="54.666666666666664" y="0.0" width="22.666666666666664" height="24"/>
                                                 <state key="normal" image="percentLight"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="355-gQ-3kv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-ME-0sB" userLabel="^">
-                                                <rect key="frame" x="154" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="109.33333333333334" y="0.0" width="22.666666666666657" height="24"/>
                                                 <state key="normal" image="powerLight"/>
                                                 <connections>
                                                     <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bE-P2-ccV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kks-pQ-bza" userLabel="+/-">
-                                                <rect key="frame" x="231" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="164" y="0.0" width="22.666666666666657" height="24"/>
                                                 <state key="normal" image="neg-posLight"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARh-lw-06L"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6m-Kw-3qK" userLabel="log">
-                                                <rect key="frame" x="308" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="218.66666666666669" y="0.0" width="22.666666666666657" height="24"/>
                                                 <state key="normal" image="Log"/>
                                                 <connections>
                                                     <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1V-D0-ULV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd6-ej-sYn" userLabel="In">
-                                                <rect key="frame" x="385" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="273.33333333333331" y="0.0" width="22.666666666666686" height="24"/>
                                                 <state key="normal" image="In"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChI-yD-MCB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECi-PC-iPf" userLabel="sin">
-                                                <rect key="frame" x="462" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="328" y="0.0" width="22.666666666666686" height="24"/>
                                                 <state key="normal" image="Sin"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O25-Vp-baw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0A-ga-gTZ" userLabel="cos">
-                                                <rect key="frame" x="539" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="382.66666666666669" y="0.0" width="22.666666666666686" height="24"/>
                                                 <state key="normal" image="Cos"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfc-rf-EhE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-g5-MW6" userLabel="tan">
-                                                <rect key="frame" x="616" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="437.33333333333331" y="0.0" width="22.666666666666686" height="24"/>
                                                 <state key="normal" image="Tan"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7h-Qm-UWu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-W6-1gd" userLabel="In-1">
-                                                <rect key="frame" x="693" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="492" y="0.0" width="22.666666666666629" height="24"/>
                                                 <state key="normal" image="In-1"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xim-tU-OaO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp6-h6-T7p" userLabel="cos-1">
-                                                <rect key="frame" x="770" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="546.66666666666663" y="0.0" width="22.666666666666629" height="24"/>
                                                 <state key="normal" image="Cos-1"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXr-7w-R6H"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-l1-51t" userLabel="tan-1">
-                                                <rect key="frame" x="847" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="601.33333333333337" y="0.0" width="22.666666666666629" height="24"/>
                                                 <state key="normal" image="Tan-1"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a55-g4-9Hl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud6-Q1-an7" userLabel="sin-1">
-                                                <rect key="frame" x="924" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="656" y="0.0" width="22.666666666666629" height="24"/>
                                                 <state key="normal" image="Sin-1"/>
                                                 <connections>
                                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9O-ZQ-tcn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-iX-9EF" userLabel="log-1">
-                                                <rect key="frame" x="1001" y="0.0" width="45" height="24"/>
+                                                <rect key="frame" x="710.66666666666663" y="0.0" width="22.666666666666629" height="24"/>
                                                 <state key="normal" image="Log-1"/>
                                                 <connections>
                                                     <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmk-3Z-mQJ"/>
@@ -379,7 +379,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="WJy-UJ-CgI"/>
                             </scrollView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nn-eY-6ay" userLabel="ac">
-                                <rect key="frame" x="-6" y="413" width="36" height="40"/>
+                                <rect key="frame" x="12" y="422" width="18" height="22"/>
                                 <state key="normal" image="acLight"/>
                                 <connections>
                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="621-Cw-koK"/>
@@ -526,7 +526,7 @@
                                     </connections>
                                 </switch>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-MA-kg4" userLabel="shadow">
-                                    <rect key="frame" x="87.666666666666686" y="512" width="200" height="200"/>
+                                    <rect key="frame" x="137.66666666666666" y="412" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -537,7 +537,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-I3-rFd" userLabel="FadeBG">
-                                    <rect key="frame" x="157" y="512" width="200" height="200"/>
+                                    <rect key="frame" x="257" y="412" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -547,7 +547,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-2c-rKG" userLabel="light">
-                                    <rect key="frame" x="18" y="326" width="200" height="200"/>
+                                    <rect key="frame" x="18" y="326" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
@@ -558,7 +558,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-HW-X90" userLabel="orange">
-                                    <rect key="frame" x="157" y="326" width="200" height="200"/>
+                                    <rect key="frame" x="257" y="326" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="OrangeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -568,7 +568,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-Fq-0dE" userLabel="dark">
-                                    <rect key="frame" x="87.666666666666686" y="326" width="200" height="200"/>
+                                    <rect key="frame" x="137.66666666666666" y="326" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                     <gestureRecognizers/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -581,7 +581,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-me-YUX" userLabel="fade">
-                                    <rect key="frame" x="18" y="512" width="200" height="200"/>
+                                    <rect key="frame" x="18" y="412" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
