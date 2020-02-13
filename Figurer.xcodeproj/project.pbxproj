@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0047C08223F4ECB20097BB55 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07D23F4ECB20097BB55 /* shadow@2x.png */; };
+		0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07E23F4ECB20097BB55 /* glyph@2x.png */; };
+		0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07F23F4ECB20097BB55 /* fade@2x.png */; };
+		0047C08523F4ECB20097BB55 /* figurerDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08023F4ECB20097BB55 /* figurerDark@2x.png */; };
+		0047C08623F4ECB20097BB55 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08123F4ECB20097BB55 /* orange@2x.png */; };
 		00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63C23EB7AC8005E125D /* AppDelegate.swift */; };
 		00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */; };
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0047C07D23F4ECB20097BB55 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
+		0047C07E23F4ECB20097BB55 /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
+		0047C07F23F4ECB20097BB55 /* fade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fade@2x.png"; sourceTree = "<group>"; };
+		0047C08023F4ECB20097BB55 /* figurerDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "figurerDark@2x.png"; sourceTree = "<group>"; };
+		0047C08123F4ECB20097BB55 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange@2x.png"; sourceTree = "<group>"; };
 		0088160123EBB68B00F6B4C6 /* Figurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figurer.entitlements; sourceTree = "<group>"; };
 		00C4E63923EB7AC8005E125D /* Figurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4E63C23EB7AC8005E125D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0047C07223F4EC560097BB55 /* AltIcons */ = {
+			isa = PBXGroup;
+			children = (
+				0047C07F23F4ECB20097BB55 /* fade@2x.png */,
+				0047C08023F4ECB20097BB55 /* figurerDark@2x.png */,
+				0047C07E23F4ECB20097BB55 /* glyph@2x.png */,
+				0047C08123F4ECB20097BB55 /* orange@2x.png */,
+				0047C07D23F4ECB20097BB55 /* shadow@2x.png */,
+			);
+			path = AltIcons;
+			sourceTree = "<group>";
+		};
 		00C4E63023EB7AC8005E125D = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +83,7 @@
 		00C4E63B23EB7AC8005E125D /* Figurer */ = {
 			isa = PBXGroup;
 			children = (
+				0047C07223F4EC560097BB55 /* AltIcons */,
 				5D4B27E123F220A500A23478 /* Settings.bundle */,
 				0088160123EBB68B00F6B4C6 /* Figurer.entitlements */,
 				00C4E63C23EB7AC8005E125D /* AppDelegate.swift */,
@@ -136,7 +159,12 @@
 				5D4B27E223F220A500A23478 /* Settings.bundle in Resources */,
 				00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */,
 				00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */,
+				0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */,
+				0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */,
+				0047C08523F4ECB20097BB55 /* figurerDark@2x.png in Resources */,
+				0047C08223F4ECB20097BB55 /* shadow@2x.png in Resources */,
 				00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */,
+				0047C08623F4ECB20097BB55 /* orange@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
