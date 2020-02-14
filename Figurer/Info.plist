@@ -19,6 +19,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>divideicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>divideby0</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>fadeicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -33,6 +42,15 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>glyph</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>negativeicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>sqrtofnegative</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>

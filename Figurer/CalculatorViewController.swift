@@ -92,6 +92,7 @@ class CalculatorViewController: UIViewController {
             } else {
                 equationViewer.text! += "π"
             }
+            numberOnScreen = Double.pi
             break
         case 2:
             if (resultLabel.text == "" || operator_strings.contains(resultLabel.text!)) {
@@ -144,6 +145,7 @@ class CalculatorViewController: UIViewController {
                 case num_operators.DIVIDE.rawValue:
                     if (numberOnScreen == 0) {
                         print("DIVIDE BY 0")
+                        UIApplication.shared.setAlternateIconName("divideicon")
                     }
                     result = previousNumber / numberOnScreen
                     break
@@ -237,6 +239,13 @@ class CalculatorViewController: UIViewController {
                     break
                 }
                 let input = Double(resultLabel.text!)
+                if let inputNum = input {
+                    if (inputNum < 0.0) {
+                        print("SQRT NEGATIVE")
+                        UIApplication.shared.setAlternateIconName("negativeicon")
+                        break
+                    }
+                }
                 let result = sqrt(input!)
                 updateDisplay(value: String(result))
                 break
