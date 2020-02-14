@@ -20,6 +20,8 @@
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
 		5D4B27E223F220A500A23478 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B27E123F220A500A23478 /* Settings.bundle */; };
 		5D791A5923F51A8000C406A6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A5823F51A8000C406A6 /* Functions.swift */; };
+		5D791A6123F6558400C406A6 /* divideby0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A6023F6558400C406A6 /* divideby0.png */; };
+		5D791A6323F6558A00C406A6 /* sqrtofnegative.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A6223F6558900C406A6 /* sqrtofnegative.png */; };
 		5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D4B27E123F220A500A23478 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5D791A5823F51A8000C406A6 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		5D791A6023F6558400C406A6 /* divideby0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divideby0.png; sourceTree = "<group>"; };
+		5D791A6223F6558900C406A6 /* sqrtofnegative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sqrtofnegative.png; sourceTree = "<group>"; };
 		5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +66,8 @@
 				0047C07E23F4ECB20097BB55 /* glyph@2x.png */,
 				0047C08123F4ECB20097BB55 /* orange@2x.png */,
 				0047C07D23F4ECB20097BB55 /* shadow@2x.png */,
+				5D791A6023F6558400C406A6 /* divideby0.png */,
+				5D791A6223F6558900C406A6 /* sqrtofnegative.png */,
 			);
 			path = AltIcons;
 			sourceTree = "<group>";
@@ -161,8 +167,10 @@
 			files = (
 				5D4B27E223F220A500A23478 /* Settings.bundle in Resources */,
 				00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */,
+				5D791A6323F6558A00C406A6 /* sqrtofnegative.png in Resources */,
 				00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */,
 				0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */,
+				5D791A6123F6558400C406A6 /* divideby0.png in Resources */,
 				0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */,
 				0047C08523F4ECB20097BB55 /* figurerDark@2x.png in Resources */,
 				0047C08223F4ECB20097BB55 /* shadow@2x.png in Resources */,
