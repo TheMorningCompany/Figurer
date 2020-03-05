@@ -62,7 +62,7 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func numbers(_ sender: UIButton) {
         
-        if ((equationViewer.text?.contains("="))! || resultLabel.text == "ERROR") {
+        if ((equationViewer.text?.contains("="))! || resultLabel.text == "error") {
             resetScreen()
         }
         
@@ -169,11 +169,11 @@ class CalculatorViewController: UIViewController {
                 numberOnScreen = Double(resultLabel.text!)!
             } else {
                 resetScreen()
-                resultLabel.text = "ERROR"
+                resultLabel.text = "error"
             }
         }
         
-        if (!(resultLabel.text == "ERROR")) {
+        if (!(resultLabel.text == "error")) {
             previousNumber = Double(resultLabel.text!)!
         } else {
             previousNumber = 1 / 0
@@ -235,7 +235,7 @@ class CalculatorViewController: UIViewController {
                 }
                 break
             case 2:
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -250,7 +250,7 @@ class CalculatorViewController: UIViewController {
                 updateDisplay(value: String(result))
                 break
             case 3:
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -259,7 +259,7 @@ class CalculatorViewController: UIViewController {
                 equationViewer.text! += "%"
                 break
             case 4:
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -267,7 +267,7 @@ class CalculatorViewController: UIViewController {
                 updateDisplay(value: String(result))
                 break
             case 5:
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -276,7 +276,7 @@ class CalculatorViewController: UIViewController {
                 break
             case 6:
                 //ln
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -285,7 +285,7 @@ class CalculatorViewController: UIViewController {
                 break
             case 7:
                 //sin
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -294,7 +294,7 @@ class CalculatorViewController: UIViewController {
                 break
             case 8:
                 //cos
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
@@ -303,7 +303,7 @@ class CalculatorViewController: UIViewController {
                 break
             case 9:
                 //tan
-                if (resultLabel.text == "" || resultLabel.text == "ERROR") {
+                if (resultLabel.text == "" || resultLabel.text == "error") {
                     break
                 }
                 let input = Double(resultLabel.text!)
