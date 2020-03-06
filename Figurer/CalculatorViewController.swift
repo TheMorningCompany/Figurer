@@ -11,6 +11,7 @@ import UIKit
 class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var degLabel: UILabel!
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -30,7 +31,25 @@ class CalculatorViewController: UIViewController {
         super.viewDidLoad()
         resultLabel.text = ""
         equationViewer.text = ""
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(infoChanged), name: NSNotification.Name(rawValue: "info"), object: nil)
+        
+        infoChanged()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func infoChanged() {
+        if let moreInfo:Bool = UserDefaults.standard.bool(forKey: "more_info") {
+            if (moreInfo) {
+                degLabel.isHidden = false
+                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                    degLabel.text = useRadians ? "rad" : "deg"
+                }
+            } else {
+                degLabel.isHidden = true
+            }
+        }
     }
     
     func updateDisplay(value: String) {

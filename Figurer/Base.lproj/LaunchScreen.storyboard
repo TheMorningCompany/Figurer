@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="Color">
-            <color red="1" green="0.97500002384185791" blue="0.98600000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.97600001096725464" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
