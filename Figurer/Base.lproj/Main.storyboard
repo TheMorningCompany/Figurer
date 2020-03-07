@@ -506,12 +506,16 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="uYh-2F-oo0"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="6Pe-8R-svM"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho1-xD-MNe">
-                                <rect key="frame" x="367.66666666666669" y="59.000000000000007" width="31.333333333333314" height="23.333333333333336"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
+                                <rect key="frame" x="367.66666666666663" y="59" width="31.333333333333332" height="23.333333333333332"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="deg">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="degButtonValueChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BN5-hV-ci5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
@@ -524,6 +528,7 @@
                             <constraint firstItem="DUb-F6-gq5" firstAttribute="centerX" secondItem="hjk-oy-eyz" secondAttribute="centerX" id="5nq-Y4-6qb"/>
                             <constraint firstItem="QG0-dw-8lV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6rO-Td-a23"/>
                             <constraint firstItem="FX7-BJ-Isd" firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="7eP-ow-OvL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1w0-CM-85f" secondAttribute="trailing" constant="15" id="8b7-5e-9Xs"/>
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="leading" secondItem="feG-53-alK" secondAttribute="trailing" constant="5" id="8ow-Up-8F0"/>
                             <constraint firstItem="8y9-dm-Jwa" firstAttribute="centerY" secondItem="FpH-Og-FzV" secondAttribute="centerY" id="B25-BP-EcZ"/>
                             <constraint firstItem="f9C-gP-FUi" firstAttribute="centerY" secondItem="FX7-BJ-Isd" secondAttribute="centerY" id="BYh-if-vtU"/>
@@ -544,6 +549,7 @@
                             <constraint firstItem="pPD-Df-9Cb" firstAttribute="width" secondItem="pPD-Df-9Cb" secondAttribute="height" multiplier="1:1" id="PIa-Ut-y9B"/>
                             <constraint firstItem="8Nn-eY-6ay" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="PWG-vF-Mup"/>
                             <constraint firstItem="SCD-yw-lCc" firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="PtF-dN-8qo"/>
+                            <constraint firstItem="1w0-CM-85f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="TBc-jG-wR9"/>
                             <constraint firstItem="h16-uk-vbT" firstAttribute="width" secondItem="h16-uk-vbT" secondAttribute="height" multiplier="1:1" id="TXZ-lL-fkz"/>
                             <constraint firstItem="f9C-gP-FUi" firstAttribute="centerX" secondItem="FX7-BJ-Isd" secondAttribute="centerX" id="ThS-N3-2hK"/>
                             <constraint firstItem="RYb-Vx-dsM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TtM-GW-Ibt"/>
@@ -564,14 +570,12 @@
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="leading" secondItem="TrS-a7-CbR" secondAttribute="trailing" constant="8" id="cEB-aR-rPu"/>
                             <constraint firstItem="hw0-sh-lph" firstAttribute="width" secondItem="hw0-sh-lph" secondAttribute="height" multiplier="1:1" id="crD-8Q-DbQ"/>
                             <constraint firstItem="SCD-yw-lCc" firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="djf-1P-sTH"/>
-                            <constraint firstItem="Ho1-xD-MNe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QG0-dw-8lV" secondAttribute="trailing" constant="8" symbolic="YES" id="dss-Pp-bQa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOI-aL-d2W" secondAttribute="bottom" constant="15" id="dzA-nm-nQk"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="centerX" secondItem="TKr-PO-Qly" secondAttribute="centerX" id="eff-ak-akh"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="leading" secondItem="i5L-cu-o2S" secondAttribute="trailing" constant="5" id="gc3-pm-bQe"/>
                             <constraint firstItem="C25-mI-34w" firstAttribute="centerY" secondItem="SCD-yw-lCc" secondAttribute="centerY" id="gxn-pj-mbM"/>
                             <constraint firstItem="Ihh-QI-2ep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="hI8-VR-dSA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RYb-Vx-dsM" secondAttribute="trailing" constant="16" id="haB-lu-68S"/>
-                            <constraint firstItem="Ho1-xD-MNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="hk4-vr-MKc"/>
                             <constraint firstItem="Fwi-zQ-UGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hw8-lt-Q4o"/>
                             <constraint firstItem="cJM-dD-eAP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="jbE-q1-ZYW"/>
                             <constraint firstItem="TrS-a7-CbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="kc0-Nt-SkA"/>
@@ -589,7 +593,6 @@
                             <constraint firstItem="DUb-F6-gq5" firstAttribute="centerY" secondItem="hjk-oy-eyz" secondAttribute="centerY" id="tq8-Y4-hVY"/>
                             <constraint firstItem="FX7-BJ-Isd" firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="uXi-XE-IyV"/>
                             <constraint firstItem="yoi-gH-NgD" firstAttribute="centerY" secondItem="KZX-BK-rj3" secondAttribute="centerY" id="ucj-gz-ShN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ho1-xD-MNe" secondAttribute="trailing" constant="15" id="usA-Go-aKq"/>
                             <constraint firstItem="h16-uk-vbT" firstAttribute="width" secondItem="h16-uk-vbT" secondAttribute="height" multiplier="1:1" id="vFY-F5-pme"/>
                             <constraint firstItem="yoi-gH-NgD" firstAttribute="centerX" secondItem="KZX-BK-rj3" secondAttribute="centerX" id="vlV-2I-Y0H"/>
                             <constraint firstItem="Fwi-zQ-UGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vx1-2x-ufp"/>
@@ -603,7 +606,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="degLabel" destination="Ho1-xD-MNe" id="g6Z-5K-6Qr"/>
+                        <outlet property="degButton" destination="1w0-CM-85f" id="DRc-c9-WlX"/>
                         <outlet property="equationViewer" destination="QG0-dw-8lV" id="ObS-IW-cgk"/>
                         <outlet property="resultLabel" destination="RYb-Vx-dsM" id="cFn-Sp-i6E"/>
                     </connections>

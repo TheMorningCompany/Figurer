@@ -11,7 +11,7 @@ import UIKit
 class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var degLabel: UILabel!
+    @IBOutlet weak var degButton: UIButton!
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -42,13 +42,21 @@ class CalculatorViewController: UIViewController {
     @objc func infoChanged() {
         if let moreInfo:Bool = UserDefaults.standard.bool(forKey: "more_info") {
             if (moreInfo) {
-                degLabel.isHidden = false
+                degButton.isHidden = false
                 if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
-                    degLabel.text = useRadians ? "rad" : "deg"
+                    degButton.setTitle(useRadians ? "rad" : "deg", for: UIControl.State.normal)
                 }
             } else {
-                degLabel.isHidden = true
+                degButton.isHidden = true
             }
+        }
+    }
+    
+    @IBAction func degButtonValueChanged(_ sender: UIButton) {
+        if let buttonValue:String = degButton.title(for: UIControl.State.normal) {
+            let newState = buttonValue == "deg" ? "rad" : "deg"
+            UserDefaults.standard.set(newState == "rad", forKey: "use_radians")
+            degButton.setTitle(newState, for: UIControl.State.normal)
         }
     }
     
@@ -73,8 +81,18 @@ class CalculatorViewController: UIViewController {
         numberOnScreen = 0.0
     }
     
+    func radToDeg(value: Double) -> Double {
+        return Double(value) / (Double.pi / 180)
+    }
+    
     func logb(val: Double, forBase base: Double) -> Double {
-        return log(val)/log(base)
+        let result = log(val)/log(base)
+        if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+            if (!useRadians) {
+                return radToDeg(value: result)
+            }
+        }
+        return result
     }
 
     //MARK: Number Buttons
@@ -150,6 +168,24 @@ class CalculatorViewController: UIViewController {
         
         if (sender.tag == num_operators.EQUALS.rawValue) {
             var result = 0.0
+//            var regex:NSRegularExpression
+//            do {
+//                regex = try NSRegularExpression(pattern: "([^0-9+-÷*])")
+//                let textToTry = String((equationViewer.text?.filter {!" ".contains($0)})!)
+//                print("TO TRY: \(textToTry)")
+//                var matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
+//                if (matches.count > 0) {
+//                    regex = try NSRegularExpression(pattern: "(^((?!sin|cos|tan|log).)*$)")
+//                    matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
+//                    if (matches.count == 0) {
+//                        print("IT WORKED: \(matches)")
+//                    }
+//                } else {
+//                    print("NO MATCHES")
+//                }
+//            } catch {
+//                print("ERROR OCCURRED")
+//            }
             if (num_operator != -1 && num_operator != num_operators.EQUALS.rawValue) {
                 switch num_operator {
                 case num_operators.ADD.rawValue:
@@ -292,6 +328,20 @@ class CalculatorViewController: UIViewController {
                 let input = Double(resultLabel.text!)
                 let result = input! * -1
                 updateDisplay(value: String(result))
+                var equationText = equationViewer.text
+                if (equationText!.contains(" ")) {
+                    
+                    if (Int.signum(Int(input!))() == 1) {
+                        let endIndex = equationText!.range(of: " ", options: .backwards)!.lowerBound
+                        let range = ...endIndex
+                        equationText = String(equationText![range]) + "-" + String(equationText![equationText!.index(after: endIndex)...])
+                    } else if (Int.signum(Int(input!))() == -1) {
+                        let endIndex = equationText!.range(of: "-", options: .backwards)!.lowerBound
+                        let range = ..<endIndex
+                        equationText = String(equationText![range]) + String(equationText![equationText!.index(after: endIndex)...])
+                    }
+                }
+                equationViewer.text = equationText
                 break
             case 6:
                 //ln
