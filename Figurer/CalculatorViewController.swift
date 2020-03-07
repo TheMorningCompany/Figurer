@@ -12,6 +12,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
+    @IBOutlet weak var settingsBtn: UIButton!
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -45,9 +46,11 @@ class CalculatorViewController: UIViewController {
                 degButton.isHidden = false
                 if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
                     degButton.setTitle(useRadians ? "rad" : "deg", for: UIControl.State.normal)
+                    settingsBtn.isHidden = false
                 }
             } else {
                 degButton.isHidden = true
+                settingsBtn.isHidden = true
             }
         }
     }
