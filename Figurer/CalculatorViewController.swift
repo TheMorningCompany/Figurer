@@ -55,6 +55,10 @@ class CalculatorViewController: UIViewController {
         }
     }
     
+    @IBAction func doTheClearScreen(_ sender: UIGestureRecognizer) {
+        resetScreen()
+    }
+    
     @IBAction func degButtonValueChanged(_ sender: UIButton) {
         if let buttonValue:String = degButton.title(for: UIControl.State.normal) {
             let newState = buttonValue == "deg" ? "rad" : "deg"

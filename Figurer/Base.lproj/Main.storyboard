@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -385,9 +385,11 @@
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nn-eY-6ay" userLabel="ac">
                                 <rect key="frame" x="15" y="446" width="18" height="22"/>
+                                <gestureRecognizers/>
                                 <state key="normal" image="acLight"/>
                                 <connections>
                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="621-Cw-koK"/>
+                                    <outletCollection property="gestureRecognizers" destination="QVg-2t-czb" appends="YES" id="x38-V6-Xd3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
@@ -520,7 +522,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="e11-30-63M"/>
+                                            <constraint firstAttribute="height" constant="22" id="U21-4I-zYU"/>
                                             <constraint firstAttribute="width" constant="733.33000000000004" id="u7U-bH-yUl"/>
                                         </constraints>
                                     </stackView>
@@ -637,6 +639,11 @@
                         <segue destination="8Ie-8t-s4i" kind="presentation" id="nJY-J0-x5z"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QVg-2t-czb" userLabel="ClearPress">
+                    <connections>
+                        <action selector="doTheClearScreen:" destination="BYZ-38-t0r" id="aLN-lC-A3M"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="127.53623188405798" y="116.51785714285714"/>
         </scene>
@@ -952,9 +959,6 @@
             <point key="canvasLocation" x="2096" y="117"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bKA-jK-ENO"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="0" width="148" height="148"/>
         <image name="0P" width="148" height="148"/>
@@ -997,7 +1001,7 @@
         <image name="dot" width="148" height="148"/>
         <image name="dotP" width="148" height="148"/>
         <image name="equalsLight" width="68" height="68"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="minusLight" width="68" height="68"/>
         <image name="multiplyLight" width="68" height="68"/>
         <image name="neg-posLight" width="20.666666030883789" height="20.333333969116211"/>
@@ -1014,4 +1018,7 @@
             <color red="1" green="0.29399999976158142" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bKA-jK-ENO"/>
+    </inferredMetricsTieBreakers>
 </document>
