@@ -386,6 +386,42 @@ class CalculatorViewController: UIViewController {
                 let result = tan(input!)
                 updateDisplay(value: String(result))
                 break
+            case 10:
+                //cos-1
+                if (resultLabel.text == "" || resultLabel.text == "error") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                var result = acos(input!)
+                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                    result = radToDeg(value: result)
+                }
+                updateDisplay(value: String(result))
+                break;
+            case 11:
+                //tan-1
+                if (resultLabel.text == "" || resultLabel.text == "error") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                var result = atan(input!)
+                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                    result = radToDeg(value: result)
+                }
+                updateDisplay(value: String(result))
+                break;
+            case 12:
+                //sin-1
+                if (resultLabel.text == "" || resultLabel.text == "error") {
+                    break
+                }
+                let input = Double(resultLabel.text!)
+                var result = asin(input!)
+                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                    result = radToDeg(value: result)
+                }
+                updateDisplay(value: String(result))
+                break;
             default:
                 break
             }
