@@ -749,6 +749,10 @@
                                 </switch>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-MA-kg4" userLabel="shadow">
                                     <rect key="frame" x="157" y="425.66666666666669" width="100" height="100.00000000000006"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="2lu-cb-5LR"/>
+                                        <constraint firstAttribute="width" secondItem="yRs-MA-kg4" secondAttribute="height" multiplier="1:1" id="ca6-CZ-Xfw"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -760,6 +764,10 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-I3-rFd" userLabel="FadeBG">
                                     <rect key="frame" x="296" y="425.66666666666669" width="100" height="100.00000000000006"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="nEI-mK-gGo"/>
+                                        <constraint firstAttribute="width" secondItem="1dE-I3-rFd" secondAttribute="height" multiplier="1:1" id="pjT-Sx-bO5"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -771,6 +779,10 @@
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-2c-rKG" userLabel="light">
                                     <rect key="frame" x="18" y="339.66666666666669" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="WsY-2c-rKG" secondAttribute="height" multiplier="1:1" id="0mX-S1-Khf"/>
+                                        <constraint firstAttribute="width" constant="100" id="uE7-qb-se0"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -781,6 +793,10 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-HW-X90" userLabel="orange">
                                     <rect key="frame" x="296" y="339.66666666666669" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="hnu-HW-X90" secondAttribute="height" multiplier="1:1" id="4p7-pK-H7N"/>
+                                        <constraint firstAttribute="width" constant="100" id="j68-Zr-5hf"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="OrangeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -793,6 +809,10 @@
                                     <rect key="frame" x="157" y="339.66666666666669" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                     <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9ze-Fq-0dE" secondAttribute="height" multiplier="1:1" id="4yc-Un-uTF"/>
+                                        <constraint firstAttribute="width" constant="100" id="XVM-jE-Mvc"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="DarkUI">
@@ -804,6 +824,10 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-me-YUX" userLabel="fade">
                                     <rect key="frame" x="18" y="425.66666666666669" width="100" height="100.00000000000006"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="55D-br-Hho"/>
+                                        <constraint firstAttribute="width" secondItem="Qzd-me-YUX" secondAttribute="height" multiplier="1:1" id="qK1-nL-L32"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1021,16 +1045,16 @@
         <image name="9P" width="148" height="148"/>
         <image name="Cos" width="21.666666030883789" height="7.3333334922790527"/>
         <image name="Cos-1" width="22" height="8.3333330154418945"/>
-        <image name="DarkUI" width="100" height="100"/>
-        <image name="FadeUI" width="100" height="100"/>
-        <image name="GlyphUI" width="100" height="100"/>
+        <image name="DarkUI" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="FadeUI" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="GlyphUI" width="731.66668701171875" height="731.66668701171875"/>
         <image name="In" width="10" height="10"/>
         <image name="In-1" width="13.333333015441895" height="8.3333330154418945"/>
-        <image name="LightUI" width="100" height="100"/>
+        <image name="LightUI" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Log" width="14.666666984558105" height="10"/>
         <image name="Log-1" width="19.333333969116211" height="10"/>
-        <image name="OrangeUI" width="100" height="100"/>
-        <image name="ShadowUI" width="100" height="100"/>
+        <image name="OrangeUI" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="ShadowUI" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Sin" width="17.333333969116211" height="10"/>
         <image name="Sin-1" width="18.666666030883789" height="8.3333330154418945"/>
         <image name="Tan" width="19.333333969116211" height="9.3333330154418945"/>
