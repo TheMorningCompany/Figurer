@@ -758,6 +758,7 @@
                                     <state key="normal" image="ShadowUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapShadowIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="gNg-Te-HQE"/>
                                     </connections>
@@ -772,6 +773,7 @@
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapFadeIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="LxA-iN-8z0"/>
                                     </connections>
@@ -787,6 +789,7 @@
                                     <state key="normal" image="LightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapLightIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="2fJ-ha-SU5"/>
                                     </connections>
@@ -801,6 +804,7 @@
                                     <state key="normal" image="OrangeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapOrangeIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="xlx-d9-zcF"/>
                                     </connections>
@@ -818,6 +822,7 @@
                                     <state key="normal" image="DarkUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapDarkIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="dZX-dH-PvO"/>
                                     </connections>
@@ -832,6 +837,7 @@
                                     <state key="normal" image="GlyphUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <state key="highlighted" image="selected"/>
                                     <connections>
                                         <action selector="didTapGlyphIcon:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="K0o-lB-GCi"/>
                                     </connections>
@@ -1073,6 +1079,7 @@
         <image name="piP" width="148" height="148"/>
         <image name="plusLight" width="68" height="68"/>
         <image name="powerLight" width="14.333333015441895" height="8.6666669845581055"/>
+        <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="sqrtLight" width="20.666666030883789" height="12.333333015441895"/>
         <image name="swipePink" width="1024" height="1024"/>
         <namedColor name="Color">
