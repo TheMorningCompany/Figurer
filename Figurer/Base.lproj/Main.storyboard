@@ -676,7 +676,6 @@
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <connections>
-                                        <action selector="didTapHowToUse:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="mvu-Nt-pCq"/>
                                         <segue destination="fDF-iu-eMZ" kind="presentation" id="lLN-bv-ZSz"/>
                                     </connections>
                                 </button>
@@ -728,8 +727,8 @@
                                         <action selector="invertSwitchValueChanged:" destination="8Ie-8t-s4i" eventType="valueChanged" id="J6C-YJ-WL6"/>
                                     </connections>
                                 </switch>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="more information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrF-Gp-HWT">
-                                    <rect key="frame" x="25" y="175.66666666666666" width="136" height="24"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show more information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrF-Gp-HWT">
+                                    <rect key="frame" x="25" y="175.66666666666666" width="181" height="24"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="24" id="HQV-c3-VrA"/>
                                     </constraints>
@@ -851,10 +850,6 @@
                                     <state key="normal" title="button option 1">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
-                                    <connections>
-                                        <action selector="clearBrowsingData:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="yLd-7e-elB"/>
-                                        <action selector="clearHistory:" destination="8Ie-8t-s4i" eventType="touchUpInside" id="dP1-IU-maY"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <gestureRecognizers/>

@@ -24,10 +24,10 @@ class CalculatorViewController: UIViewController {
         case POWER = 6
         case LOG = 7
     }
-
+    
     var numberOnScreen:Double = 0.0
     var previousNumber:Double = 0.0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text = ""
@@ -46,11 +46,11 @@ class CalculatorViewController: UIViewController {
                 degButton.isHidden = false
                 if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
                     degButton.setTitle(useRadians ? "rad" : "deg", for: UIControl.State.normal)
-                    settingsBtn.isHidden = false
+                    
                 }
             } else {
                 degButton.isHidden = true
-                settingsBtn.isHidden = true
+                
             }
         }
     }
@@ -101,7 +101,7 @@ class CalculatorViewController: UIViewController {
         }
         return result
     }
-
+    
     //MARK: Number Buttons
     
     @IBAction func numbers(_ sender: UIButton) {
@@ -124,7 +124,7 @@ class CalculatorViewController: UIViewController {
         
         numberOnScreen = Double(resultLabel.text!)!
     }
-
+    
     //MARK: Special Buttons
     
     @IBAction func special(_ sender: UIButton) {
@@ -156,7 +156,7 @@ class CalculatorViewController: UIViewController {
             break
         }
     }
-
+    
     //MARK: Operator Buttons
     
     @IBAction func operators(_ sender: UIButton) {
@@ -175,24 +175,24 @@ class CalculatorViewController: UIViewController {
         
         if (sender.tag == num_operators.EQUALS.rawValue) {
             var result = 0.0
-//            var regex:NSRegularExpression
-//            do {
-//                regex = try NSRegularExpression(pattern: "([^0-9+-÷*])")
-//                let textToTry = String((equationViewer.text?.filter {!" ".contains($0)})!)
-//                print("TO TRY: \(textToTry)")
-//                var matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
-//                if (matches.count > 0) {
-//                    regex = try NSRegularExpression(pattern: "(^((?!sin|cos|tan|log).)*$)")
-//                    matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
-//                    if (matches.count == 0) {
-//                        print("IT WORKED: \(matches)")
-//                    }
-//                } else {
-//                    print("NO MATCHES")
-//                }
-//            } catch {
-//                print("ERROR OCCURRED")
-//            }
+            //            var regex:NSRegularExpression
+            //            do {
+            //                regex = try NSRegularExpression(pattern: "([^0-9+-÷*])")
+            //                let textToTry = String((equationViewer.text?.filter {!" ".contains($0)})!)
+            //                print("TO TRY: \(textToTry)")
+            //                var matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
+            //                if (matches.count > 0) {
+            //                    regex = try NSRegularExpression(pattern: "(^((?!sin|cos|tan|log).)*$)")
+            //                    matches = regex.matches(in: textToTry, range: NSRange(location: 0, length: textToTry.count))
+            //                    if (matches.count == 0) {
+            //                        print("IT WORKED: \(matches)")
+            //                    }
+            //                } else {
+            //                    print("NO MATCHES")
+            //                }
+            //            } catch {
+            //                print("ERROR OCCURRED")
+            //            }
             if (num_operator != -1 && num_operator != num_operators.EQUALS.rawValue) {
                 switch num_operator {
                 case num_operators.ADD.rawValue:
@@ -276,7 +276,7 @@ class CalculatorViewController: UIViewController {
             }
         }
     }
-
+    
     // MARK: Function Buttons
     
     @IBAction func function(_ sender: UIButton) {
@@ -439,13 +439,13 @@ class CalculatorViewController: UIViewController {
             }
         }
     }    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
