@@ -64,38 +64,7 @@ class OptionsViewController: UIViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "info"), object: nil)
     }
-    @IBAction func didTapLightIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName(nil)
-    }
-    @IBAction func didTapDarkIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName("darkicon")
-    }
-    @IBAction func didTapOrangeIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName("orangeicon")
-    }
-    @IBAction func didTapShadowIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName("shadowicon")
-    }
-    @IBAction func didTapGlyphIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName("glyphicon")
-    }
-    @IBAction func didTapFadeIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName("fadeicon")
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+  
 
 }
