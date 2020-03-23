@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionsViewController: UIViewController {
+class OptionsViewController: UITableViewController {
 
     @IBOutlet weak var invertNumpadSwitch: UISwitch!
     @IBOutlet weak var hapticsSwitch: UISwitch!
