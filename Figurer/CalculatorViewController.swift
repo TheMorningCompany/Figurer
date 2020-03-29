@@ -13,6 +13,13 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
     @IBOutlet weak var settingsBtn: UIButton!
+    
+    //iPad only Outlets
+    @IBOutlet weak var topRow: UIStackView!
+    @IBOutlet weak var middleRow: UIStackView!
+    @IBOutlet weak var bottomRow: UIStackView!
+    
+    
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -37,6 +44,17 @@ class CalculatorViewController: UIViewController {
         
         infoChanged()
         
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            topRow.isHidden = true
+            middleRow.isHidden = true
+            bottomRow.isHidden = true
+        }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            topRow.isHidden = false
+            middleRow.isHidden = false
+            bottomRow.isHidden = false
+        }
         // Do any additional setup after loading the view.
     }
     
