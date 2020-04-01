@@ -13,6 +13,9 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
     @IBOutlet weak var settingsBtn: UIButton!
+    
+    let impact = UIImpactFeedbackGenerator() // Haptics
+    
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -57,6 +60,7 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func doTheClearScreen(_ sender: UIGestureRecognizer) {
         resetScreen()
+        impact.impactOccurred() // Haptics
     }
     
     @IBAction func degButtonValueChanged(_ sender: UIButton) {
@@ -105,7 +109,7 @@ class CalculatorViewController: UIViewController {
     //MARK: Number Buttons
     
     @IBAction func numbers(_ sender: UIButton) {
-        
+        impact.impactOccurred() // Haptics
         if ((equationViewer.text?.contains("="))! || resultLabel.text == "error") {
             resetScreen()
         }
@@ -128,6 +132,7 @@ class CalculatorViewController: UIViewController {
     //MARK: Special Buttons
     
     @IBAction func special(_ sender: UIButton) {
+        impact.impactOccurred() // Haptics
         switch sender.tag {
         case 1:
             updateDisplay(value: String(Double.pi))
@@ -160,7 +165,7 @@ class CalculatorViewController: UIViewController {
     //MARK: Operator Buttons
     
     @IBAction func operators(_ sender: UIButton) {
-        
+        impact.impactOccurred() // Haptics
         if ((equationViewer.text?.contains("="))!) {
             equationViewer.text = resultLabel.text
         }
@@ -280,6 +285,7 @@ class CalculatorViewController: UIViewController {
     // MARK: Function Buttons
     
     @IBAction func function(_ sender: UIButton) {
+        impact.impactOccurred() // Haptics
         if (!operator_strings.contains(resultLabel.text!)) {
             switch sender.tag {
             case 1:
