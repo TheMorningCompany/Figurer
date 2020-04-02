@@ -1045,7 +1045,13 @@
                             <outlet property="delegate" destination="Q9r-Wk-j2l" id="niD-b7-OJI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0kS-wj-PNs"/>
+                    <navigationItem key="navigationItem" id="0kS-wj-PNs">
+                        <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="5pU-yL-5yg">
+                            <connections>
+                                <action selector="close:" destination="Q9r-Wk-j2l" id="nd8-3x-Msn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="hapticsSwitch" destination="A4G-F5-H8D" id="cxo-ZF-H34"/>
                         <outlet property="infoSwitch" destination="0DX-3J-OTe" id="gcJ-o4-65e"/>
@@ -1287,6 +1293,7 @@
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="sqrtLight" width="20.666666030883789" height="12.333333015441895"/>
         <image name="swipePink" width="1024" height="1024"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="Color">
             <color red="0.94099998474121094" green="0.93300002813339233" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

@@ -70,6 +70,9 @@ class OptionsViewController: UITableViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "info"), object: nil)
     }
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
   
 
