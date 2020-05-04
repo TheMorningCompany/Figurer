@@ -15,30 +15,25 @@ class AppIconsViewController: UITableViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func whiteIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("orangeicon")
+    }
+    @IBAction func darkIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("darkicon")
+    }
+    @IBAction func orangeIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName(nil)
+    }
+    @IBAction func shadowIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("shadowicon")
+    }
+    @IBAction func neonIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("glyphicon")
+    }
+    @IBAction func fadeIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("fadeicon")
+    }
     
 
-    @IBAction func didTapDarkIcon(_ sender: UIButton) {
-           doHaptic()
-           UIApplication.shared.setAlternateIconName("darkicon")
-       }
-       @IBAction func didTapOrangeIcon(_ sender: UIButton) {
-           doHaptic()
-           UIApplication.shared.setAlternateIconName("orangeicon")
-       }
-       @IBAction func didTapShadowIcon(_ sender: UIButton) {
-           doHaptic()
-           UIApplication.shared.setAlternateIconName("shadowicon")
-       }
-       @IBAction func didTapGlyphIcon(_ sender: UIButton) {
-           doHaptic()
-           UIApplication.shared.setAlternateIconName("glyphicon")
-       }
-       @IBAction func didTapFadeIcon(_ sender: UIButton) {
-           doHaptic()
-           UIApplication.shared.setAlternateIconName("fadeicon")
-       }
-        @IBAction func didTapLightIcon(_ sender: UIButton) {
-        doHaptic()
-        UIApplication.shared.setAlternateIconName(nil)
-        }
+
 }
