@@ -8,11 +8,10 @@
 
 import UIKit
 
-class MagicViewController: UIViewController {
+class MagicViewController: UITableViewController {
 
     @IBOutlet weak var resultTextBox: UITextField!
-    @IBOutlet weak var submitButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +19,19 @@ class MagicViewController: UIViewController {
         updateResultTextBox()
         
         // Do any additional setup after loading the view.
+        self.navigationController!.navigationBar.layer.borderWidth = 0.50
+        self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
+        self.navigationController?.navigationBar.clipsToBounds = true
+        let backBarButtton = UIBarButtonItem(title: "",style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarButtton
     }
     
     
-    @IBAction func submitButtonPressed(_ sender: UIButton) {
+    @IBAction func submit(_ sender: Any) {
         let resultText = resultTextBox.text
-        UserDefaults.standard.set(resultText, forKey: "magicValue")
-    }
-    
-    @IBAction func resetButtonPressed(_ sender: UIButton) {
-        UserDefaults.standard.removeObject(forKey: "magicValue")
-        updateResultTextBox()
-    }
-    
+               UserDefaults.standard.set(resultText, forKey: "magicValue")
+        }
+
     func updateResultTextBox() {
         if let magicValue = UserDefaults.standard.string(forKey: "magicValue") {
             resultTextBox.text = magicValue
