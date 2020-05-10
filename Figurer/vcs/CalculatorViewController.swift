@@ -229,14 +229,19 @@ class CalculatorViewController: UIViewController {
                 result = numberOnScreen
             }
             
-            if (!(result.isNaN) && result.isFinite) {
-                print(result)
-                updateDisplay(value: String(result))
-                equationViewer.text! += " = " + resultLabel.text!
-                numberOnScreen = Double(resultLabel.text!)!
+            if let magicValue = UserDefaults.standard.string(forKey: "magicValue") {
+                resultLabel.text = magicValue
+                return
             } else {
-                resetScreen()
-                resultLabel.text = "error"
+                if (!(result.isNaN) && result.isFinite) {
+                    print(result)
+                    updateDisplay(value: String(result))
+                    equationViewer.text! += " = " + resultLabel.text!
+                    numberOnScreen = Double(resultLabel.text!)!
+                } else {
+                    resetScreen()
+                    resultLabel.text = "error"
+                }
             }
         }
         
@@ -453,5 +458,10 @@ class CalculatorViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            performSegue(withIdentifier: "showMagicWindow", sender: sender)
+        }
+    }
     
 }
