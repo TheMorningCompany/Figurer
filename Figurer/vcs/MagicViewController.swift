@@ -17,6 +17,8 @@ class MagicViewController: UITableViewController {
         super.viewDidLoad()
 
         updateResultTextBox()
+        self.resultTextBox.text = ""
+        self.resultTextBox.becomeFirstResponder()
         
         // Do any additional setup after loading the view.
         self.navigationController!.navigationBar.layer.borderWidth = 0.50
