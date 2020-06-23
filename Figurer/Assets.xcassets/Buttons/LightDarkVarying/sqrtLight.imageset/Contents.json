@@ -1,56 +1,52 @@
 {
   "images" : [
     {
+      "filename" : "Artboard – 68.pdf",
       "idiom" : "universal",
-      "filename" : "sqrtLight@1x.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "universal",
-      "filename" : "sqrtDark@1x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
       ],
+      "filename" : "Artboard – 83.pdf",
+      "idiom" : "universal",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sqrtLight@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
-      "filename" : "sqrtDark@2x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
       ],
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sqrtLight@3x.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "universal",
-      "filename" : "sqrtDark@3x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
       ],
+      "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
