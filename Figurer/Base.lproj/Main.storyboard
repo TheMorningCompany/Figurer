@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +16,7 @@
             <objects>
                 <tableViewController id="vAJ-Rt-e3R" customClass="MagicViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="UbD-CC-veR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -502,7 +504,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-dw-8lV">
-                                <rect key="frame" x="15" y="59" width="266.33333333333331" height="21"/>
+                                <rect key="frame" x="15" y="59" width="266" height="21"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="r5d-C6-M8i"/>
@@ -511,25 +513,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
-                                <rect key="frame" x="291.33333333333331" y="59" width="32" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
+                                <rect key="frame" x="291" y="59" width="32" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="rGv-xR-m5J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="deg">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="degButtonValueChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BN5-hV-ci5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-5s-D2f">
-                                <rect key="frame" x="338.33333333333331" y="59" width="21.666666666666686" height="21"/>
+                                <rect key="frame" x="338" y="59" width="22" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="vnb-kv-awl"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="gear" catalog="system"/>
                                 <connections>
                                     <segue destination="6fL-yY-kbZ" kind="presentation" modalPresentationStyle="formSheet" id="AYm-Xg-kZJ"/>
@@ -718,6 +720,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="a3D-eX-ngH" firstAttribute="width" secondItem="a3D-eX-ngH" secondAttribute="height" multiplier="1:1" id="20w-tU-wqH"/>
@@ -805,7 +808,6 @@
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="top" secondItem="YGx-b4-JW6" secondAttribute="bottom" constant="25" id="yfg-4M-Aj6"/>
                             <constraint firstItem="75r-pC-20o" firstAttribute="centerX" secondItem="h16-uk-vbT" secondAttribute="centerX" id="zVW-p4-Daq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="degButton" destination="1w0-CM-85f" id="DRc-c9-WlX"/>
@@ -839,7 +841,7 @@
             <objects>
                 <tableViewController id="Q9r-Wk-j2l" customClass="OptionsViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Dok-Uj-RoF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="tintColor" name="Color"/>
@@ -1027,11 +1029,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-pw-qAr">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-pw-qAr">
                                                     <rect key="frame" x="36" y="10" width="167" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="choose app icon">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="ncN-B4-tCU" kind="show" id="OtG-Oz-cIh"/>
@@ -1057,11 +1059,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A86-g0-qfZ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A86-g0-qfZ">
                                                     <rect key="frame" x="36" y="10" width="112" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="how to use">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="pQp-rA-Des" kind="show" id="iwb-Vv-S9p"/>
@@ -1113,7 +1115,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="Color"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1130,7 +1132,7 @@
             <objects>
                 <tableViewController id="pQp-rA-Des" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ULM-sy-jtM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -1279,7 +1281,7 @@
             <objects>
                 <tableViewController id="ncN-B4-tCU" customClass="AppIconsViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pS0-4I-QlJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Expedition White"/>
@@ -1642,5 +1644,8 @@
         <namedColor name="Figurer Orange">
             <color red="1" green="0.29399999976158142" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
