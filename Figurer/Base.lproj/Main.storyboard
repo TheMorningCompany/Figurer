@@ -502,7 +502,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-dw-8lV">
-                                <rect key="frame" x="15" y="59" width="266.33333333333331" height="21"/>
+                                <rect key="frame" x="15" y="59" width="269" height="21"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="r5d-C6-M8i"/>
@@ -512,7 +512,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
-                                <rect key="frame" x="291.33333333333331" y="59" width="32" height="21"/>
+                                <rect key="frame" x="294" y="59" width="32" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="rGv-xR-m5J"/>
                                 </constraints>
@@ -525,12 +525,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-5s-D2f">
-                                <rect key="frame" x="338.33333333333331" y="59" width="21.666666666666686" height="21"/>
+                                <rect key="frame" x="341" y="59" width="19" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="vnb-kv-awl"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gear" catalog="system"/>
+                                <state key="normal" image="settingsMenu"/>
                                 <connections>
                                     <segue destination="6fL-yY-kbZ" kind="presentation" modalPresentationStyle="formSheet" id="AYm-Xg-kZJ"/>
                                 </connections>
@@ -1592,15 +1592,15 @@
         <image name="9P" width="141" height="141"/>
         <image name="Cos" width="350" height="250"/>
         <image name="Cos-1" width="350" height="250"/>
-        <image name="DarkUI" width="652" height="652"/>
-        <image name="FadeUI" width="652" height="652"/>
-        <image name="GlyphUI" width="652" height="652"/>
-        <image name="LightUI" width="652" height="652"/>
+        <image name="DarkUI" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="FadeUI" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="GlyphUI" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="LightUI" width="651.66668701171875" height="651.66668701171875"/>
         <image name="Log" width="350" height="250"/>
         <image name="Log-1" width="350" height="250"/>
         <image name="MagicWand" width="1024" height="1024"/>
-        <image name="OrangeUI" width="652" height="652"/>
-        <image name="ShadowUI" width="652" height="652"/>
+        <image name="OrangeUI" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="ShadowUI" width="651.66668701171875" height="651.66668701171875"/>
         <image name="Sin" width="350" height="250"/>
         <image name="Sin-1" width="350" height="250"/>
         <image name="Tan" width="350" height="250"/>
@@ -1610,7 +1610,6 @@
         <image name="dot" width="141" height="141"/>
         <image name="dotP" width="141" height="141"/>
         <image name="equalsLight" width="68" height="68"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearOrange" width="1024" height="1024"/>
         <image name="ln" width="350" height="250"/>
         <image name="ln-1" width="350" height="250"/>
@@ -1623,6 +1622,7 @@
         <image name="piP" width="141" height="141"/>
         <image name="plusLight" width="68" height="68"/>
         <image name="powerLight" width="350" height="250"/>
+        <image name="settingsMenu" width="19" height="18"/>
         <image name="sqrtLight" width="350" height="250"/>
         <image name="swipePink" width="1024" height="1024"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
