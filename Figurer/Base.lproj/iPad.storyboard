@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--iPad View Controller-->
         <scene sceneID="jy8-jq-Pce">
             <objects>
-                <viewController id="l7g-Ra-GnU" sceneMemberID="viewController">
+                <viewController id="l7g-Ra-GnU" customClass="iPadViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNN-xu-PBf">
                         <rect key="frame" x="0.0" y="0.0" width="990.5" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

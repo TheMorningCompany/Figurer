@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D802A2427F738005E0CA1 /* AppIconsViewController.swift */; };
-		001D54FA24BD7BB400BE7B56 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001D54F924BD7BB400BE7B56 /* iPad.storyboard */; };
 		0047C08223F4ECB20097BB55 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07D23F4ECB20097BB55 /* shadow@2x.png */; };
 		0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07E23F4ECB20097BB55 /* glyph@2x.png */; };
 		0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07F23F4ECB20097BB55 /* fade@2x.png */; };
@@ -19,6 +18,8 @@
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
 		00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64523EB7AC9005E125D /* Assets.xcassets */; };
 		00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */; };
+		00EA7DE424BD93FD00991E1E /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EA7DE224BD93FD00991E1E /* iPad.storyboard */; };
+		00EA7DE624BD948B00991E1E /* iPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA7DE524BD948B00991E1E /* iPadViewController.swift */; };
 		5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C9DED24678C6D00103ECE /* MagicViewController.swift */; };
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
 		5D4B27E223F220A500A23478 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B27E123F220A500A23478 /* Settings.bundle */; };
@@ -30,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		000D802A2427F738005E0CA1 /* AppIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
-		001D54F924BD7BB400BE7B56 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		0047C07D23F4ECB20097BB55 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
 		0047C07E23F4ECB20097BB55 /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
 		0047C07F23F4ECB20097BB55 /* fade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fade@2x.png"; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		00C4E64523EB7AC9005E125D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C4E64823EB7AC9005E125D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C4E64A23EB7AC9005E125D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EA7DE324BD93FD00991E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
+		00EA7DE524BD948B00991E1E /* iPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadViewController.swift; sourceTree = "<group>"; };
 		5D1C9DED24678C6D00103ECE /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D4B27E123F220A500A23478 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
-				001D54F924BD7BB400BE7B56 /* iPad.storyboard */,
+				00EA7DE224BD93FD00991E1E /* iPad.storyboard */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
 				00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */,
 				00C4E64A23EB7AC9005E125D /* Info.plist */,
@@ -118,6 +120,7 @@
 			children = (
 				000D802A2427F738005E0CA1 /* AppIconsViewController.swift */,
 				5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */,
+				00EA7DE524BD948B00991E1E /* iPadViewController.swift */,
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
 				5D1C9DED24678C6D00103ECE /* MagicViewController.swift */,
 			);
@@ -186,7 +189,7 @@
 				00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */,
 				5D791A6323F6558A00C406A6 /* sqrtofnegative.png in Resources */,
 				00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */,
-				001D54FA24BD7BB400BE7B56 /* iPad.storyboard in Resources */,
+				00EA7DE424BD93FD00991E1E /* iPad.storyboard in Resources */,
 				0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */,
 				5D791A6123F6558400C406A6 /* divideby0.png in Resources */,
 				0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */,
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EA7DE624BD948B00991E1E /* iPadViewController.swift in Sources */,
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
@@ -231,6 +235,14 @@
 				00C4E64823EB7AC9005E125D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		00EA7DE224BD93FD00991E1E /* iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EA7DE324BD93FD00991E1E /* Base */,
+			);
+			name = iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
