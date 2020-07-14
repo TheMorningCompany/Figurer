@@ -470,9 +470,8 @@
         <!--Navigation Controller-->
         <scene sceneID="Pt6-tP-3oV">
             <objects>
-                <navigationController id="IOB-7g-H4n" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="IOB-7g-H4n" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gzk-JG-eou">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
