@@ -2,7 +2,7 @@
 
 ## What it is
 
-Figurer is a beautifully designed calculator app, designed to run on all apple platforms, though for now only on iPhone.
+Figurer is a beautifully designed calculator app, designed for iPhone and iPad.
 
 ## Credits
 
