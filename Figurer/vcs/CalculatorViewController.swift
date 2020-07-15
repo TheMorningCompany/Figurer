@@ -13,6 +13,10 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
     @IBOutlet weak var settingsBtn: UIButton!
+    @IBOutlet weak var widthBottom: NSLayoutConstraint!
+    @IBOutlet weak var width1: NSLayoutConstraint!
+    @IBOutlet weak var width2: NSLayoutConstraint!
+    @IBOutlet weak var width3: NSLayoutConstraint!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
     
@@ -40,7 +44,18 @@ class CalculatorViewController: UIViewController {
         
         infoChanged()
         
-        // Do any additional setup after loading the view.
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            widthBottom.constant = UIScreen.main.bounds.width - 90
+            width1.constant = UIScreen.main.bounds.width - 90
+            width2.constant = UIScreen.main.bounds.width - 90
+            width3.constant = UIScreen.main.bounds.width - 90
+        } else {
+            widthBottom.constant = 280
+            width1.constant = 280
+            width2.constant = 280
+            width3.constant = 280
+        }
+        
     }
     
     @objc func infoChanged() {
