@@ -50,10 +50,17 @@ class CalculatorViewController: UIViewController {
             width2.constant = UIScreen.main.bounds.width - 90
             width3.constant = UIScreen.main.bounds.width - 90
         } else {
+            if !UIApplication.shared.isSplitOrSlideOver {
             widthBottom.constant = 280
             width1.constant = 280
             width2.constant = 280
             width3.constant = 280
+            } else {
+                widthBottom.constant = UIScreen.main.bounds.width - 90
+                width1.constant = UIScreen.main.bounds.width - 90
+                width2.constant = UIScreen.main.bounds.width - 90
+                width3.constant = UIScreen.main.bounds.width - 90
+            }
         }
         
     }
@@ -479,4 +486,11 @@ class CalculatorViewController: UIViewController {
         }
     }
     
+}
+
+extension UIApplication {
+    public var isSplitOrSlideOver: Bool {
+        guard let w = self.delegate?.window, let window = w else { return false }
+        return !window.frame.equalTo(window.screen.bounds)
+    }
 }
