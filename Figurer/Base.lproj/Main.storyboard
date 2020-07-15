@@ -1568,7 +1568,7 @@
         <!--Root View Controller-->
         <scene sceneID="lbt-bQ-2np">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="ihg-hb-3mn" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="ihg-hb-3mn" customClass="SidebarTableViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f20-gL-pI3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
