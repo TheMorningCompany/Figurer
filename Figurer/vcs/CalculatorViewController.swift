@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PencilKit
 
 class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
