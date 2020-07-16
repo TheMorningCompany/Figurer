@@ -9,7 +9,7 @@
 import UIKit
 import PencilKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserver {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
@@ -18,8 +18,14 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var width1: NSLayoutConstraint!
     @IBOutlet weak var width2: NSLayoutConstraint!
     @IBOutlet weak var width3: NSLayoutConstraint!
+    @IBOutlet weak var canvasView: PKCanvasView!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
+    
+    //Some drawing stuffs
+    let canvasWidth: CGFloat = 768
+    let canvasOverscrollHeight: CGFloat = 500
+    var drawing = PKDrawing()
     
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
@@ -62,6 +68,26 @@ class CalculatorViewController: UIViewController {
                 width2.constant = UIScreen.main.bounds.width - 90
                 width3.constant = UIScreen.main.bounds.width - 90
             }
+        }
+        
+        
+        //More drawing stuff
+        if UIDevice.current.userInterfaceIdiom == .pad {
+        canvasView.delegate = self
+        canvasView.drawing = drawing
+
+        canvasView.alwaysBounceVertical = true
+        canvasView.allowsFingerDrawing = true
+        
+        if let window = parent?.view.window,
+            let toolPicker = PKToolPicker.shared(for: window) {
+            
+            toolPicker.setVisible(true, forFirstResponder: canvasView)
+            toolPicker.addObserver(canvasView)
+            
+            canvasView.becomeFirstResponder()
+            
+        }
         }
         
     }

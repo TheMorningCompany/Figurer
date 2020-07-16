@@ -729,8 +729,8 @@
                                     <action selector="function:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOV-ZK-g6k"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-qu-mnz" userLabel="DrawView">
-                                <rect key="frame" x="-379.5" y="599" width="980" height="425"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-qu-mnz" userLabel="DrawView" customClass="PKCanvasView">
+                                <rect key="frame" x="-379.5" y="44" width="980" height="980"/>
                                 <color key="backgroundColor" name="Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="980" id="Xih-zE-yFG"/>
@@ -762,6 +762,7 @@
                             <constraint firstItem="x0O-VM-kIn" firstAttribute="centerY" secondItem="CWc-g3-vQc" secondAttribute="centerY" id="HKr-nU-Itr"/>
                             <constraint firstItem="6Y7-5s-D2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="HU3-D2-BxE"/>
                             <constraint firstItem="KZX-BK-rj3" firstAttribute="width" secondItem="KZX-BK-rj3" secondAttribute="height" multiplier="1:1" id="Ila-00-KPj"/>
+                            <constraint firstItem="LEU-qu-mnz" firstAttribute="top" secondItem="QG0-dw-8lV" secondAttribute="bottom" constant="8" id="K9g-dv-umV"/>
                             <constraint firstItem="FpH-Og-FzV" firstAttribute="centerX" secondItem="DaM-gM-cpH" secondAttribute="centerX" id="KQa-IW-yBd"/>
                             <constraint firstItem="FpH-Og-FzV" firstAttribute="width" secondItem="FpH-Og-FzV" secondAttribute="height" multiplier="1:1" id="KcX-cV-1VD"/>
                             <constraint firstItem="SCD-yw-lCc" firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="Kyw-r5-f8k"/>
@@ -789,7 +790,6 @@
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="top" secondItem="RYb-Vx-dsM" secondAttribute="bottom" constant="8" id="apc-HI-w2r"/>
                             <constraint firstItem="Alq-Sp-ans" firstAttribute="centerY" secondItem="hw0-sh-lph" secondAttribute="centerY" id="c5y-aw-2oX"/>
                             <constraint firstItem="hw0-sh-lph" firstAttribute="width" secondItem="hw0-sh-lph" secondAttribute="height" multiplier="1:1" id="crD-8Q-DbQ"/>
-                            <constraint firstItem="LEU-qu-mnz" firstAttribute="top" secondItem="RYb-Vx-dsM" secondAttribute="bottom" constant="18" id="czH-iD-TOS"/>
                             <constraint firstItem="SCD-yw-lCc" firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="djf-1P-sTH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOI-aL-d2W" secondAttribute="bottom" constant="15" id="dzA-nm-nQk"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="centerX" secondItem="TKr-PO-Qly" secondAttribute="centerX" id="eff-ak-akh"/>
@@ -826,6 +826,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="canvasView" destination="LEU-qu-mnz" id="KZP-Bc-z9k"/>
                         <outlet property="degButton" destination="1w0-CM-85f" id="DRc-c9-WlX"/>
                         <outlet property="equationViewer" destination="QG0-dw-8lV" id="ObS-IW-cgk"/>
                         <outlet property="resultLabel" destination="RYb-Vx-dsM" id="cFn-Sp-i6E"/>
