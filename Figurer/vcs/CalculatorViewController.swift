@@ -20,6 +20,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     @IBOutlet weak var width3: NSLayoutConstraint!
     @IBOutlet weak var canvasView: PKCanvasView!
     @IBOutlet weak var penSizeSlider: UISlider!
+    @IBOutlet weak var toolView: UIView!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
     
@@ -48,6 +49,12 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         super.viewDidLoad()
         resultLabel.text = ""
         equationViewer.text = ""
+        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            self.toolView.isHidden = true
+        } else {
+            self.toolView.isHidden = false
+        }
         
         NotificationCenter.default.addObserver(self, selector: #selector(infoChanged), name: NSNotification.Name(rawValue: "info"), object: nil)
         
