@@ -140,7 +140,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="990" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="990.5" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-zQ-UGP">
@@ -980,7 +980,7 @@
                             <constraint firstItem="yoi-gH-NgD" firstAttribute="centerX" secondItem="KZX-BK-rj3" secondAttribute="centerX" id="vlV-2I-Y0H"/>
                             <constraint firstItem="Fwi-zQ-UGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vx1-2x-ufp"/>
                             <constraint firstItem="FX7-BJ-Isd" firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="xXf-1K-WgG"/>
-                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="LEU-qu-mnz" secondAttribute="trailing" constant="10" id="xma-Fu-2RZ"/>
+                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="LEU-qu-mnz" secondAttribute="trailing" constant="10" id="xma-Fu-2RZ" userLabel="DrawViewTrailing"/>
                             <constraint firstItem="C25-mI-34w" firstAttribute="centerX" secondItem="SCD-yw-lCc" secondAttribute="centerX" id="xqx-WK-Xhd"/>
                             <constraint firstItem="wOI-aL-d2W" firstAttribute="centerY" secondItem="Ihh-QI-2ep" secondAttribute="centerY" id="y3A-jC-35g"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="top" secondItem="YGx-b4-JW6" secondAttribute="bottom" constant="25" id="yfg-4M-Aj6"/>
@@ -989,6 +989,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="DrawViewTrailing" destination="xma-Fu-2RZ" id="QuD-6S-5jB"/>
                         <outlet property="canvasView" destination="LEU-qu-mnz" id="KZP-Bc-z9k"/>
                         <outlet property="degButton" destination="1w0-CM-85f" id="DRc-c9-WlX"/>
                         <outlet property="equationViewer" destination="QG0-dw-8lV" id="ObS-IW-cgk"/>

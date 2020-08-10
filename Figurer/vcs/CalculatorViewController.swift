@@ -21,6 +21,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     @IBOutlet weak var canvasView: PKCanvasView!
     @IBOutlet weak var penSizeSlider: UISlider!
     @IBOutlet weak var toolView: UIView!
+    @IBOutlet weak var DrawViewTrailing: NSLayoutConstraint!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
     
@@ -49,11 +50,15 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         super.viewDidLoad()
         resultLabel.text = ""
         equationViewer.text = ""
+                
+        print("is app in splitview?", UIApplication.shared.isSplitOrSlideOver)
         
-        if UIDevice.current.userInterfaceIdiom == .phone {
+        if UIDevice.current.userInterfaceIdiom == .phone || UIApplication.shared.isSplitOrSlideOver {
             self.toolView.isHidden = true
+            self.DrawViewTrailing.constant = -50
         } else {
             self.toolView.isHidden = false
+            self.DrawViewTrailing.constant = 10
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(infoChanged), name: NSNotification.Name(rawValue: "info"), object: nil)
