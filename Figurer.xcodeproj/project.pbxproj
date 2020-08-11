@@ -20,6 +20,8 @@
 		00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64523EB7AC9005E125D /* Assets.xcassets */; };
 		00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */; };
 		00D1D85B24BEC94000AF53C4 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */; };
+		00D8C66524E2442F0071F40D /* PapertapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D8C66424E2442F0071F40D /* PapertapeViewController.swift */; };
+		00D8C66724E248420071F40D /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D8C66624E248420071F40D /* DrawViewController.swift */; };
 		5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C9DED24678C6D00103ECE /* MagicViewController.swift */; };
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
 		5D4B27E223F220A500A23478 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B27E123F220A500A23478 /* Settings.bundle */; };
@@ -46,6 +48,8 @@
 		00C4E64823EB7AC9005E125D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C4E64A23EB7AC9005E125D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
+		00D8C66424E2442F0071F40D /* PapertapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapertapeViewController.swift; sourceTree = "<group>"; };
+		00D8C66624E248420071F40D /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		5D1C9DED24678C6D00103ECE /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D4B27E123F220A500A23478 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -121,8 +125,10 @@
 			children = (
 				000D802A2427F738005E0CA1 /* AppIconsViewController.swift */,
 				5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */,
+				00D8C66624E248420071F40D /* DrawViewController.swift */,
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
 				5D1C9DED24678C6D00103ECE /* MagicViewController.swift */,
+				00D8C66424E2442F0071F40D /* PapertapeViewController.swift */,
 			);
 			path = vcs;
 			sourceTree = "<group>";
@@ -206,9 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D8C66724E248420071F40D /* DrawViewController.swift in Sources */,
 				00D1D85B24BEC94000AF53C4 /* SidebarTableViewController.swift in Sources */,
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
+				00D8C66524E2442F0071F40D /* PapertapeViewController.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
 				5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */,
 				5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */,
