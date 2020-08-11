@@ -9,7 +9,7 @@
 import UIKit
 import PencilKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserver {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
@@ -18,12 +18,20 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var width1: NSLayoutConstraint!
     @IBOutlet weak var width2: NSLayoutConstraint!
     @IBOutlet weak var width3: NSLayoutConstraint!
-    @IBOutlet weak var canvasLeading: NSLayoutConstraint!
-    @IBOutlet weak var canvasView: UIView!
-    
+    @IBOutlet weak var canvasView: PKCanvasView!
+    @IBOutlet weak var penSizeSlider: UISlider!
+    @IBOutlet weak var toolView: UIView!
+    @IBOutlet weak var DrawViewTrailing: NSLayoutConstraint!
+    @IBOutlet weak var toolPickerLeading: NSLayoutConstraint!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
-
+    
+    //Some drawing stuffs
+    let canvasWidth: CGFloat = 768
+    let canvasOverscrollHeight: CGFloat = 500
+    var drawing = PKDrawing()
+    var penColor = "BlackWhite"
+    
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -49,7 +57,7 @@ class CalculatorViewController: UIViewController {
         infoChanged()
         
         if UIDevice.current.userInterfaceIdiom == .phone {
-            self.canvasView.isHidden = true
+            self.toolView.isHidden = true
             widthBottom.constant = UIScreen.main.bounds.width - 90
             width1.constant = UIScreen.main.bounds.width - 90
             width2.constant = UIScreen.main.bounds.width - 90
@@ -61,7 +69,7 @@ class CalculatorViewController: UIViewController {
                 width2.constant = 280
                 width3.constant = 280
             } else {
-                self.canvasView.isHidden = false
+                self.toolView.isHidden = false
                 widthBottom.constant = UIScreen.main.bounds.width - 90
                 width1.constant = UIScreen.main.bounds.width - 90
                 width2.constant = UIScreen.main.bounds.width - 90
@@ -69,7 +77,26 @@ class CalculatorViewController: UIViewController {
             }
         }
         
+        
+        //More drawing stuff
+        if UIDevice.current.userInterfaceIdiom == .pad {
+        canvasView.delegate = self
+        canvasView.drawing = drawing
 
+        canvasView.alwaysBounceVertical = true
+        canvasView.allowsFingerDrawing = true
+        
+        if let window = parent?.view.window,
+            let toolPicker = PKToolPicker.shared(for: window) {
+            
+            toolPicker.setVisible(false, forFirstResponder: canvasView)
+            toolPicker.addObserver(canvasView)
+            
+            canvasView.becomeFirstResponder()
+            
+        }
+        }
+        self.canvasView.tool = PKInkingTool(.pen, color: .black, width: 5)
         
     }
     
@@ -480,7 +507,76 @@ class CalculatorViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func ShowHideRuler(_ sender: Any) {
+        if self.canvasView.isRulerActive == false {
+            self.canvasView.isRulerActive = true
+        } else {
+            self.canvasView.isRulerActive = false
+        }
 
+    }
+    
+    
+    
+    @IBAction func PenSizeSliderChange(_ sender: Any) {
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: penColor)!, width: CGFloat(penSizeSlider.value))
+        print(penColor)
+    }
+    
+    
+    
+    @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            performSegue(withIdentifier: "showMagicWindow", sender: sender)
+        }
+    }
+    
+    
+    @IBAction func blackPen(_ sender: Any) {
+        penColor = "BlackWhite"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "BlackWhite")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func redPen(_ sender: Any) {
+        penColor = "Brick"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Brick")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func yellowPen(_ sender: Any) {
+        penColor = "Ochre"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Ochre")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func greenPen(_ sender: Any) {
+        penColor = "Forest"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Forest")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func tealPen(_ sender: Any) {
+        penColor = "Teal"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Teal")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func bluePen(_ sender: Any) {
+        penColor = "Ocean"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Ocean")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func purplePen(_ sender: Any) {
+        penColor = "Lavender"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Lavender")!, width: CGFloat(penSizeSlider.value))
+    }
+    @IBAction func pinkPen(_ sender: Any) {
+        penColor = "Magenta"
+        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Magenta")!, width: CGFloat(penSizeSlider.value))
+    }
+    
+    @IBAction func clearDrawing(_ sender: Any) {
+        self.canvasView.tool = PKEraserTool(.bitmap)
+        //Clear the pencilkit view
+    }
+    
+    
+    
+    
+    
+    
     
     
     
