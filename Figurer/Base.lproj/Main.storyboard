@@ -193,7 +193,7 @@
                                                     <rect key="frame" x="33" y="22.5" width="434" height="31"/>
                                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <connections>
-                                                        <action selector="PenSizeSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="nVz-GV-FpJ"/>
+                                                        <action selector="penSizeChange:" destination="Oap-WO-o17" eventType="valueChanged" id="zir-3f-KH3"/>
                                                     </connections>
                                                 </slider>
                                             </subviews>
@@ -226,7 +226,6 @@
                                                                         <constraint firstAttribute="height" constant="50" id="jrX-Ab-SJ5"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="blackPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwz-Fh-sH6"/>
                                                                         <action selector="blackPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="o1t-x3-fWa"/>
                                                                     </connections>
                                                                 </button>
@@ -238,7 +237,6 @@
                                                                         <constraint firstAttribute="height" constant="50" id="rqa-z6-1bi"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="redPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2WK-qW-N3b"/>
                                                                         <action selector="redPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="mFw-Lo-lkC"/>
                                                                     </connections>
                                                                 </button>
@@ -250,7 +248,6 @@
                                                                         <constraint firstAttribute="height" constant="50" id="Myg-dp-g0h"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="yellowPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4s-8G-yct"/>
                                                                         <action selector="yellowPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="Wjx-DE-Wdw"/>
                                                                     </connections>
                                                                 </button>
@@ -263,7 +260,6 @@
                                                                     </constraints>
                                                                     <connections>
                                                                         <action selector="greenPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="Nt9-Xy-HR2"/>
-                                                                        <action selector="greenPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPP-ER-3Yl"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aE-5x-iJY" customClass="ColorPickerViews" customModule="Figurer" customModuleProvider="target">
@@ -275,7 +271,6 @@
                                                                     </constraints>
                                                                     <connections>
                                                                         <action selector="tealPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="AXg-oO-H43"/>
-                                                                        <action selector="tealPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHw-Wz-21u"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im2-4g-cun" customClass="ColorPickerViews" customModule="Figurer" customModuleProvider="target">
@@ -287,7 +282,6 @@
                                                                     </constraints>
                                                                     <connections>
                                                                         <action selector="BluePen:" destination="Oap-WO-o17" eventType="touchUpInside" id="V5d-Xq-sZl"/>
-                                                                        <action selector="bluePen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih7-34-34w"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W17-TF-vif" customClass="ColorPickerViews" customModule="Figurer" customModuleProvider="target">
@@ -299,7 +293,6 @@
                                                                     </constraints>
                                                                     <connections>
                                                                         <action selector="PurplePen:" destination="Oap-WO-o17" eventType="touchUpInside" id="zEq-vY-MVh"/>
-                                                                        <action selector="purplePen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjN-fu-AN6"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gab-FV-7t9" customClass="ColorPickerViews" customModule="Figurer" customModuleProvider="target">
@@ -311,7 +304,6 @@
                                                                     </constraints>
                                                                     <connections>
                                                                         <action selector="PinkPen:" destination="Oap-WO-o17" eventType="touchUpInside" id="0Kg-g0-CgX"/>
-                                                                        <action selector="pinkPen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stT-yX-Z7s"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -335,66 +327,6 @@
                                                 <constraint firstItem="G6e-21-MTI" firstAttribute="leading" secondItem="tlr-50-gz4" secondAttribute="leading" constant="20" id="g8I-ga-vWU"/>
                                                 <constraint firstAttribute="trailing" secondItem="G6e-21-MTI" secondAttribute="trailing" constant="20" id="hgO-OG-x4X"/>
                                                 <constraint firstItem="G6e-21-MTI" firstAttribute="centerY" secondItem="tlr-50-gz4" secondAttribute="centerY" id="p4c-ES-j07"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" name="Color"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="hNz-RY-2Rr">
-                                        <rect key="frame" x="20" y="400" width="500" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNz-RY-2Rr" id="fgA-bi-Ltm">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-Nd-NVb" userLabel="Ruler">
-                                                    <rect key="frame" x="25" y="19.5" width="440" height="36"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="36" id="8Cp-7q-Sp0"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <state key="normal" title=" Ruler" image="ruler">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="ShowHideRuler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVI-TF-v39"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="PAY-Nd-NVb" firstAttribute="leading" secondItem="fgA-bi-Ltm" secondAttribute="leadingMargin" constant="10" id="9aA-7g-f4w"/>
-                                                <constraint firstItem="PAY-Nd-NVb" firstAttribute="centerY" secondItem="fgA-bi-Ltm" secondAttribute="centerY" id="GyX-Dn-zaJ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="PAY-Nd-NVb" secondAttribute="trailing" constant="20" id="Xua-eZ-j66"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" name="Color"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="xIc-Jz-r3E">
-                                        <rect key="frame" x="20" y="475" width="500" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xIc-Jz-r3E" id="Fdy-3U-Hbs">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Sh-eT-CpB" userLabel="Erase">
-                                                    <rect key="frame" x="25" y="19.5" width="440" height="36"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="36" id="KMb-XV-Fkd"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <state key="normal" title=" Eraser" image="clear" catalog="system">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="clearDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjU-ab-zPX"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="8Sh-eT-CpB" firstAttribute="centerY" secondItem="Fdy-3U-Hbs" secondAttribute="centerY" id="9JM-CC-DVh"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="8Sh-eT-CpB" secondAttribute="trailing" constant="20" id="Pon-jj-Fki"/>
-                                                <constraint firstItem="8Sh-eT-CpB" firstAttribute="leading" secondItem="Fdy-3U-Hbs" secondAttribute="leadingMargin" constant="10" id="U2g-Xx-H13"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Color"/>
@@ -1008,11 +940,51 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-qu-mnz" userLabel="DrawView" customClass="PKCanvasView">
-                                <rect key="frame" x="0.0" y="0.0" width="976" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="979" height="1024"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6i-KL-GQh" userLabel="Tools">
+                                        <rect key="frame" x="10" y="15" width="20" height="22"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="paintbrush.rounded">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToTools:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSz-fT-uzG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-sX-gZo" userLabel="Ruler">
+                                        <rect key="frame" x="55" y="15" width="21" height="22"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="ruler">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShowHideRuler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YlM-Gk-wt6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-Rt-uHN" userLabel="Eraser">
+                                        <rect key="frame" x="101" y="15" width="19.5" height="22"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="clear" catalog="system">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eraserToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCX-sW-7hj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" name="Color"/>
+                                <constraints>
+                                    <constraint firstItem="fjh-sX-gZo" firstAttribute="top" secondItem="LEU-qu-mnz" secondAttribute="top" constant="15" id="Eff-Vy-yIY"/>
+                                    <constraint firstItem="W6i-KL-GQh" firstAttribute="leading" secondItem="LEU-qu-mnz" secondAttribute="leading" constant="10" id="R5E-FY-Qyt"/>
+                                    <constraint firstItem="5bE-Rt-uHN" firstAttribute="leading" secondItem="fjh-sX-gZo" secondAttribute="trailing" constant="25" id="W2y-4x-Eq5"/>
+                                    <constraint firstItem="5bE-Rt-uHN" firstAttribute="top" secondItem="LEU-qu-mnz" secondAttribute="top" constant="15" id="Y26-Sw-Gaj"/>
+                                    <constraint firstItem="W6i-KL-GQh" firstAttribute="top" secondItem="LEU-qu-mnz" secondAttribute="top" constant="15" id="gbp-x3-1Il"/>
+                                    <constraint firstItem="fjh-sX-gZo" firstAttribute="leading" secondItem="W6i-KL-GQh" secondAttribute="trailing" constant="25" id="hr0-2w-w1h"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-dw-8lV">
-                                <rect key="frame" x="986" y="15" width="290" height="21"/>
+                                <rect key="frame" x="989" y="15" width="287" height="21"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="r5d-C6-M8i"/>
@@ -1021,24 +993,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-Lb-4CI">
-                                <rect key="frame" x="946" y="15" width="20" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-Lb-4CI" userLabel="Papertape">
+                                <rect key="frame" x="949" y="15" width="20" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="papertape"/>
                                 <connections>
                                     <segue destination="ihg-hb-3mn" kind="popoverPresentation" popoverAnchorView="MOj-Lb-4CI" id="JNP-sd-7K3">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6i-KL-GQh">
-                                <rect key="frame" x="15" y="15" width="20" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="paintbrush.rounded">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToTools:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSz-fT-uzG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1051,7 +1013,6 @@
                             <constraint firstItem="TKr-PO-Qly" firstAttribute="centerY" secondItem="DaM-gM-cpH" secondAttribute="centerY" id="498-64-An6"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="centerX" secondItem="TKr-PO-Qly" secondAttribute="centerX" id="4DL-lp-V2J"/>
                             <constraint firstItem="YGx-b4-JW6" firstAttribute="centerY" secondItem="i5L-cu-o2S" secondAttribute="centerY" id="4PB-VH-ZH4"/>
-                            <constraint firstItem="W6i-KL-GQh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="4sh-xT-GEc"/>
                             <constraint firstItem="FPS-S7-3He" firstAttribute="top" secondItem="TKr-PO-Qly" secondAttribute="bottom" constant="25" id="59r-0g-8Dm"/>
                             <constraint firstItem="mD4-nL-fQv" firstAttribute="centerY" secondItem="a3D-eX-ngH" secondAttribute="centerY" id="5Nk-hz-CkK"/>
                             <constraint firstItem="DUb-F6-gq5" firstAttribute="centerX" secondItem="hjk-oy-eyz" secondAttribute="centerX" id="5nq-Y4-6qb"/>
@@ -1061,7 +1022,7 @@
                             <constraint firstItem="6Y7-5s-D2f" firstAttribute="leading" secondItem="1w0-CM-85f" secondAttribute="trailing" constant="15" id="9bv-kB-3eP"/>
                             <constraint firstItem="8y9-dm-Jwa" firstAttribute="centerY" secondItem="FpH-Og-FzV" secondAttribute="centerY" id="B25-BP-EcZ"/>
                             <constraint firstItem="f9C-gP-FUi" firstAttribute="centerY" secondItem="FX7-BJ-Isd" secondAttribute="centerY" id="BYh-if-vtU"/>
-                            <constraint firstItem="W6i-KL-GQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="CJw-rX-yEe"/>
+                            <constraint firstItem="DaM-gM-cpH" firstAttribute="leading" secondItem="LEU-qu-mnz" secondAttribute="trailing" constant="30" id="Cer-Uh-0Ce" userLabel="DrawViewTrailing"/>
                             <constraint firstItem="hjk-oy-eyz" firstAttribute="width" secondItem="hjk-oy-eyz" secondAttribute="height" multiplier="1:1" id="DDy-zl-FxF"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="leading" secondItem="Ihh-QI-2ep" secondAttribute="trailing" constant="5" id="EA8-kq-4WH"/>
                             <constraint firstItem="CQK-7k-IXn" firstAttribute="centerX" secondItem="WOO-hG-UyB" secondAttribute="centerX" id="EZS-5q-Jxq"/>
@@ -1127,7 +1088,6 @@
                             <constraint firstItem="yoi-gH-NgD" firstAttribute="centerX" secondItem="KZX-BK-rj3" secondAttribute="centerX" id="vlV-2I-Y0H"/>
                             <constraint firstItem="Fwi-zQ-UGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vx1-2x-ufp"/>
                             <constraint firstItem="FX7-BJ-Isd" firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="xXf-1K-WgG"/>
-                            <constraint firstItem="feG-53-alK" firstAttribute="leading" secondItem="LEU-qu-mnz" secondAttribute="trailing" constant="10" id="xma-Fu-2RZ" userLabel="DrawViewTrailing"/>
                             <constraint firstItem="C25-mI-34w" firstAttribute="centerX" secondItem="SCD-yw-lCc" secondAttribute="centerX" id="xqx-WK-Xhd"/>
                             <constraint firstItem="wOI-aL-d2W" firstAttribute="centerY" secondItem="Ihh-QI-2ep" secondAttribute="centerY" id="y3A-jC-35g"/>
                             <constraint firstItem="hMl-OU-ccg" firstAttribute="top" secondItem="YGx-b4-JW6" secondAttribute="bottom" constant="25" id="yfg-4M-Aj6"/>
@@ -1137,7 +1097,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="DrawViewTrailing" destination="xma-Fu-2RZ" id="QuD-6S-5jB"/>
+                        <outlet property="DrawViewTrailing" destination="Cer-Uh-0Ce" id="G88-0P-4JY"/>
                         <outlet property="canvasView" destination="LEU-qu-mnz" id="KZP-Bc-z9k"/>
                         <outlet property="degButton" destination="1w0-CM-85f" id="DRc-c9-WlX"/>
                         <outlet property="equationViewer" destination="QG0-dw-8lV" id="ObS-IW-cgk"/>
@@ -1148,7 +1108,7 @@
                         <outlet property="width3" destination="CIL-Aq-jSp" id="gcu-Pr-s6d"/>
                         <outlet property="widthBottom" destination="H2C-TL-S9U" id="ITj-sa-sXI"/>
                         <segue destination="0nJ-K6-pq9" kind="presentation" identifier="showMagicWindow" id="tvZ-b0-2JT"/>
-                        <segue destination="qQS-8Q-khI" kind="modal" identifier="goToTools" id="Y56-85-0PN"/>
+                        <segue destination="qQS-8Q-khI" kind="presentation" identifier="goToTools" modalPresentationStyle="formSheet" id="Y56-85-0PN"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="right" id="2Ru-Bg-tU1" userLabel="OptionsSwipe">

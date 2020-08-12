@@ -32,7 +32,6 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     var drawing = PKDrawing()
     var penColor = "BlackWhite"
     var penSize = 12.5
-    var toolVC = ToolPickerViewController()
     
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
@@ -58,23 +57,34 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         
         infoChanged()
        
+        NotificationCenter.default.addObserver(forName: SIZE_NOTIFICATION, object: nil, queue: nil) { notification in
+            print("penSizeRecieved")
+            self.penSize = notification.object as! Double
+            print(notification.object)
+            self.canvasView.tool = PKInkingTool(.pen, width: CGFloat(self.penSize))
+        }
+        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
+            print("colorRecieved")
+            self.penColor = notification.object as! String
+            self.canvasView.tool = PKInkingTool(.pen, color: (UIColor(named: self.penColor.self) ?? UIColor(named: "blackWhite"))!, width: CGFloat(self.penSize))
+        }
         
 
         
         if UIDevice.current.userInterfaceIdiom == .phone {
-            self.toolView.isHidden = true
+            self.canvasView.isHidden = true
             widthBottom.constant = UIScreen.main.bounds.width - 90
             width1.constant = UIScreen.main.bounds.width - 90
             width2.constant = UIScreen.main.bounds.width - 90
             width3.constant = UIScreen.main.bounds.width - 90
         } else {
+                self.canvasView.isHidden = false
             if !UIApplication.shared.isSplitOrSlideOver {
                 widthBottom.constant = 280
                 width1.constant = 280
                 width2.constant = 280
                 width3.constant = 280
             } else {
-                self.toolView.isHidden = false
                 widthBottom.constant = UIScreen.main.bounds.width - 90
                 width1.constant = UIScreen.main.bounds.width - 90
                 width2.constant = UIScreen.main.bounds.width - 90
@@ -118,11 +128,6 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
                 
             }
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        print("did APPEAR")
-        penColor = toolVC.penColorFromPicker
     }
     
     @IBAction func doTheClearScreen(_ sender: UIGestureRecognizer) {
@@ -529,17 +534,11 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         } else {
             self.canvasView.isRulerActive = false
         }
-
     }
     
-    
-    
-    @IBAction func PenSizeSliderChange(_ sender: Any) {
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: penColor)!, width: CGFloat(penSizeSlider.value))
-        print(penColor)
+    @IBAction func eraserToggle(_ sender: Any) {
+        self.canvasView.tool = PKEraserTool(.bitmap)
     }
-    
-    
     
     @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
@@ -547,45 +546,9 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         }
     }
     
-    
-    @IBAction func blackPen(_ sender: Any) {
-        penColor = "BlackWhite"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "BlackWhite")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func redPen(_ sender: Any) {
-        penColor = "Brick"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Brick")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func yellowPen(_ sender: Any) {
-        penColor = "Ochre"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Ochre")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func greenPen(_ sender: Any) {
-        penColor = "Forest"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Forest")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func tealPen(_ sender: Any) {
-        penColor = "Teal"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Teal")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func bluePen(_ sender: Any) {
-        penColor = "Ocean"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Ocean")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func purplePen(_ sender: Any) {
-        penColor = "Lavender"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Lavender")!, width: CGFloat(penSizeSlider.value))
-    }
-    @IBAction func pinkPen(_ sender: Any) {
-        penColor = "Magenta"
-        self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Magenta")!, width: CGFloat(penSizeSlider.value))
-    }
-    
-    @IBAction func clearDrawing(_ sender: Any) {
-        self.canvasView.tool = PKEraserTool(.bitmap)
-        //Clear the pencilkit view
-    }
-    
+    //    @IBAction func clearDrawing(_ sender: Any) { self.canvasView.tool = PKEraserTool(.bitmap) }
+    //    self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Magenta")!, width: CGFloat(penSizeSlider.value))
+
     
     
     

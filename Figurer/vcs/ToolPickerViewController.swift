@@ -12,9 +12,11 @@ class ToolPickerViewController: UITableViewController {
    
     @IBOutlet weak var penSizeSlider: UISlider!
     
+    var calcVC = CalculatorViewController()
+    
     var penSizeToolPicker = 12.5
     
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,6 @@ class ToolPickerViewController: UITableViewController {
         self.navigationController!.navigationBar.layer.borderWidth = 0.50
         self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
         self.navigationController?.navigationBar.clipsToBounds = true
-
     }
     
     var penColorFromPicker = ""
@@ -52,8 +53,21 @@ class ToolPickerViewController: UITableViewController {
         penColorFromPicker = "Magenta"
     }
     
-    @IBAction func dismiss(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+   @IBAction func dismiss(_ sender: Any) {
+       dismiss(animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func penSizeChange(_ sender: Any) {
+        penSizeToolPicker = Double(penSizeSlider.value)
+        print(penSizeToolPicker)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("will DISAPPEAR")
+        
+        NotificationCenter.default.post(name: SIZE_NOTIFICATION, object: penSizeToolPicker)
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: penColorFromPicker)
     }
     
     
