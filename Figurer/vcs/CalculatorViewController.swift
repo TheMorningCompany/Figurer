@@ -31,6 +31,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     let canvasOverscrollHeight: CGFloat = 500
     var drawing = PKDrawing()
     var penColor = "BlackWhite"
+    var penSize = 12.5
     
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
@@ -508,6 +509,14 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         }
     }
     
+    @IBAction func goToTools(_ sender: Any) {
+        penColor = "BlackWhite"
+        performSegue(withIdentifier: "goToTools", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ToolPickerViewController
+        vc.penSizeToolPicker = penSize
+    }
     
     @IBAction func ShowHideRuler(_ sender: Any) {
         if self.canvasView.isRulerActive == false {
