@@ -32,6 +32,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     var drawing = PKDrawing()
     var penColor = "BlackWhite"
     var penSize = 12.5
+    var toolVC = ToolPickerViewController()
     
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
@@ -56,6 +57,9 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         NotificationCenter.default.addObserver(self, selector: #selector(infoChanged), name: NSNotification.Name(rawValue: "info"), object: nil)
         
         infoChanged()
+       
+        
+
         
         if UIDevice.current.userInterfaceIdiom == .phone {
             self.toolView.isHidden = true
@@ -116,6 +120,11 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("did APPEAR")
+        penColor = toolVC.penColorFromPicker
+    }
+    
     @IBAction func doTheClearScreen(_ sender: UIGestureRecognizer) {
         resetScreen()
         impact.impactOccurred() // Haptics
@@ -143,6 +152,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         }
     }
     
+
     func resetScreen() {
         resultLabel.text = ""
         equationViewer.text = ""
@@ -510,12 +520,7 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     }
     
     @IBAction func goToTools(_ sender: Any) {
-        penColor = "BlackWhite"
         performSegue(withIdentifier: "goToTools", sender: self)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ToolPickerViewController
-        vc.penSizeToolPicker = penSize
     }
     
     @IBAction func ShowHideRuler(_ sender: Any) {

@@ -15,17 +15,17 @@ class ToolPickerViewController: UITableViewController {
     var penSizeToolPicker = 12.5
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        penSizeSlider.value = Float(penSizeToolPicker)
         self.navigationController!.navigationBar.layer.borderWidth = 0.50
         self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
         self.navigationController?.navigationBar.clipsToBounds = true
 
     }
     
-    var penColorFromPicker = "Ocean"
+    var penColorFromPicker = ""
 
     @IBAction func blackPen(_ sender: Any) {
         penColorFromPicker = "BlackWhite"
