@@ -979,7 +979,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="r5d-C6-M8i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -988,7 +988,7 @@
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="papertape"/>
                                 <connections>
-                                    <segue destination="ihg-hb-3mn" kind="popoverPresentation" popoverAnchorView="MOj-Lb-4CI" id="JNP-sd-7K3">
+                                    <segue destination="C4H-Uz-rgH" kind="popoverPresentation" popoverAnchorView="MOj-Lb-4CI" id="JNP-sd-7K3">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -1885,7 +1885,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgk-Lp-lI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3822" y="839"/>
+            <point key="canvasLocation" x="4515.8125915080527" y="838.4765625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v7a-G5-hP5">
@@ -1912,7 +1912,7 @@
             <objects>
                 <tableViewController modalPresentationStyle="pageSheet" clearsSelectionOnViewWillAppear="NO" id="ihg-hb-3mn" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f20-gL-pI3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zy5-tQ-SJb">
@@ -1967,18 +1967,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-L5-Sc5">
-                                                    <rect key="frame" x="340" y="11" width="19" height="22"/>
-                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <state key="normal" image="trash" catalog="system"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rB6-L5-Sc5" firstAttribute="top" secondItem="njO-jp-RLF" secondAttribute="topMargin" id="5cn-Pg-fmb"/>
                                                 <constraint firstItem="5y4-XA-uLB" firstAttribute="centerX" secondItem="njO-jp-RLF" secondAttribute="centerX" id="Cle-Jz-6ph"/>
                                                 <constraint firstItem="5y4-XA-uLB" firstAttribute="top" secondItem="njO-jp-RLF" secondAttribute="topMargin" constant="15" id="Scb-cZ-xQu"/>
                                                 <constraint firstItem="3hi-d2-y5M" firstAttribute="top" secondItem="5y4-XA-uLB" secondAttribute="bottom" constant="15" id="U58-Gb-c4n"/>
-                                                <constraint firstItem="rB6-L5-Sc5" firstAttribute="trailing" secondItem="njO-jp-RLF" secondAttribute="trailingMargin" id="l5o-gL-rnD"/>
                                                 <constraint firstItem="3hi-d2-y5M" firstAttribute="centerX" secondItem="njO-jp-RLF" secondAttribute="centerX" id="w7l-ke-AJQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1993,12 +1986,16 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Kra-Wn-7aO"/>
+                    <navigationItem key="navigationItem" id="Kra-Wn-7aO">
+                        <barButtonItem key="rightBarButtonItem" image="trash" catalog="system" id="V4R-7w-v27">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIU-0K-MvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1883.7890624999998" y="969.53125"/>
+            <point key="canvasLocation" x="2577.4524158125914" y="969.14062499999989"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Of-gH-kBR">
@@ -2019,6 +2016,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaF-8c-pX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1944.9487554904831" y="-608.203125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h49-3E-kXX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C4H-Uz-rgH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="OtW-zD-2Vk">
+                        <rect key="frame" x="0.0" y="13" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="Color"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ihg-hb-3mn" kind="relationship" relationship="rootViewController" id="lcz-CH-I06"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3r6-cs-fEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883.455344070278" y="969.14062499999989"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
