@@ -59,8 +59,8 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
        
         NotificationCenter.default.addObserver(forName: SIZE_NOTIFICATION, object: nil, queue: nil) { notification in
             print("penSizeRecieved")
-            self.penSize = notification.object as! Double
             print(notification.object ?? "no notification")
+            self.penSize = notification.object as! Double
             self.canvasView.tool = PKInkingTool(.pen, width: CGFloat(self.penSize))
         }
         NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
