@@ -11,7 +11,8 @@ import UIKit
 class MagicViewController: UITableViewController {
 
     @IBOutlet weak var resultTextBox: UITextField!
-
+    @IBOutlet weak var eightBallSwitch: UISwitch!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +31,10 @@ class MagicViewController: UITableViewController {
     
     
     @IBAction func submit(_ sender: Any) {
-        let resultText = resultTextBox.text
+        if let resultText = resultTextBox.text {
                UserDefaults.standard.set(resultText, forKey: "magicValue")
         }
+    }
 
     func updateResultTextBox() {
         if let magicValue = UserDefaults.standard.string(forKey: "magicValue") {
