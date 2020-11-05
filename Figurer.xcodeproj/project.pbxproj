@@ -22,6 +22,7 @@
 		00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */; };
 		00D1D85B24BEC94000AF53C4 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */; };
 		00F1481224E2769C00D055D5 /* ToolPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1481124E2769C00D055D5 /* ToolPickerViewController.swift */; };
+		00F7A87B25549D4A00A9B7BD /* BGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7A87A25549D4A00A9B7BD /* BGView.swift */; };
 		5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C9DED24678C6D00103ECE /* MagicViewController.swift */; };
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
 		5D4B27E223F220A500A23478 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B27E123F220A500A23478 /* Settings.bundle */; };
@@ -50,6 +51,7 @@
 		00C4E64A23EB7AC9005E125D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
 		00F1481124E2769C00D055D5 /* ToolPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPickerViewController.swift; sourceTree = "<group>"; };
+		00F7A87A25549D4A00A9B7BD /* BGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGView.swift; sourceTree = "<group>"; };
 		5D1C9DED24678C6D00103ECE /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D4B27E123F220A500A23478 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
+				00F7A87A25549D4A00A9B7BD /* BGView.swift */,
 				0009039524DFD8D0002BB698 /* ColorPickerViews.swift */,
 				00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 				5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */,
 				5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */,
 				00F1481224E2769C00D055D5 /* ToolPickerViewController.swift in Sources */,
+				00F7A87B25549D4A00A9B7BD /* BGView.swift in Sources */,
 				0000E08624E4A445003B42EB /* NotificationConstants.swift in Sources */,
 				5D791A5923F51A8000C406A6 /* Functions.swift in Sources */,
 				0009039624DFD8D0002BB698 /* ColorPickerViews.swift in Sources */,

@@ -12,6 +12,8 @@ class MagicViewController: UITableViewController {
 
     @IBOutlet weak var resultTextBox: UITextField!
     @IBOutlet weak var eightBallSwitch: UISwitch!
+    @IBOutlet weak var textFieldBG: UIView!
+    @IBOutlet weak var ToggleView: UIView!
     
     
     override func viewDidLoad() {
