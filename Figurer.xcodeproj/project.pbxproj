@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0000E08624E4A445003B42EB /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000E08524E4A445003B42EB /* NotificationConstants.swift */; };
-		0009039624DFD8D0002BB698 /* ColorPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009039524DFD8D0002BB698 /* ColorPickerViews.swift */; };
 		000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D802A2427F738005E0CA1 /* AppIconsViewController.swift */; };
 		0047C08223F4ECB20097BB55 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07D23F4ECB20097BB55 /* shadow@2x.png */; };
 		0047C08323F4ECB20097BB55 /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07E23F4ECB20097BB55 /* glyph@2x.png */; };
@@ -20,8 +18,8 @@
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
 		00C4E64623EB7AC9005E125D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64523EB7AC9005E125D /* Assets.xcassets */; };
 		00C4E64923EB7AC9005E125D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */; };
-		00D1D85B24BEC94000AF53C4 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */; };
-		00F1481224E2769C00D055D5 /* ToolPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1481124E2769C00D055D5 /* ToolPickerViewController.swift */; };
+		00EE75FC256646D500D28222 /* GradientTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE75FB256646D500D28222 /* GradientTitleBar.swift */; };
+		00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE75FE256648BB00D28222 /* TitleBarViewController.swift */; };
 		00F7A87B25549D4A00A9B7BD /* BGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7A87A25549D4A00A9B7BD /* BGView.swift */; };
 		5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C9DED24678C6D00103ECE /* MagicViewController.swift */; };
 		5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */; };
@@ -33,8 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0000E08524E4A445003B42EB /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
-		0009039524DFD8D0002BB698 /* ColorPickerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViews.swift; sourceTree = "<group>"; };
 		000D802A2427F738005E0CA1 /* AppIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
 		0047C07D23F4ECB20097BB55 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
 		0047C07E23F4ECB20097BB55 /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
@@ -49,8 +45,8 @@
 		00C4E64523EB7AC9005E125D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C4E64823EB7AC9005E125D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C4E64A23EB7AC9005E125D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
-		00F1481124E2769C00D055D5 /* ToolPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPickerViewController.swift; sourceTree = "<group>"; };
+		00EE75FB256646D500D28222 /* GradientTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientTitleBar.swift; path = Figurer/GradientTitleBar.swift; sourceTree = SOURCE_ROOT; };
+		00EE75FE256648BB00D28222 /* TitleBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleBarViewController.swift; path = Figurer/TitleBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		00F7A87A25549D4A00A9B7BD /* BGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGView.swift; sourceTree = "<group>"; };
 		5D1C9DED24678C6D00103ECE /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
@@ -114,8 +110,6 @@
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
 				00F7A87A25549D4A00A9B7BD /* BGView.swift */,
-				0009039524DFD8D0002BB698 /* ColorPickerViews.swift */,
-				00D1D85A24BEC94000AF53C4 /* SidebarTableViewController.swift */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
 				00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */,
 				00C4E64A23EB7AC9005E125D /* Info.plist */,
@@ -127,9 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				000D802A2427F738005E0CA1 /* AppIconsViewController.swift */,
+				00EE75FB256646D500D28222 /* GradientTitleBar.swift */,
 				5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */,
-				00F1481124E2769C00D055D5 /* ToolPickerViewController.swift */,
-				0000E08524E4A445003B42EB /* NotificationConstants.swift */,
+				00EE75FE256648BB00D28222 /* TitleBarViewController.swift */,
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
 				5D1C9DED24678C6D00103ECE /* MagicViewController.swift */,
 			);
@@ -163,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "The Morning Company";
 				TargetAttributes = {
 					00C4E63823EB7AC8005E125D = {
@@ -215,17 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D1D85B24BEC94000AF53C4 /* SidebarTableViewController.swift in Sources */,
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
+				00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */,
+				00EE75FC256646D500D28222 /* GradientTitleBar.swift in Sources */,
 				5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */,
 				5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */,
-				00F1481224E2769C00D055D5 /* ToolPickerViewController.swift in Sources */,
 				00F7A87B25549D4A00A9B7BD /* BGView.swift in Sources */,
-				0000E08624E4A445003B42EB /* NotificationConstants.swift in Sources */,
 				5D791A5923F51A8000C406A6 /* Functions.swift in Sources */,
-				0009039624DFD8D0002BB698 /* ColorPickerViews.swift in Sources */,
 				00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +270,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,6 +331,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -14,6 +14,7 @@ class OptionsViewController: UITableViewController {
     @IBOutlet weak var hapticsSwitch: UISwitch!
     @IBOutlet weak var infoSwitch: UISwitch!
     @IBOutlet weak var radianSwitch: UISwitch!
+    @IBOutlet weak var titleView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +29,10 @@ class OptionsViewController: UITableViewController {
         self.navigationController?.navigationBar.clipsToBounds = true
         let backBarButtton = UIBarButtonItem(title: "",style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
+        
+        self.titleView.layer.cornerRadius = 20.0
+        self.titleView.layer.cornerCurve = .continuous
+        self.titleView.layer.masksToBounds = true
     }
     
     func registerSettingsBundle(){
@@ -36,16 +41,20 @@ class OptionsViewController: UITableViewController {
     }
     
     @objc func defaultsChanged(){
-        if let invertNumpad:Bool = UserDefaults.standard.bool(forKey: "invert_numpad") {
+         let invertNumpad = UserDefaults.standard.bool(forKey: "invert_numpad")
+         if (invertNumpad){
             invertNumpadSwitch.setOn(invertNumpad, animated: false)
         }
-        if let enableHaptics:Bool = UserDefaults.standard.bool(forKey: "enable_haptics") {
+         let enableHaptics = UserDefaults.standard.bool(forKey: "enable_haptics")
+         if (enableHaptics){
             hapticsSwitch.setOn(enableHaptics, animated: false)
         }
-        if let moreInfo:Bool = UserDefaults.standard.bool(forKey: "more_info") {
+         let moreInfo = UserDefaults.standard.bool(forKey: "more_info")
+         if (moreInfo){
             infoSwitch.setOn(moreInfo, animated: false)
         }
-        if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+         let useRadians = UserDefaults.standard.bool(forKey: "use_radians")
+         if (useRadians) {
             radianSwitch.setOn(useRadians, animated: false)
         }
     }

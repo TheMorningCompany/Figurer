@@ -9,7 +9,7 @@
 import UIKit
 import PencilKit
 
-class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserver {
+class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var degButton: UIButton!
@@ -18,20 +18,8 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     @IBOutlet weak var width1: NSLayoutConstraint!
     @IBOutlet weak var width2: NSLayoutConstraint!
     @IBOutlet weak var width3: NSLayoutConstraint!
-    @IBOutlet weak var canvasView: PKCanvasView!
-    @IBOutlet weak var penSizeSlider: UISlider!
-    @IBOutlet weak var toolView: UIView!
-    @IBOutlet weak var DrawViewTrailing: NSLayoutConstraint!
-    @IBOutlet weak var toolPickerLeading: NSLayoutConstraint!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
-    
-    //Some drawing stuffs
-    let canvasWidth: CGFloat = 768
-    let canvasOverscrollHeight: CGFloat = 500
-    var drawing = PKDrawing()
-    var penColor = "BlackWhite"
-    var penSize = 12.5
     
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
@@ -57,28 +45,13 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
         
         infoChanged()
        
-        NotificationCenter.default.addObserver(forName: SIZE_NOTIFICATION, object: nil, queue: nil) { notification in
-            print("penSizeRecieved")
-            print(notification.object ?? "no notification")
-            self.penSize = notification.object as! Double
-            self.canvasView.tool = PKInkingTool(.pen, width: CGFloat(self.penSize))
-        }
-        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
-            print("colorRecieved")
-            self.penColor = notification.object as! String
-            self.canvasView.tool = PKInkingTool(.pen, color: (UIColor(named: self.penColor.self) ?? UIColor(named: "blackWhite"))!, width: CGFloat(self.penSize))
-        }
-        
 
-        
         if UIDevice.current.userInterfaceIdiom == .phone {
-            self.canvasView.isHidden = true
             widthBottom.constant = UIScreen.main.bounds.width - 90
             width1.constant = UIScreen.main.bounds.width - 90
             width2.constant = UIScreen.main.bounds.width - 90
             width3.constant = UIScreen.main.bounds.width - 90
         } else {
-                self.canvasView.isHidden = false
             if !UIApplication.shared.isSplitOrSlideOver {
                 widthBottom.constant = 280
                 width1.constant = 280
@@ -92,42 +65,22 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
             }
         }
         
-        
-        //More drawing stuff
-        if UIDevice.current.userInterfaceIdiom == .pad {
-        canvasView.delegate = self
-        canvasView.drawing = drawing
-
-        canvasView.alwaysBounceVertical = true
-        canvasView.allowsFingerDrawing = true
-        
-        if let window = parent?.view.window,
-            let toolPicker = PKToolPicker.shared(for: window) {
-            
-            toolPicker.setVisible(false, forFirstResponder: canvasView)
-            toolPicker.addObserver(canvasView)
-            
-            canvasView.becomeFirstResponder()
-            
-        }
-        }
-        self.canvasView.tool = PKInkingTool(.pen, color: .black, width: 5)
-        
     }
     
     @objc func infoChanged() {
-        if let moreInfo:Bool = UserDefaults.standard.bool(forKey: "more_info") {
+         let moreInfo = UserDefaults.standard.bool(forKey: "more_info")
             if (moreInfo) {
                 degButton.isHidden = false
-                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                let useRadians = UserDefaults.standard.bool(forKey: "use_radians")
+                if (useRadians) {
                     degButton.setTitle(useRadians ? "rad" : "deg", for: UIControl.State.normal)
-                    
                 }
             } else {
                 degButton.isHidden = true
                 
             }
-        }
+        
+    
     }
     
     @IBAction func doTheClearScreen(_ sender: UIGestureRecognizer) {
@@ -171,11 +124,10 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
     
     func logb(val: Double, forBase base: Double) -> Double {
         let result = log(val)/log(base)
-        if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+        let useRadians = UserDefaults.standard.bool(forKey: "use_radians")
             if (!useRadians) {
                 return radToDeg(value: result)
             }
-        }
         return result
     }
     
@@ -477,7 +429,8 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
                 }
                 let input = Double(resultLabel.text!)
                 var result = acos(input!)
-                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                 let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians")
+                 if (useRadians) {
                     result = radToDeg(value: result)
                 }
                 updateDisplay(value: String(result))
@@ -489,7 +442,8 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
                 }
                 let input = Double(resultLabel.text!)
                 var result = atan(input!)
-                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians")
+                if (useRadians) {
                     result = radToDeg(value: result)
                 }
                 updateDisplay(value: String(result))
@@ -501,7 +455,8 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
                 }
                 let input = Double(resultLabel.text!)
                 var result = asin(input!)
-                if let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians") {
+                let useRadians:Bool = UserDefaults.standard.bool(forKey: "use_radians")
+                if (useRadians){
                     result = radToDeg(value: result)
                 }
                 updateDisplay(value: String(result))
@@ -523,31 +478,14 @@ class CalculatorViewController: UIViewController, PKCanvasViewDelegate, PKToolPi
             }
         }
     }
-    
-    @IBAction func goToTools(_ sender: Any) {
-        performSegue(withIdentifier: "goToTools", sender: self)
-    }
-    
-    @IBAction func ShowHideRuler(_ sender: Any) {
-        if self.canvasView.isRulerActive == false {
-            self.canvasView.isRulerActive = true
-        } else {
-            self.canvasView.isRulerActive = false
-        }
-    }
-    
-    @IBAction func eraserToggle(_ sender: Any) {
-        self.canvasView.tool = PKEraserTool(.bitmap)
-    }
+
     
     @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             performSegue(withIdentifier: "showMagicWindow", sender: sender)
         }
     }
-    
-    //    @IBAction func clearDrawing(_ sender: Any) { self.canvasView.tool = PKEraserTool(.bitmap) }
-    //    self.canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "Magenta")!, width: CGFloat(penSizeSlider.value))
+
 
     
     
