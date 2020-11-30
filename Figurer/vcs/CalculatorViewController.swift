@@ -9,6 +9,7 @@
 import UIKit
 import PencilKit
 
+
 class CalculatorViewController: UIViewController {
     @IBOutlet weak var equationViewer: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
@@ -20,7 +21,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var width3: NSLayoutConstraint!
     
     let impact = UIImpactFeedbackGenerator() // Haptics
-    
+        
     var num_operator:Int = -1
     var operator_strings = ["=", "+", "-", "×", "÷", "^", "log"]
     enum num_operators:Int {
@@ -237,7 +238,8 @@ class CalculatorViewController: UIViewController {
                 case num_operators.DIVIDE.rawValue:
                     if (numberOnScreen == 0) {
                         print("DIVIDE BY 0")
-                        UIApplication.shared.setAlternateIconName("divideicon")
+                        //Commented out because it's against the app store guidelines, maybe give local notification and unlock it in options.
+                        //UIApplication.shared.setAlternateIconName("divideicon")
                     }
                     result = previousNumber / numberOnScreen
                     break
@@ -340,7 +342,8 @@ class CalculatorViewController: UIViewController {
                 if let inputNum = input {
                     if (inputNum < 0.0) {
                         print("SQRT NEGATIVE")
-                        UIApplication.shared.setAlternateIconName("negativeicon")
+                        //Commented out because it's against the app store guidelines, maybe give local notification and unlock it in options.
+                        //UIApplication.shared.setAlternateIconName("negativeicon")
                         break
                     }
                 }
