@@ -483,12 +483,15 @@ class CalculatorViewController: UIViewController {
     }
 
     
-    @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
-        if sender.state == .began {
-            performSegue(withIdentifier: "showMagicWindow", sender: sender)
-        }
+//    @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
+//        if sender.state == .began {
+//            performSegue(withIdentifier: "showMagicWindow", sender: sender)
+//        }
+//    }
+    @IBAction func MagicBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showMagicWindow", sender: sender)
     }
-
+    
 
     
     

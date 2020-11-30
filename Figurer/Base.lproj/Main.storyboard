@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -195,9 +196,13 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="52"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-Lb-4CI" userLabel="Papertape">
-                                        <rect key="frame" x="7.9999999999999991" y="15" width="14.666666666666664" height="22"/>
+                                        <rect key="frame" x="8" y="15" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="BmU-cS-IKL"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" image="papertape">
+                                        <state key="normal">
+                                            <imageReference key="image" image="papertape" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
                                         </state>
                                         <connections>
@@ -206,13 +211,30 @@
                                             </segue>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whf-dh-ghb" userLabel="Magic">
+                                        <rect key="frame" x="46.666666666666664" y="14" width="23.999999999999993" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="DHz-S0-ABG"/>
+                                            <constraint firstAttribute="width" constant="24" id="EZQ-0a-l07"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="wand.and.stars" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MagicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4H8-aK-0FK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Color"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="MOj-Lb-4CI" firstAttribute="leading" secondItem="Fwi-zQ-UGP" secondAttribute="leading" constant="8" id="FPa-bO-Cfh"/>
-                                    <constraint firstAttribute="trailing" secondItem="MOj-Lb-4CI" secondAttribute="trailing" constant="391.33333333333337" id="Nee-Wr-MB8"/>
-                                    <constraint firstItem="MOj-Lb-4CI" firstAttribute="centerY" secondItem="Fwi-zQ-UGP" secondAttribute="centerY" id="Ns3-hW-yns"/>
+                                    <constraint firstItem="whf-dh-ghb" firstAttribute="leading" secondItem="MOj-Lb-4CI" secondAttribute="trailing" constant="14.666666666666664" id="K4p-tw-R14"/>
+                                    <constraint firstAttribute="trailing" secondItem="MOj-Lb-4CI" secondAttribute="trailing" constant="382" id="Nee-Wr-MB8"/>
+                                    <constraint firstItem="MOj-Lb-4CI" firstAttribute="centerY" secondItem="Fwi-zQ-UGP" secondAttribute="centerY" constant="1" id="Ns3-hW-yns"/>
+                                    <constraint firstItem="whf-dh-ghb" firstAttribute="centerY" secondItem="Fwi-zQ-UGP" secondAttribute="centerY" id="hmj-BD-c5F"/>
                                     <constraint firstAttribute="height" constant="52" id="wkB-Hl-egv"/>
                                 </constraints>
                                 <connections>
@@ -569,7 +591,6 @@
                                 <state key="highlighted" image="9P"/>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ck-1t-Rys"/>
-                                    <outletCollection property="gestureRecognizers" destination="1yT-3h-cPY" appends="YES" id="AhY-kT-aBU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYb-Vx-dsM" userLabel="answerLabel">
@@ -579,7 +600,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-CM-85f">
-                                <rect key="frame" x="331" y="59" width="32" height="21"/>
+                                <rect key="frame" x="328" y="59" width="32" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="rGv-xR-m5J"/>
                                 </constraints>
@@ -592,13 +613,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-5s-D2f">
-                                <rect key="frame" x="378" y="59" width="21" height="21"/>
+                                <rect key="frame" x="375" y="59" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Y7-5s-D2f" secondAttribute="height" multiplier="1:1" id="FiV-vh-tNf"/>
-                                    <constraint firstAttribute="height" constant="21" id="vnb-kv-awl"/>
+                                    <constraint firstAttribute="height" constant="24" id="vnb-kv-awl"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="gearshape"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
                                     <segue destination="6fL-yY-kbZ" kind="presentation" modalPresentationStyle="formSheet" id="AYm-Xg-kZJ"/>
                                 </connections>
@@ -899,11 +922,6 @@
                         <segue destination="6fL-yY-kbZ" kind="presentation" id="9zW-2U-8qf"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="1yT-3h-cPY" userLabel="MagicPress">
-                    <connections>
-                        <action selector="longPressGesture:" destination="BYZ-38-t0r" id="tpn-Wx-x87"/>
-                    </connections>
-                </pongPressGestureRecognizer>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QVg-2t-czb" userLabel="ClearPress">
                     <connections>
@@ -1945,6 +1963,7 @@
         <image name="dot" width="141" height="141"/>
         <image name="dotP" width="141" height="141"/>
         <image name="equals" width="500" height="500"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="gearshape" width="14" height="14"/>
         <image name="hand.point.up" catalog="system" width="111" height="128"/>
         <image name="ln" width="350" height="250"/>
@@ -1952,6 +1971,7 @@
         <image name="minus" width="500" height="500"/>
         <image name="multiply" width="500" height="500"/>
         <image name="neg-posLight" width="350" height="250"/>
+        <image name="papertape" width="15" height="14"/>
         <image name="papertape" width="15" height="14"/>
         <image name="percentLight" width="350" height="250"/>
         <image name="pi" width="141" height="141"/>
