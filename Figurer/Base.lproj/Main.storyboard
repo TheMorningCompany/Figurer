@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -1964,15 +1964,14 @@
         <image name="dot" width="141" height="141"/>
         <image name="dotP" width="141" height="141"/>
         <image name="equals" width="500" height="500"/>
-        <image name="gearshape" width="14" height="14"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape" width="14" height="14"/>
         <image name="hand.point.up" catalog="system" width="111" height="128"/>
         <image name="ln" width="350" height="250"/>
         <image name="ln-1" width="350" height="250"/>
         <image name="minus" width="500" height="500"/>
         <image name="multiply" width="500" height="500"/>
         <image name="neg-posLight" width="350" height="250"/>
-        <image name="papertape" width="15" height="14"/>
         <image name="papertape" width="15" height="14"/>
         <image name="percentLight" width="350" height="250"/>
         <image name="pi" width="141" height="141"/>
