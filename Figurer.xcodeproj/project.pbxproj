@@ -13,6 +13,7 @@
 		0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07F23F4ECB20097BB55 /* fade@2x.png */; };
 		0047C08523F4ECB20097BB55 /* figurerDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08023F4ECB20097BB55 /* figurerDark@2x.png */; };
 		0047C08623F4ECB20097BB55 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08123F4ECB20097BB55 /* orange@2x.png */; };
+		0099A7C025ABC6D70052AAAF /* Calcbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */; };
 		00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63C23EB7AC8005E125D /* AppDelegate.swift */; };
 		00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */; };
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		0047C08023F4ECB20097BB55 /* figurerDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "figurerDark@2x.png"; sourceTree = "<group>"; };
 		0047C08123F4ECB20097BB55 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange@2x.png"; sourceTree = "<group>"; };
 		0088160123EBB68B00F6B4C6 /* Figurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figurer.entitlements; sourceTree = "<group>"; };
+		0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calcbutton.swift; sourceTree = "<group>"; };
 		00C4E63923EB7AC8005E125D /* Figurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4E63C23EB7AC8005E125D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
+				0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */,
 				00F7A87A25549D4A00A9B7BD /* BGView.swift */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
 				00C4E64723EB7AC9005E125D /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 				00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */,
 				00EE75FC256646D500D28222 /* GradientTitleBar.swift in Sources */,
 				5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */,
+				0099A7C025ABC6D70052AAAF /* Calcbutton.swift in Sources */,
 				5D9CEC0E23EBE8B9004521D8 /* CalculatorViewController.swift in Sources */,
 				00F7A87B25549D4A00A9B7BD /* BGView.swift in Sources */,
 				5D791A5923F51A8000C406A6 /* Functions.swift in Sources */,
@@ -374,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.themorningcompany.figurer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.themorningcompany.figurer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -396,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.themorningcompany.figurer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.themorningcompany.figurer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

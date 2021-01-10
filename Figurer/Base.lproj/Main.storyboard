@@ -436,159 +436,183 @@
                                     <constraint firstAttribute="width" constant="300" id="H2C-TL-S9U"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-hG-UyB" userLabel="0">
-                                <rect key="frame" x="124" y="757" width="120" height="120"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-hG-UyB" userLabel="0" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="154" y="787" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="gdX-Yr-x0S"/>
                                     <constraint firstAttribute="width" secondItem="WOO-hG-UyB" secondAttribute="height" multiplier="1:1" id="jPR-bT-C1h"/>
-                                    <constraint firstAttribute="width" constant="120" id="vXe-P7-HIo"/>
+                                    <constraint firstAttribute="width" constant="60" id="vXe-P7-HIo"/>
                                 </constraints>
-                                <state key="normal" image="0"/>
-                                <state key="highlighted" image="0P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="If2-IW-s01"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-Df-9Cb" userLabel="pi">
-                                <rect key="frame" x="24" y="757" width="120" height="120"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-Df-9Cb" userLabel="pi" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="54" y="787" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pPD-Df-9Cb" secondAttribute="height" multiplier="1:1" id="aFg-YR-xc3"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="fiZ-Rc-xc0"/>
-                                    <constraint firstAttribute="width" constant="120" id="wPH-Hi-kHH"/>
+                                    <constraint firstAttribute="width" constant="60" id="wPH-Hi-kHH"/>
                                 </constraints>
-                                <state key="normal" image="pi"/>
-                                <state key="highlighted" image="piP"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="π">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="special:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6IM-4V-cGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-sh-lph" userLabel="dot">
-                                <rect key="frame" x="224" y="757" width="120" height="120"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-sh-lph" userLabel="dot" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="254" y="787" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="3I7-Op-V57"/>
-                                    <constraint firstAttribute="width" constant="120" id="arS-Hc-Iiu"/>
+                                    <constraint firstAttribute="width" constant="60" id="arS-Hc-Iiu"/>
                                     <constraint firstAttribute="width" secondItem="hw0-sh-lph" secondAttribute="height" multiplier="1:1" id="p0K-gQ-a5l"/>
                                 </constraints>
-                                <state key="normal" image="dot"/>
-                                <state key="highlighted" image="dotP"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="special:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRr-Qf-X2r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-g3-vQc" userLabel="1">
-                                <rect key="frame" x="21.333333333333329" y="672" width="119.99999999999999" height="120"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-g3-vQc" userLabel="1" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="51.333333333333343" y="702" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="AEd-Or-0hE"/>
-                                    <constraint firstAttribute="width" constant="120" id="T3O-Ls-tAL"/>
+                                    <constraint firstAttribute="width" constant="60" id="T3O-Ls-tAL"/>
                                     <constraint firstAttribute="width" secondItem="CWc-g3-vQc" secondAttribute="height" multiplier="1:1" id="w16-yI-aF8"/>
                                 </constraints>
-                                <state key="normal" image="1"/>
-                                <state key="highlighted" image="1P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3YW-bT-1IV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-eX-ngH" userLabel="2">
-                                <rect key="frame" x="124" y="672" width="120" height="120"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-eX-ngH" userLabel="2" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="154" y="702" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="ChA-b4-DgG"/>
                                     <constraint firstAttribute="width" secondItem="a3D-eX-ngH" secondAttribute="height" multiplier="1:1" id="br5-UG-tOB"/>
-                                    <constraint firstAttribute="width" constant="120" id="gCN-S6-zQK"/>
+                                    <constraint firstAttribute="width" constant="60" id="gCN-S6-zQK"/>
                                 </constraints>
-                                <state key="normal" image="2"/>
-                                <state key="highlighted" image="2P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEz-8A-B5C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZX-BK-rj3" userLabel="3">
-                                <rect key="frame" x="226.66666666666663" y="672" width="120" height="120"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZX-BK-rj3" userLabel="3" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="256.66666666666669" y="702" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KZX-BK-rj3" secondAttribute="height" multiplier="1:1" id="4eM-5m-ccJ"/>
-                                    <constraint firstAttribute="width" constant="120" id="HQU-Zx-1FZ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="mJJ-v2-R2A"/>
+                                    <constraint firstAttribute="width" constant="60" id="HQU-Zx-1FZ"/>
                                 </constraints>
-                                <state key="normal" image="3"/>
-                                <state key="highlighted" image="3P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEO-IS-0cn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74n-HK-TWY" userLabel="4">
-                                <rect key="frame" x="21.333333333333329" y="587" width="119.99999999999999" height="120"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74n-HK-TWY" userLabel="4" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="51.333333333333343" y="617" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="JAh-Wk-J1N"/>
+                                    <constraint firstAttribute="width" constant="60" id="JAh-Wk-J1N"/>
                                     <constraint firstAttribute="width" secondItem="74n-HK-TWY" secondAttribute="height" multiplier="1:1" id="Lg7-XM-4IJ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="cnJ-vX-EQa"/>
                                 </constraints>
-                                <state key="normal" image="4"/>
-                                <state key="highlighted" image="4P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0t5-VK-dGZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-oy-eyz" userLabel="5">
-                                <rect key="frame" x="124" y="587" width="120" height="120"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-oy-eyz" userLabel="5" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="154" y="617" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="VvN-Kj-zy6"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="a7w-te-3GI"/>
+                                    <constraint firstAttribute="width" constant="60" id="VvN-Kj-zy6"/>
                                     <constraint firstAttribute="width" secondItem="hjk-oy-eyz" secondAttribute="height" multiplier="1:1" id="vBa-cP-NXm"/>
                                 </constraints>
-                                <state key="normal" image="5"/>
-                                <state key="highlighted" image="5P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icF-rU-8fs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h16-uk-vbT" userLabel="6">
-                                <rect key="frame" x="226.66666666666663" y="587" width="120" height="120"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h16-uk-vbT" userLabel="6" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="256.66666666666669" y="617" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="ObX-fq-A7o"/>
+                                    <constraint firstAttribute="width" constant="60" id="ObX-fq-A7o"/>
                                     <constraint firstAttribute="width" secondItem="h16-uk-vbT" secondAttribute="height" multiplier="1:1" id="dVR-x3-0pA"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="znX-6Z-I5Z"/>
                                 </constraints>
-                                <state key="normal" image="6"/>
-                                <state key="highlighted" image="6P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSp-ve-Yr0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-Og-FzV" userLabel="7">
-                                <rect key="frame" x="21.333333333333329" y="502" width="119.99999999999999" height="120"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-Og-FzV" userLabel="7" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="51.333333333333343" y="532" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="SZm-ui-5oi"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="XIK-oh-wWa"/>
+                                    <constraint firstAttribute="width" constant="60" id="SZm-ui-5oi"/>
                                     <constraint firstAttribute="width" secondItem="FpH-Og-FzV" secondAttribute="height" multiplier="1:1" id="mcx-AT-xhn"/>
                                 </constraints>
-                                <state key="normal" image="7"/>
-                                <state key="highlighted" image="7P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yc7-oG-3Ad"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FX7-BJ-Isd" userLabel="8">
-                                <rect key="frame" x="124" y="502" width="120" height="120"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FX7-BJ-Isd" userLabel="8" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="154" y="532" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="7ry-2x-2j2"/>
+                                    <constraint firstAttribute="width" constant="60" id="7ry-2x-2j2"/>
                                     <constraint firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="Zwv-5J-ekS"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="kBq-Y7-Dmn"/>
                                 </constraints>
-                                <state key="normal" image="8"/>
-                                <state key="highlighted" image="8P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnE-J0-WLQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-yw-lCc" userLabel="9">
-                                <rect key="frame" x="226.66666666666663" y="502" width="120" height="120"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-yw-lCc" userLabel="9" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
+                                <rect key="frame" x="256.66666666666669" y="532" width="60" height="60"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="7Mk-rq-8gt"/>
                                     <constraint firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="Kw2-8P-fRY"/>
-                                    <constraint firstAttribute="width" constant="120" id="f1G-Mg-0qr"/>
+                                    <constraint firstAttribute="width" constant="60" id="f1G-Mg-0qr"/>
                                 </constraints>
-                                <state key="normal" image="9"/>
-                                <state key="highlighted" image="9P"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ck-1t-Rys"/>
                                 </connections>
@@ -1921,26 +1945,6 @@
         <segue reference="qV9-67-Sgd"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="0" width="141" height="141"/>
-        <image name="0P" width="141" height="141"/>
-        <image name="1" width="141" height="141"/>
-        <image name="1P" width="141" height="141"/>
-        <image name="2" width="141" height="141"/>
-        <image name="2P" width="141" height="141"/>
-        <image name="3" width="141" height="141"/>
-        <image name="3P" width="141" height="141"/>
-        <image name="4" width="141" height="141"/>
-        <image name="4P" width="141" height="141"/>
-        <image name="5" width="141" height="141"/>
-        <image name="5P" width="141" height="141"/>
-        <image name="6" width="141" height="141"/>
-        <image name="6P" width="141" height="141"/>
-        <image name="7" width="141" height="141"/>
-        <image name="7P" width="141" height="141"/>
-        <image name="8" width="141" height="141"/>
-        <image name="8P" width="141" height="141"/>
-        <image name="9" width="141" height="141"/>
-        <image name="9P" width="141" height="141"/>
         <image name="Actions" width="651.66668701171875" height="651.66668701171875"/>
         <image name="Clear" width="651.66668701171875" height="651.66668701171875"/>
         <image name="Cos" width="350" height="250"/>
@@ -1961,8 +1965,6 @@
         <image name="acLight" width="350" height="250"/>
         <image name="all clear" width="651.66668701171875" height="651.66668701171875"/>
         <image name="divide" width="500" height="500"/>
-        <image name="dot" width="141" height="141"/>
-        <image name="dotP" width="141" height="141"/>
         <image name="equals" width="500" height="500"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="gearshape" width="14" height="14"/>
@@ -1974,8 +1976,6 @@
         <image name="neg-posLight" width="350" height="250"/>
         <image name="papertape" width="15" height="14"/>
         <image name="percentLight" width="350" height="250"/>
-        <image name="pi" width="141" height="141"/>
-        <image name="piP" width="141" height="141"/>
         <image name="plus" width="500" height="500"/>
         <image name="powerLight" width="350" height="250"/>
         <image name="sqrtLight" width="350" height="250"/>
