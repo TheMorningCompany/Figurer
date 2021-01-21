@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "draw.pdf",
+      "filename" : "loglight.svg",
       "idiom" : "universal"
     },
     {
@@ -11,15 +11,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "drawDark.pdf",
+      "filename" : "logdark.svg",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "auto-scaling" : "auto"
   }
 }

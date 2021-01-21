@@ -13,6 +13,7 @@ class BGView: UIView {
     override func awakeFromNib() {
         layer.cornerRadius = 20.0
         layer.cornerCurve = .continuous
+        clipsToBounds = true
     }
 
 }

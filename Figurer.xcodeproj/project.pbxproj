@@ -13,6 +13,7 @@
 		0047C08423F4ECB20097BB55 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C07F23F4ECB20097BB55 /* fade@2x.png */; };
 		0047C08523F4ECB20097BB55 /* figurerDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08023F4ECB20097BB55 /* figurerDark@2x.png */; };
 		0047C08623F4ECB20097BB55 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0047C08123F4ECB20097BB55 /* orange@2x.png */; };
+		008C062725B96211007796BB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C062625B96211007796BB /* LogViewController.swift */; };
 		0099A7C025ABC6D70052AAAF /* Calcbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */; };
 		00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63C23EB7AC8005E125D /* AppDelegate.swift */; };
 		00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 		0047C08023F4ECB20097BB55 /* figurerDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "figurerDark@2x.png"; sourceTree = "<group>"; };
 		0047C08123F4ECB20097BB55 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange@2x.png"; sourceTree = "<group>"; };
 		0088160123EBB68B00F6B4C6 /* Figurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figurer.entitlements; sourceTree = "<group>"; };
+		008C062625B96211007796BB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calcbutton.swift; sourceTree = "<group>"; };
 		00C4E63923EB7AC8005E125D /* Figurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4E63C23EB7AC8005E125D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
+				008C062625B96211007796BB /* LogViewController.swift */,
 				0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */,
 				00F7A87A25549D4A00A9B7BD /* BGView.swift */,
 				00C4E64523EB7AC9005E125D /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
+				008C062725B96211007796BB /* LogViewController.swift in Sources */,
 				00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */,
 				00EE75FC256646D500D28222 /* GradientTitleBar.swift in Sources */,
 				5D1C9DEE24678C6D00103ECE /* MagicViewController.swift in Sources */,
@@ -299,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
