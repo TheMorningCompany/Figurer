@@ -28,7 +28,8 @@ class LogViewController: UITableViewController {
     
     @IBAction func xChanged(_ sender: Any) {
         if baseField.text != "" {
-            
+            let baseNum = Int(baseField.text!)
+            let xNum = Int(xfield.text!)
         }
     }
 }
