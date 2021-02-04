@@ -16,6 +16,7 @@
 		007EEA8D25BC174C004E4A0B /* AppIconPickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007EEA8C25BC174C004E4A0B /* AppIconPickerImageView.swift */; };
 		008C062725B96211007796BB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C062625B96211007796BB /* LogViewController.swift */; };
 		0099A7C025ABC6D70052AAAF /* Calcbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */; };
+		009ACE7725CBD53A003B68C9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009ACE7625CBD53A003B68C9 /* DrawView.swift */; };
 		00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63C23EB7AC8005E125D /* AppDelegate.swift */; };
 		00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */; };
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		0088160123EBB68B00F6B4C6 /* Figurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figurer.entitlements; sourceTree = "<group>"; };
 		008C062625B96211007796BB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calcbutton.swift; sourceTree = "<group>"; };
+		009ACE7625CBD53A003B68C9 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		00C4E63923EB7AC8005E125D /* Figurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4E63C23EB7AC8005E125D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				000D802A2427F738005E0CA1 /* AppIconsViewController.swift */,
 				00EE75FB256646D500D28222 /* GradientTitleBar.swift */,
 				5D9CEC0D23EBE8B9004521D8 /* CalculatorViewController.swift */,
+				009ACE7625CBD53A003B68C9 /* DrawView.swift */,
 				00EE75FE256648BB00D28222 /* TitleBarViewController.swift */,
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
 				5D1C9DED24678C6D00103ECE /* MagicViewController.swift */,
@@ -220,6 +223,7 @@
 			files = (
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
+				009ACE7725CBD53A003B68C9 /* DrawView.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
 				008C062725B96211007796BB /* LogViewController.swift in Sources */,
 				00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */,

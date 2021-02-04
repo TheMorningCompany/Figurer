@@ -45,8 +45,7 @@ class CalculatorViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(infoChanged), name: NSNotification.Name(rawValue: "info"), object: nil)
         
         infoChanged()
-       
-
+        
         if UIDevice.current.userInterfaceIdiom == .phone {
             widthBottom.constant = UIScreen.main.bounds.width - 90
             width1.constant = UIScreen.main.bounds.width - 90
