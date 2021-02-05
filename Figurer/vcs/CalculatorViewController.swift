@@ -53,10 +53,10 @@ class CalculatorViewController: UIViewController {
             width3.constant = UIScreen.main.bounds.width - 90
         } else {
             if !UIApplication.shared.isSplitOrSlideOver {
-                widthBottom.constant = 280
-                width1.constant = 280
-                width2.constant = 280
-                width3.constant = 280
+                widthBottom.constant = 230
+                width1.constant = 230
+                width2.constant = 230
+                width3.constant = 230
             } else {
                 widthBottom.constant = UIScreen.main.bounds.width - 90
                 width1.constant = UIScreen.main.bounds.width - 90
