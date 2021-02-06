@@ -17,6 +17,9 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
     @IBOutlet weak var canvasView: PKCanvasView!
     @IBOutlet weak var sizeSlider: UISlider!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var saveImg: Calcbutton!
+    @IBOutlet weak var saveImgWidth: NSLayoutConstraint!
+    @IBOutlet weak var saveImgRight: NSLayoutConstraint!
     
     var penSize = UserDefaults.standard.integer(forKey: "penSize")
     var penColor = UserDefaults.standard.string(forKey: "penColor")
@@ -69,6 +72,15 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
         canvasView.undoManager?.redo()
     }
     @IBAction func save(_ sender: Any) {
+        
+        saveImgWidth.constant = 60
+        saveImgRight.constant = 3
+        
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded()
+        })
+        saveImg.setImage(UIImage(systemName: "checkmark"), for: .normal)
+
         UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, true, UIScreen.main.scale)
         
         canvasView.drawHierarchy(in: canvasView.bounds, afterScreenUpdates: true)
@@ -79,8 +91,18 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
         if image != nil {
             PHPhotoLibrary.shared().performChanges({
                 PHAssetChangeRequest.creationRequestForAsset(from: image!)
+                
             }, completionHandler: {success, error in
                 
+            })
+        }
+        Timer.scheduledTimer(withTimeInterval: 1.4, repeats: false) { timer in
+            self.saveImg.setImage(UIImage(systemName: "square.and.arrow.down"), for: .normal)
+            self.saveImgWidth.constant = 40
+            self.saveImgRight.constant = 10
+            
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+                self.view.layoutIfNeeded()
             })
         }
     }
