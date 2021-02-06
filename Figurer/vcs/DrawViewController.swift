@@ -167,8 +167,13 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
         penColor = UserDefaults.standard.string(forKey: "penColor")
         canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "\(penColor ?? "dark")")!, width: CGFloat(penSize))
     }
-    
-    
+    @IBAction func showRuler(_ sender: Any) {
+        if canvasView.isRulerActive == false {
+            canvasView.isRulerActive = true
+        } else {
+            canvasView.isRulerActive = false
+        }
+    }
     
     
     
