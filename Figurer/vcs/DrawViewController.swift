@@ -23,6 +23,7 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
     
     var penSize = UserDefaults.standard.integer(forKey: "penSize")
     var penColor = UserDefaults.standard.string(forKey: "penColor")
+    var expanded = false
     
     let canvasWidth: CGFloat = 768
     let canvasOverscrollHeight: CGFloat = 500
@@ -72,15 +73,33 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
         canvasView.undoManager?.redo()
     }
     @IBAction func save(_ sender: Any) {
-        
+     if expanded == false {
+        expanded = true
         saveImgWidth.constant = 60
         saveImgRight.constant = 3
         
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
         })
-        saveImg.setImage(UIImage(systemName: "checkmark"), for: .normal)
+        
+        Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { timer in
+            self.saveImgWidth.constant = 40
+            self.saveImgRight.constant = 10
+            
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+                self.view.layoutIfNeeded()
+            })
+            self.expanded = false
+        }
 
+     } else {
+        saveImgWidth.constant = 65
+        saveImgRight.constant = 1
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded()
+        })
+        saveImg.setImage(UIImage(systemName: "checkmark"), for: .normal)
+        
         UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, true, UIScreen.main.scale)
         
         canvasView.drawHierarchy(in: canvasView.bounds, afterScreenUpdates: true)
@@ -105,6 +124,8 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
                 self.view.layoutIfNeeded()
             })
         }
+        expanded = false
+     }
     }
     @IBAction func brick(_ sender: Any) {
         UserDefaults.standard.set("brick", forKey: "penColor")
