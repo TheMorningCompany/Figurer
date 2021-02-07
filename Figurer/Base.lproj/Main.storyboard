@@ -1316,7 +1316,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zy5-tQ-SJb">
-                            <rect key="frame" x="0.0" y="277.00000034679061" width="360" height="467.00000000000006"/>
+                            <rect key="frame" x="0.0" y="277.00000034679073" width="360" height="467.00000000000006"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" name="Color"/>
                             <prototypes>
@@ -2657,7 +2657,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="704" height="228"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-Of-UqE" customClass="CellBGView" customModule="Expedition" customModuleProvider="target">
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-Of-UqE" customClass="CellBGView" customModule="Figurer" customModuleProvider="target">
                                                     <rect key="frame" x="18" y="0.0" width="668" height="225"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="225" id="LxQ-8L-92U"/>
@@ -2702,7 +2702,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="704" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-QB-GbO" customClass="CellBGView" customModule="Expedition" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-QB-GbO" customClass="CellBGView" customModule="Figurer" customModuleProvider="target">
                                                     <rect key="frame" x="18" y="5" width="668" height="72.5"/>
                                                     <color key="backgroundColor" name="Elevated"/>
                                                 </view>
@@ -2734,7 +2734,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="704" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huB-fW-qlA" customClass="CellBGView" customModule="Expedition" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huB-fW-qlA" customClass="CellBGView" customModule="Figurer" customModuleProvider="target">
                                                     <rect key="frame" x="18" y="5" width="668" height="96"/>
                                                     <subviews>
                                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3j-lo-17D">
@@ -2869,28 +2869,28 @@
             <color red="0.91399997472763062" green="0.40799999237060547" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="brick">
-            <color red="0.83899998664855957" green="0.18700000643730164" blue="0.13400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.91764705882352937" green="0.28235294117647058" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="dark">
             <color red="0.039000000804662704" green="0.039000000804662704" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="forest">
-            <color red="0.33799999952316284" green="0.81999999284744263" blue="0.20499999821186066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.4392156862745098" green="0.83137254901960778" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="lavendar">
-            <color red="0.62699997425079346" green="0.18700000643730164" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.039215686274509803" green="0.63529411764705879" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="magenta">
-            <color red="0.81999999284744263" green="0.12800000607967377" blue="0.60500001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5607843137254902" green="0.18431372549019609" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ocean">
-            <color red="0.15199999511241913" green="0.38600000739097595" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0039215686274509803" green="0.74509803921568629" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ochre">
-            <color red="0.81999999284744263" green="0.54100000858306885" blue="0.11500000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89411764705882346" green="0.55294117647058827" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="teal">
-            <color red="0.15999999642372131" green="0.77999997138977051" blue="0.63999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.27450980392156865" green="0.74901960784313726" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

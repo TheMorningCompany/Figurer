@@ -33,9 +33,6 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        canvasView.layer.cornerCurve = .continuous
-        canvasView.layer.cornerRadius = 20
-        canvasView.clipsToBounds = true
         stackView.layer.cornerRadius = 20
         stackView.layer.cornerCurve = .continuous
         stackView.clipsToBounds = true
