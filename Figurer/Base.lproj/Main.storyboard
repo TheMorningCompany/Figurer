@@ -246,7 +246,7 @@
             <objects>
                 <tableViewController id="vAJ-Rt-e3R" customClass="MagicViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="UbD-CC-veR">
-                        <rect key="frame" x="0.0" y="0.0" width="360" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -484,7 +484,9 @@
                     </view>
                     <connections>
                         <outlet property="calcWidth" destination="7in-RT-rfw" id="Cn4-PI-iM8"/>
+                        <outlet property="graphLeft" destination="SnJ-pR-9M1" id="sfX-eB-epM"/>
                         <outlet property="graphView" destination="dIl-Xl-5SP" id="ABe-ge-Iz8"/>
+                        <outlet property="middleSeparator" destination="hZD-Fh-ATI" id="gz5-aj-jke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vja-b5-wot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1312,11 +1314,11 @@
             <objects>
                 <tableViewController modalPresentationStyle="pageSheet" clearsSelectionOnViewWillAppear="NO" id="ihg-hb-3mn" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f20-gL-pI3">
-                        <rect key="frame" x="0.0" y="0.0" width="360" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zy5-tQ-SJb">
-                            <rect key="frame" x="0.0" y="277.00000034679073" width="360" height="467.00000000000006"/>
+                            <rect key="frame" x="0.0" y="277.00000034679067" width="360" height="467"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" name="Color"/>
                             <prototypes>
@@ -1443,7 +1445,7 @@
             <objects>
                 <tableViewController id="WPf-ZW-1mu" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cRT-KF-5wt">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -1660,7 +1662,7 @@
             <objects>
                 <tableViewController id="ALJ-T8-man" customClass="AppIconsViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="suc-Qi-OmG">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -2027,7 +2029,7 @@
             <objects>
                 <tableViewController id="b8I-F7-yPO" customClass="OptionsViewController" customModule="Figurer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="XCF-Cf-7cw">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -2287,7 +2289,7 @@
             <objects>
                 <tableViewController id="HAg-mY-Wss" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jeZ-3g-iXj">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Color"/>
@@ -2641,7 +2643,7 @@
             <objects>
                 <tableViewController id="n85-CM-vm6" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9N0-Ag-W56">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="separatorColor" name="Expedition White"/>
@@ -2792,7 +2794,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Am7-t7-H8W"/>
+        <segue reference="6dl-TF-KNE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2tap" width="375" height="301"/>
@@ -2869,28 +2871,28 @@
             <color red="0.91399997472763062" green="0.40799999237060547" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="brick">
-            <color red="0.91764705882352937" green="0.28235294117647058" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.9179999828338623" green="0.28200000524520874" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="dark">
             <color red="0.039000000804662704" green="0.039000000804662704" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="forest">
-            <color red="0.4392156862745098" green="0.83137254901960778" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.43900001049041748" green="0.83099997043609619" blue="0.47499999403953552" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="lavendar">
-            <color red="0.039215686274509803" green="0.63529411764705879" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.039000000804662704" green="0.63499999046325684" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="magenta">
-            <color red="0.5607843137254902" green="0.18431372549019609" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.56099998950958252" green="0.18400000035762787" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ocean">
-            <color red="0.0039215686274509803" green="0.74509803921568629" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.0040000001899898052" green="0.74500000476837158" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ochre">
-            <color red="0.89411764705882346" green="0.55294117647058827" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.89399999380111694" green="0.55299997329711914" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="teal">
-            <color red="0.27450980392156865" green="0.74901960784313726" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.27500000596046448" green="0.74900001287460327" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

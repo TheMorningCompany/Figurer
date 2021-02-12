@@ -12,19 +12,28 @@ class HolderViewController: UIViewController {
     
     @IBOutlet weak var calcWidth: NSLayoutConstraint!
     @IBOutlet weak var graphView: UIView!
+    @IBOutlet weak var middleSeparator: NSLayoutConstraint!
+    @IBOutlet weak var graphLeft: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if UIDevice.current.userInterfaceIdiom == .phone {
-            calcWidth.constant = UIScreen.main.bounds.width - 90
-
+            
+            graphView.isHidden = false
+            middleSeparator.constant = 120
+            graphLeft.constant = -80
         } else {
             if !UIApplication.shared.isSplitOrSlideOver {
                 calcWidth.constant = 340
+                graphView.isHidden = false
+                middleSeparator.constant = 20
+                graphLeft.constant = 20
 
             } else {
-                calcWidth.constant = UIScreen.main.bounds.width - 90
+                
+                middleSeparator.constant = 20
+                graphLeft.constant = 20
             }
         }
         

@@ -119,7 +119,6 @@
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
-				0043B59E25CCC4E800B6237F /* HolderViewController.swift */,
 				007EEA8C25BC174C004E4A0B /* AppIconPickerImageView.swift */,
 				008C062625B96211007796BB /* LogViewController.swift */,
 				0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */,
@@ -141,6 +140,7 @@
 				5D4B27DF23F21D8100A23478 /* OptionsViewController.swift */,
 				0043B5A025CCCB7D00B6237F /* DrawViewController.swift */,
 				5D1C9DED24678C6D00103ECE /* MagicViewController.swift */,
+				0043B59E25CCC4E800B6237F /* HolderViewController.swift */,
 			);
 			path = vcs;
 			sourceTree = "<group>";
