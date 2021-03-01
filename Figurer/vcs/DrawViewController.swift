@@ -20,10 +20,16 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
     @IBOutlet weak var saveImg: Calcbutton!
     @IBOutlet weak var saveImgWidth: NSLayoutConstraint!
     @IBOutlet weak var saveImgRight: NSLayoutConstraint!
+    @IBOutlet weak var redoBtn: Calcbutton!
+    @IBOutlet weak var undoBtn: Calcbutton!
+    @IBOutlet weak var rulerBtn: Calcbutton!
     
     var penSize = UserDefaults.standard.integer(forKey: "penSize")
     var penColor = UserDefaults.standard.string(forKey: "penColor")
     var expanded = false
+    
+    var heavyClick = UIImpactFeedbackGenerator(style: .heavy)
+    var lightClick = UIImpactFeedbackGenerator(style: .light)
     
     let canvasWidth: CGFloat = 768
     let canvasOverscrollHeight: CGFloat = 500
@@ -50,7 +56,7 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
             toolPicker.setVisible(true, forFirstResponder: canvasView)
         }
         
-        canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "\(penColor ?? "dark")")!, width: CGFloat(penSize))
+//        canvasView.tool = PKInkingTool(.pen, color: UIColor(named: "\(penColor ?? "dark")")!, width: CGFloat(penSize))
         
         sizeSlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
         
@@ -166,13 +172,19 @@ class DrawViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerOb
     }
     @IBAction func showRuler(_ sender: Any) {
         if canvasView.isRulerActive == false {
+            
             canvasView.isRulerActive = true
+            self.rulerBtn.backgroundColor = UIColor(named: "Figurer Orange")
+            self.rulerBtn.tintColor = .white
         } else {
+            
             canvasView.isRulerActive = false
+            self.rulerBtn.backgroundColor = UIColor(named: "Elevated")
+            self.rulerBtn.tintColor = .label
         }
     }
     
-    
+
     
 }
 

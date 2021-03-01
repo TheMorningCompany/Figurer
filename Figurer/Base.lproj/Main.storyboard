@@ -222,11 +222,14 @@
                     </view>
                     <connections>
                         <outlet property="canvasView" destination="Del-sY-L4N" id="ycS-v6-oGP"/>
+                        <outlet property="redoBtn" destination="hGp-kt-AZl" id="28o-84-DZo"/>
+                        <outlet property="rulerBtn" destination="DXk-hY-vEU" id="wMc-k0-dMy"/>
                         <outlet property="saveImg" destination="ICl-5U-hzF" id="s8w-67-dGr"/>
                         <outlet property="saveImgRight" destination="m01-cq-9le" id="cLJ-VL-8DN"/>
                         <outlet property="saveImgWidth" destination="lFP-Qk-vHZ" id="nnA-aQ-NyR"/>
                         <outlet property="sizeSlider" destination="NKF-9w-24v" id="bI7-bi-bPs"/>
                         <outlet property="stackView" destination="H1e-it-Ptn" id="2he-Xp-oi8"/>
+                        <outlet property="undoBtn" destination="A8i-eo-wbY" id="DJy-wM-HPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fP-Se-Ata" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -548,6 +551,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-OU-ccg" userLabel="plus" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="285" y="608" width="60" height="60"/>
                                 <color key="backgroundColor" name="4"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Q11-33-Aem"/>
                                     <constraint firstAttribute="height" constant="60" id="lfC-I3-UfV"/>
@@ -563,6 +569,9 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKr-PO-Qly" userLabel="divide" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="285" y="353" width="60" height="60"/>
                                 <color key="backgroundColor" name="1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Jqr-W9-iii"/>
                                     <constraint firstAttribute="height" constant="60" id="gpc-EB-jxI"/>
@@ -578,6 +587,9 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-S7-3He" userLabel="times" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="285" y="438" width="60" height="60"/>
                                 <color key="backgroundColor" name="2"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="f56-tQ-ze4"/>
                                     <constraint firstAttribute="height" constant="60" id="nfj-CQ-Q4W"/>
@@ -593,6 +605,9 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGx-b4-JW6" userLabel="minus" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="285" y="523" width="60" height="60"/>
                                 <color key="backgroundColor" name="3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9pi-D2-kfQ"/>
                                     <constraint firstAttribute="width" constant="60" id="s4v-DQ-uLz"/>
@@ -608,6 +623,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-aL-d2W" userLabel="equals" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="285" y="693" width="60" height="60"/>
                                 <color key="backgroundColor" name="5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="DJ7-16-i3H"/>
                                     <constraint firstAttribute="height" constant="60" id="xow-2c-hlM"/>
@@ -763,6 +781,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-hG-UyB" userLabel="0" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="109" y="693" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WOO-hG-UyB" secondAttribute="height" multiplier="1:1" id="jPR-bT-C1h"/>
                                     <constraint firstAttribute="width" constant="60" id="vXe-P7-HIo"/>
@@ -778,6 +799,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-Df-9Cb" userLabel="pi" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="19" y="693" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pPD-Df-9Cb" secondAttribute="height" multiplier="1:1" id="aFg-YR-xc3"/>
                                     <constraint firstAttribute="width" constant="60" id="wPH-Hi-kHH"/>
@@ -793,6 +817,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-sh-lph" userLabel="dot" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="199" y="693" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="arS-Hc-Iiu"/>
                                     <constraint firstAttribute="width" secondItem="hw0-sh-lph" secondAttribute="height" multiplier="1:1" id="p0K-gQ-a5l"/>
@@ -808,6 +835,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-g3-vQc" userLabel="1" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="16.5" y="608" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="T3O-Ls-tAL"/>
                                     <constraint firstAttribute="width" secondItem="CWc-g3-vQc" secondAttribute="height" multiplier="1:1" id="w16-yI-aF8"/>
@@ -823,6 +853,9 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-eX-ngH" userLabel="2" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="109" y="608" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a3D-eX-ngH" secondAttribute="height" multiplier="1:1" id="br5-UG-tOB"/>
                                     <constraint firstAttribute="width" constant="60" id="gCN-S6-zQK"/>
@@ -838,6 +871,9 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZX-BK-rj3" userLabel="3" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="201.5" y="608" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KZX-BK-rj3" secondAttribute="height" multiplier="1:1" id="4eM-5m-ccJ"/>
                                     <constraint firstAttribute="width" constant="60" id="HQU-Zx-1FZ"/>
@@ -853,6 +889,9 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74n-HK-TWY" userLabel="4" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="16.5" y="523" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="JAh-Wk-J1N"/>
                                     <constraint firstAttribute="width" secondItem="74n-HK-TWY" secondAttribute="height" multiplier="1:1" id="Lg7-XM-4IJ"/>
@@ -868,6 +907,9 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-oy-eyz" userLabel="5" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="109" y="523" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="VvN-Kj-zy6"/>
                                     <constraint firstAttribute="width" secondItem="hjk-oy-eyz" secondAttribute="height" multiplier="1:1" id="vBa-cP-NXm"/>
@@ -883,6 +925,9 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h16-uk-vbT" userLabel="6" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="201.5" y="523" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="ObX-fq-A7o"/>
                                     <constraint firstAttribute="width" secondItem="h16-uk-vbT" secondAttribute="height" multiplier="1:1" id="dVR-x3-0pA"/>
@@ -898,6 +943,9 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-Og-FzV" userLabel="7" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="16.5" y="438" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="SZm-ui-5oi"/>
                                     <constraint firstAttribute="width" secondItem="FpH-Og-FzV" secondAttribute="height" multiplier="1:1" id="mcx-AT-xhn"/>
@@ -913,6 +961,9 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FX7-BJ-Isd" userLabel="8" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="109" y="438" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="7ry-2x-2j2"/>
                                     <constraint firstAttribute="width" secondItem="FX7-BJ-Isd" secondAttribute="height" multiplier="1:1" id="Zwv-5J-ekS"/>
@@ -928,6 +979,9 @@
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-yw-lCc" userLabel="9" customClass="Calcbutton" customModule="Figurer" customModuleProvider="target">
                                 <rect key="frame" x="201.5" y="438" width="60" height="60"/>
                                 <color key="backgroundColor" name="Elevated"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
+                                </accessibility>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SCD-yw-lCc" secondAttribute="height" multiplier="1:1" id="Kw2-8P-fRY"/>
@@ -1318,7 +1372,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Color"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zy5-tQ-SJb">
-                            <rect key="frame" x="0.0" y="277.00000034679067" width="360" height="467"/>
+                            <rect key="frame" x="0.0" y="277.00000034679078" width="360" height="467"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" name="Color"/>
                             <prototypes>

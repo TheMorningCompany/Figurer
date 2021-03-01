@@ -18,6 +18,7 @@
 		007EEA8D25BC174C004E4A0B /* AppIconPickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007EEA8C25BC174C004E4A0B /* AppIconPickerImageView.swift */; };
 		008C062725B96211007796BB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C062625B96211007796BB /* LogViewController.swift */; };
 		0099A7C025ABC6D70052AAAF /* Calcbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */; };
+		00AF0A9025E638FC00FE6513 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF0A8F25E638FC00FE6513 /* Button.swift */; };
 		00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63C23EB7AC8005E125D /* AppDelegate.swift */; };
 		00C4E63F23EB7AC8005E125D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */; };
 		00C4E64423EB7AC8005E125D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4E64223EB7AC8005E125D /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		0088160123EBB68B00F6B4C6 /* Figurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figurer.entitlements; sourceTree = "<group>"; };
 		008C062625B96211007796BB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		0099A7BF25ABC6D70052AAAF /* Calcbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calcbutton.swift; sourceTree = "<group>"; };
+		00AF0A8F25E638FC00FE6513 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		00C4E63923EB7AC8005E125D /* Figurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C4E63C23EB7AC8005E125D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				00C4E63E23EB7AC8005E125D /* SceneDelegate.swift */,
 				5D1C9DEF24678C7F00103ECE /* vcs */,
 				5D791A5823F51A8000C406A6 /* Functions.swift */,
+				00AF0A8F25E638FC00FE6513 /* Button.swift */,
 				00C4E64223EB7AC8005E125D /* Main.storyboard */,
 				007EEA8C25BC174C004E4A0B /* AppIconPickerImageView.swift */,
 				008C062625B96211007796BB /* LogViewController.swift */,
@@ -227,6 +230,7 @@
 				00C4E63D23EB7AC8005E125D /* AppDelegate.swift in Sources */,
 				000D802B2427F738005E0CA1 /* AppIconsViewController.swift in Sources */,
 				0043B59F25CCC4E800B6237F /* HolderViewController.swift in Sources */,
+				00AF0A9025E638FC00FE6513 /* Button.swift in Sources */,
 				5D4B27E023F21D8100A23478 /* OptionsViewController.swift in Sources */,
 				008C062725B96211007796BB /* LogViewController.swift in Sources */,
 				00EE75FF256648BB00D28222 /* TitleBarViewController.swift in Sources */,
